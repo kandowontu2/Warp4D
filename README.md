@@ -12,7 +12,7 @@ For that ROM, Warp4D groups the game’s original 16×16 metatiles into whole bu
 
 ## Run
 
-Download `Warp4D.exe` from the [latest Windows release](https://github.com/kandowontu/Warp4D/releases/latest), launch it, then choose **Open ROM** or drag a `.nes` file onto the window. Warp4D always starts with no cartridge loaded; it never searches the computer for ROMs or automatically opens one. No ROM is included in this repository, executable, or release.
+Download `Warp4D.exe` from the [latest Windows release](https://github.com/kandowontu2/Warp4D/releases/latest), launch it, then choose **Open ROM** or drag a `.nes` file onto the window. Warp4D always starts with no cartridge loaded; it never searches the computer for ROMs or automatically opens one. No ROM is included in this repository, executable, or release.
 
 Controls:
 
