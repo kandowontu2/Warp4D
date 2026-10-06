@@ -16,12 +16,13 @@
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
     <AssemblyName>Warp4D</AssemblyName>
     <Product>Warp4D Native NES Object Projector</Product>
-    <Version>1.1.1</Version>
+    <Version>1.2.0-preview</Version>
     <PublishTrimmed>false</PublishTrimmed>
     <NuGetAudit>false</NuGetAudit>
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Profiles\Data\*.json" />
     <Content Include="MesenCore.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

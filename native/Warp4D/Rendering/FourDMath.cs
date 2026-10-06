@@ -1,4 +1,5 @@
 using System.Drawing;
+using System.Numerics;
 
 namespace Warp4D.Rendering;
 
@@ -81,6 +82,49 @@ internal readonly struct PreparedRotation4D
         first = originalFirst * cosine - originalSecond * sine;
         second = originalFirst * sine + originalSecond * cosine;
     }
+
+    internal void ProjectVertices(ReadOnlySpan<PointF> points,float z,float w,float camera4,float camera3,PointF center,float scale,Span<SurfaceVertex> vertices)
+    {
+        if(vertices.Length<points.Length)throw new ArgumentException("Projection destination too short.");
+        int index=0,lanes=Vector<float>.Count;
+        if(Vector.IsHardwareAccelerated && camera4>0 && camera3>0 && points.Length>=lanes)
+        {
+            Span<float> xs=stackalloc float[lanes],ys=stackalloc float[lanes];
+            Span<float> depths=stackalloc float[lanes],qs=stackalloc float[lanes];
+            Vector<float> c4=new(camera4),c3=new(camera3),min4=new(camera4*.16f),min3=new(camera3*.16f);
+            Vector<float> cx=new(center.X),cy=new(center.Y),screenScale=new(scale);
+            for(;index<=points.Length-lanes;index+=lanes)
+            {
+                for(int lane=0;lane<lanes;lane++){xs[lane]=points[index+lane].X;ys[lane]=points[index+lane].Y;}
+                Vector<float> x=new(xs),y=new(ys),zz=new(z),ww=new(w);
+                RotateVectorPlane(ref x,ref y,_xyCos,_xySin);
+                RotateVectorPlane(ref x,ref ww,_xwCos,_xwSin);
+                RotateVectorPlane(ref y,ref ww,_ywCos,_ywSin);
+                RotateVectorPlane(ref zz,ref ww,_zwCos,_zwSin);
+                RotateVectorPlane(ref x,ref zz,_xzCos,_xzSin);
+                RotateVectorPlane(ref y,ref zz,_yzCos,_yzSin);
+                Vector<float> q4=c4/Vector.Max(min4,c4-ww);
+                Vector<float> x3=x*q4,y3=y*q4,z3=zz*q4;
+                Vector<float> q3=c3/Vector.Max(min3,c3-z3);
+                (cx+(x3*q3)*screenScale).CopyTo(xs);
+                (cy+(y3*q3)*screenScale).CopyTo(ys);
+                (z3/c3).CopyTo(depths);(q4*q3).CopyTo(qs);
+                for(int lane=0;lane<lanes;lane++)vertices[index+lane]=new(new(xs[lane],ys[lane]),depths[lane],qs[lane]);
+            }
+        }
+        for(;index<points.Length;index++)
+        {
+            var p=FourDMath.Project(new(points[index].X,points[index].Y,z,w),this,camera4,camera3);
+            vertices[index]=new(new(center.X+p.Point.X*scale,center.Y+p.Point.Y*scale),p.CameraDepth/camera3,p.Scale4D);
+        }
+    }
+    [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+    private static void RotateVectorPlane(ref Vector<float> first,ref Vector<float> second,float cosine,float sine)
+    {
+        var a=first;var b=second;
+        first=a*new Vector<float>(cosine)-b*new Vector<float>(sine);
+        second=a*new Vector<float>(sine)+b*new Vector<float>(cosine);
+    }
 }
 
 internal static class FourDMath
@@ -101,8 +145,11 @@ internal static class FourDMath
         float fourDimensionalCamera,
         float threeDimensionalCamera)
     {
-        Vector4F rotated = rotation.Apply(input);
+        return ProjectRotated(rotation.Apply(input),fourDimensionalCamera,threeDimensionalCamera);
+    }
 
+    public static Projected4D ProjectRotated(Vector4F rotated,float fourDimensionalCamera,float threeDimensionalCamera)
+    {
         // First perspective divide: R4 -> R3, with the camera on the +W axis.
         float denominator4D = Math.Max(fourDimensionalCamera * 0.16f, fourDimensionalCamera - rotated.W);
         float scale4D = fourDimensionalCamera / denominator4D;

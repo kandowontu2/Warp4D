@@ -1,0 +1,953 @@
+{
+  "FormatVersion": 7,
+  "Name": "Celeste Mario\u0027s Zap \u0026 Dash Deluxe \u00B7 built-in",
+  "RomName": "Celeste Mario\u0027s Zap \u0026 Dash Deluxe.nes",
+  "RomSha256": "",
+  "GameplayStateAddress": -1,
+  "GameplayStateValue": 2,
+  "TransparentBackdrop": true,
+  "SeparateMetatiles": true,
+  "AllowMaskedLeftEdgeArtwork": false,
+  "CellSize": 16,
+  "RequireRecognizedScene": true,
+  "MinimumScenePatterns": 2,
+  "SceneAnchors": [],
+  "FlatRegions": [
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 0,
+        "Y": 192
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 256,
+        "Height": 48
+      },
+      "X": 0,
+      "Y": 192,
+      "Width": 256,
+      "Height": 48,
+      "Left": 0,
+      "Top": 192,
+      "Right": 256,
+      "Bottom": 240,
+      "IsEmpty": false
+    }
+  ],
+  "ConditionalFlatRegions": [
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": true,
+          "X": 0,
+          "Y": 0
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 256,
+          "Height": 96
+        },
+        "X": 0,
+        "Y": 0,
+        "Width": 256,
+        "Height": 96,
+        "Left": 0,
+        "Top": 0,
+        "Right": 256,
+        "Bottom": 96,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "1863": 5,
+        "1856": 2,
+        "14": 8,
+        "1883": 2
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 16,
+          "Y": 32
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 32,
+          "Height": 16
+        },
+        "X": 16,
+        "Y": 32,
+        "Width": 32,
+        "Height": 16,
+        "Left": 16,
+        "Top": 32,
+        "Right": 48,
+        "Bottom": 48,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "1883": 2,
+        "14": 8,
+        "1856": 1,
+        "1869": 24,
+        "1870": 24
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": true,
+          "X": 0,
+          "Y": 0
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 8,
+          "Height": 192
+        },
+        "X": 0,
+        "Y": 0,
+        "Width": 8,
+        "Height": 192,
+        "Left": 0,
+        "Top": 0,
+        "Right": 8,
+        "Bottom": 192,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "1883": 0,
+        "1869": 2,
+        "14": 8,
+        "1870": 2,
+        "1856": 1
+      }
+    }
+  ],
+  "ObjectRegions": [],
+  "PlayerOamIndices": [],
+  "PlayerLabel": "Player",
+  "BackgroundRules": {
+    "P3-0000CCDC": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "C5DA1755BDE06327B50B1780419C41580E706359F637FB7788AA9080534D272E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5DA1755BDE06327B50B1780419C41580E706359F637FB7788AA9080534D272E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00CE00CF": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "10020CC036B4785D82A77BF53AEEC4A3106136A1357067A7D6ED4208FA24ACE7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "10020CC036B4785D82A77BF53AEEC4A3106136A1357067A7D6ED4208FA24ACE7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0000230B": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "8064844290EA9D7E8C673AFCF9F2B8E8669622CA6C07B3DE8C98788C7C8CB356",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8064844290EA9D7E8C673AFCF9F2B8E8669622CA6C07B3DE8C98788C7C8CB356",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0A1A001B": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "CCEBCE751AEAC82968158CD68B6B092565AC858830DB4A27E7DD1AE9A10D74EF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CCEBCE751AEAC82968158CD68B6B092565AC858830DB4A27E7DD1AE9A10D74EF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00C600C7": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "2FB174AC711CA8DA57D0E5135B9C011328ADE8FCDDC3E8510990834DBA1F8AC1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2FB174AC711CA8DA57D0E5135B9C011328ADE8FCDDC3E8510990834DBA1F8AC1",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C9D9CADA": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "727F82627D0F0AE17CA0A1B931AC9F512146B9A19096A8EFC82F087778D4EAB5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "727F82627D0F0AE17CA0A1B931AC9F512146B9A19096A8EFC82F087778D4EAB5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-05150616": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "539E1EE75E988B4AF987FC17FF74F6E633E409C716BEEEF15242A4174C194CB3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "539E1EE75E988B4AF987FC17FF74F6E633E409C716BEEEF15242A4174C194CB3",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-CBDBCCDC": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "2321498C2B7403F2541F43F3D4564FE5A0133479E0174897DDD055856769E449",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2321498C2B7403F2541F43F3D4564FE5A0133479E0174897DDD055856769E449",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-05150000": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "20480A4A46A6880C72F4186F6FBF792F3ACEC1652A6AB7DDF5A382228BB4331B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "20480A4A46A6880C72F4186F6FBF792F3ACEC1652A6AB7DDF5A382228BB4331B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-22201700": {
+      "Kind": "Terrain",
+      "Label": "Celeste ice terrain",
+      "VisualFingerprint": "7641181A91B0F719144E95CF321DBF991D6A21E01171BEBE93916749FB8D74FE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7641181A91B0F719144E95CF321DBF991D6A21E01171BEBE93916749FB8D74FE",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-80908191": {
+      "Kind": "QuestionBlock",
+      "Label": "Celeste question block",
+      "VisualFingerprint": "1BFC8FE5F7E96AA62D50FD43848577DD708FE16F463BCB123FDD817A1415FB9F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1BFC8FE5F7E96AA62D50FD43848577DD708FE16F463BCB123FDD817A1415FB9F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "551833E39B4FAEE3029C39197CC5D5D3073F0BFBDEF297A34DD8AB3DD0A0224C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A7E1A8B4B373E9C6383570F181BB56C6873A806FE66C07D8EF4C9E7B33968609",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1BFD98D4C1792DDD8893C173127A5031EB86ECDADFF9D2495EAC0519FE9CAED7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E452554549244AD9D89B48E25859947FE2F064F90052F969C069FE3CB446C845",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9B4F31337BEC14C776E6AA873FC1291BBEB68A4ADAC153517AD4473B1EF8F7CF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1BFCB7F24BFAE2D0C4321286B600ED56E639765EAAC7C91BEDC38C321A20E36D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E3F4745F71B1258C06487C4DEDADC818C3A01CC0002889F1A6C2744F74A24FE5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-6C7C6D7D": {
+      "Kind": "Brick",
+      "Label": "Celeste ice brick",
+      "VisualFingerprint": "6B5A880C7BED826AB5143E3F3F62EE2C33E28EB7FB02946A5F76AE81E0657728",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6B5A880C7BED826AB5143E3F3F62EE2C33E28EB7FB02946A5F76AE81E0657728",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0000071F": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "121BDB981CD4FAB5ADEE34E8679E033C40E89BDB190BACE794C770FD27E99E97",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "121BDB981CD4FAB5ADEE34E8679E033C40E89BDB190BACE794C770FD27E99E97",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-CADACBDB": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "43F800FD5D615A4950121B1AFA6F4F0BC47495D67F317D579C39BA546B214A83",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "43F800FD5D615A4950121B1AFA6F4F0BC47495D67F317D579C39BA546B214A83",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00000F1F": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "7B3E66CDA6300A525A7936CE9D19287E6D7D102E30F6E3E1A68FB3001B434702",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7B3E66CDA6300A525A7936CE9D19287E6D7D102E30F6E3E1A68FB3001B434702",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-EAFAEBFB": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "D5DCCC2E467476C741A20FA1781BC4CBC6C9356F178412BCBE61EA76DD8B5FFA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D5DCCC2E467476C741A20FA1781BC4CBC6C9356F178412BCBE61EA76DD8B5FFA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-041E0602": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "93A8836A5B80C073048ABFC924F35F605B7E80065FA18BB224BF0BF90CFA4BE4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "93A8836A5B80C073048ABFC924F35F605B7E80065FA18BB224BF0BF90CFA4BE4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0503071F": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "D4F08C717991CB43DC56E11739370D8196620CC1F206FAB064DB662081065FF7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D4F08C717991CB43DC56E11739370D8196620CC1F206FAB064DB662081065FF7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0E1E1414": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "3FE7F7A4A035DCCF9C6CF7B4C0DE0F9DC88E5E483BCEE9E7732A27930920DD67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3FE7F7A4A035DCCF9C6CF7B4C0DE0F9DC88E5E483BCEE9E7732A27930920DD67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00270F1F": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "7B3E66CDA6300A525A7936CE9D19287E6D7D102E30F6E3E1A68FB3001B434702",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7B3E66CDA6300A525A7936CE9D19287E6D7D102E30F6E3E1A68FB3001B434702",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00313133": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "516DB2EE1B76A1A3766C4BCC9D81C95AE041AA1CA7BF9FB94974CEB2782DEAD8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "516DB2EE1B76A1A3766C4BCC9D81C95AE041AA1CA7BF9FB94974CEB2782DEAD8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-25352636": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "273EF685EA31512F7A9319DDD2657C2F5A4743FE36B234AB6C344495EF1EC2C6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "273EF685EA31512F7A9319DDD2657C2F5A4743FE36B234AB6C344495EF1EC2C6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-30320030": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "1DE2A8EDD82082CC3FE92607C9EC228EE7BF2DCF1A21B7AB408249CD5D8D56DF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1DE2A8EDD82082CC3FE92607C9EC228EE7BF2DCF1A21B7AB408249CD5D8D56DF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-13350F37": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "C29EDB1BF45049599B99482531B6B60BACF4C47E6BA485D64490D5324209F6E1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C29EDB1BF45049599B99482531B6B60BACF4C47E6BA485D64490D5324209F6E1",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-10001100": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "4BAA309E848CF55A9A65E7DA5AFABCC6D322AAFD7CB0BC50B20D61E025BAD9B6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4BAA309E848CF55A9A65E7DA5AFABCC6D322AAFD7CB0BC50B20D61E025BAD9B6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0E341236": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "807E45BD049553DB74AF73A31A66B2F358F1878D93223889FFDC257A3BED0046",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "807E45BD049553DB74AF73A31A66B2F358F1878D93223889FFDC257A3BED0046",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-00B40000": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "E4582B49AB23815475ACB8AEE2DDF6026540835E36803B6E9246E6D4EB06DE52",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E4582B49AB23815475ACB8AEE2DDF6026540835E36803B6E9246E6D4EB06DE52",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "24E4AAB115B5FD8F74A234E5A105BBB456B12BD36B1231FF09BDC7405A963E1C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-000000A4": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "DAF64D361EC549AB0AFD09443DDF796C4B114E982448CB944574BC914DE20705",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DAF64D361EC549AB0AFD09443DDF796C4B114E982448CB944574BC914DE20705",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6A448F9C19CBCD8C7AD7B9841D9048FCB0685B1B596E5E336995C4CFAF6F51FA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-30323133": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "3CEDA4D5FE5C288DEA309FC0E1B281E77BE22CD1E084D4D8B0E0A783D016A85F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3CEDA4D5FE5C288DEA309FC0E1B281E77BE22CD1E084D4D8B0E0A783D016A85F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0E1E0F1F": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "EBC257668F7717820573A17AEB1A0FB787160B58DEDD3340F8BE60B3A3F1F45F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EBC257668F7717820573A17AEB1A0FB787160B58DEDD3340F8BE60B3A3F1F45F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-EEFEEFFF": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "B428755386BED6AB0CA759D7D3D2C3B2381A5C361A22C167B125ED122092FFEC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B428755386BED6AB0CA759D7D3D2C3B2381A5C361A22C167B125ED122092FFEC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0E340F1F": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "F85D6ADC823E3F919EDA7975CB4CF829569C3A6943BB674B5B62A4FB5CDB7D27",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F85D6ADC823E3F919EDA7975CB4CF829569C3A6943BB674B5B62A4FB5CDB7D27",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-10000F1F": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "90EBB4AD49787FB87251FE20BFBBBC6D55CA3D79BEF93DB9E451441E5966461F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "90EBB4AD49787FB87251FE20BFBBBC6D55CA3D79BEF93DB9E451441E5966461F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-CEDECFDF": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "633EDA0074DF9EC1BA6FE324BF95A8281751CF2F6AD6127B87502757A81C571E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "633EDA0074DF9EC1BA6FE324BF95A8281751CF2F6AD6127B87502757A81C571E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-88018901": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "9827A5BE50AA00BE33D43E80C1C4497E402D88879AF71B467EE46D0813FDE6B8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9827A5BE50AA00BE33D43E80C1C4497E402D88879AF71B467EE46D0813FDE6B8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-0000B400": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "AE604C06FC3E9D333DC9EB0E499B18292BE94EFABEEB0029F2C4A38BB7CB509E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AE604C06FC3E9D333DC9EB0E499B18292BE94EFABEEB0029F2C4A38BB7CB509E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1614ECC949CCDB39DEDD0642621027EA696C9E5155CE3840EC7CC7119154B4D8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A4000000": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "F562C92FE7CB726D685F89C730C4E4EE0EECDECFCBCF3C6412986F66DDB36E0B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F562C92FE7CB726D685F89C730C4E4EE0EECDECFCBCF3C6412986F66DDB36E0B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "57A6D9793509FAFC37284E19E9D0DEBF40870D2069785CF49C67D1422D8FA51C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-EEFE0000": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "7536F53DBEE66D9C2B107890BDB2C4FE07E9451248E8164AACADA8E931AC0205",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7536F53DBEE66D9C2B107890BDB2C4FE07E9451248E8164AACADA8E931AC0205",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00003133": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "18451C7A93F6BEADF01548B84CCF1A1FF6C14BC437E54F95F98DA93ABE2D6047",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "18451C7A93F6BEADF01548B84CCF1A1FF6C14BC437E54F95F98DA93ABE2D6047",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00000F37": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "D72E8592447B16D13FAA0C93A55F3CB767EBF3163132B8C54AC71D5814B3905E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D72E8592447B16D13FAA0C93A55F3CB767EBF3163132B8C54AC71D5814B3905E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-25350000": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "69C5A204DC12FB2F5AAB3F974E8CE5C4327841CADEB5AD7A271B07EB62D4FD33",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "69C5A204DC12FB2F5AAB3F974E8CE5C4327841CADEB5AD7A271B07EB62D4FD33",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-10000000": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "260770A39087C9F2B434778743988FF0C52E0FE84D6F817243A32536FBE686A7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "260770A39087C9F2B434778743988FF0C52E0FE84D6F817243A32536FBE686A7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-64746575": {
+      "Kind": "Terrain",
+      "Label": "Splat and Splash cave scenery",
+      "VisualFingerprint": "24DC9E2351C3CEA1D6E3D3F716D60C5B84191DA6493BE3D8ECF96F86E56F7AF8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "24DC9E2351C3CEA1D6E3D3F716D60C5B84191DA6493BE3D8ECF96F86E56F7AF8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00B40000": {
+      "Kind": "Terrain",
+      "Label": "Main course ice scenery",
+      "VisualFingerprint": "E4582B49AB23815475ACB8AEE2DDF6026540835E36803B6E9246E6D4EB06DE52",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E4582B49AB23815475ACB8AEE2DDF6026540835E36803B6E9246E6D4EB06DE52",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "378E2F6F1EB4990318A57239871873847EB5D032CC80495DF5D3B74865E0E9DA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "24E4AAB115B5FD8F74A234E5A105BBB456B12BD36B1231FF09BDC7405A963E1C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-000000A4": {
+      "Kind": "Terrain",
+      "Label": "Main course ice scenery",
+      "VisualFingerprint": "DAF64D361EC549AB0AFD09443DDF796C4B114E982448CB944574BC914DE20705",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DAF64D361EC549AB0AFD09443DDF796C4B114E982448CB944574BC914DE20705",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6A448F9C19CBCD8C7AD7B9841D9048FCB0685B1B596E5E336995C4CFAF6F51FA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-A4000000": {
+      "Kind": "Terrain",
+      "Label": "Main course ice scenery",
+      "VisualFingerprint": "F562C92FE7CB726D685F89C730C4E4EE0EECDECFCBCF3C6412986F66DDB36E0B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F562C92FE7CB726D685F89C730C4E4EE0EECDECFCBCF3C6412986F66DDB36E0B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "57A6D9793509FAFC37284E19E9D0DEBF40870D2069785CF49C67D1422D8FA51C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0E340F37": {
+      "Kind": "Terrain",
+      "Label": "Duality Mario cave scenery",
+      "VisualFingerprint": "8262BDC2597DE15AAAB524DBA03954A848063506CD9A2BAF4CCF162A318585E8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8262BDC2597DE15AAAB524DBA03954A848063506CD9A2BAF4CCF162A318585E8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-CEDECFDF": {
+      "Kind": "Terrain",
+      "Label": "Duality Mario cave scenery",
+      "VisualFingerprint": "633EDA0074DF9EC1BA6FE324BF95A8281751CF2F6AD6127B87502757A81C571E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "633EDA0074DF9EC1BA6FE324BF95A8281751CF2F6AD6127B87502757A81C571E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00180919": {
+      "Kind": "Terrain",
+      "Label": "Duality Mario cave scenery",
+      "VisualFingerprint": "A51158249A589253D41BED07D2ACBBCF8CA902962A069377B5179683D76F6B7A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A51158249A589253D41BED07D2ACBBCF8CA902962A069377B5179683D76F6B7A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-82928393": {
+      "Kind": "Terrain",
+      "Label": "Duality Mario cave scenery",
+      "VisualFingerprint": "FC20F283C132CEE368F4B362DF47C6BD40ADBDB2CA04ADD1C16F3BADB49E189F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FC20F283C132CEE368F4B362DF47C6BD40ADBDB2CA04ADD1C16F3BADB49E189F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0515071F": {
+      "Kind": "Terrain",
+      "Label": "Archive hub masonry",
+      "VisualFingerprint": "0190CA3004D4DB5BCF0889E5D94F2CE0953BD1697FD426D4E77FE916E0A45CBA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0190CA3004D4DB5BCF0889E5D94F2CE0953BD1697FD426D4E77FE916E0A45CBA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-68786979": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "961387E4BA0BEFCFCF396572B8F6BC052E50FDE66AEA60EB22C1BBA6198AB301",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "961387E4BA0BEFCFCF396572B8F6BC052E50FDE66AEA60EB22C1BBA6198AB301",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-05150633": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "EACEDF2E17BADE32F9E8D4999ABED8F4F8D1DE8D31875136A15746DFDBA9B58E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EACEDF2E17BADE32F9E8D4999ABED8F4F8D1DE8D31875136A15746DFDBA9B58E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-05350737": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "D30926FC734945993AF75BE0134CFAAC28BFD83613FD074EF9D63ECACE71E4B8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D30926FC734945993AF75BE0134CFAAC28BFD83613FD074EF9D63ECACE71E4B8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0000B400": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "1614ECC949CCDB39DEDD0642621027EA696C9E5155CE3840EC7CC7119154B4D8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1614ECC949CCDB39DEDD0642621027EA696C9E5155CE3840EC7CC7119154B4D8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-04340636": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "44E9AEBDD72BCBAB3A0EA16181301B849A3D9776DE6E8D951C799DD2B3E017A9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "44E9AEBDD72BCBAB3A0EA16181301B849A3D9776DE6E8D951C799DD2B3E017A9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-05320616": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "6BF6B820ECD0F868F41B73F212E5D73BF5E0D614A5EDE16E1249C04735964C73",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6BF6B820ECD0F868F41B73F212E5D73BF5E0D614A5EDE16E1249C04735964C73",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00270030": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "03A2C333FF8BA213228B7A18762EB86193D09540EE10C829A8E0E219EEAC532C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "03A2C333FF8BA213228B7A18762EB86193D09540EE10C829A8E0E219EEAC532C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00271414": {
+      "Kind": "Terrain",
+      "Label": "Main course ice ledges and pillars",
+      "VisualFingerprint": "4698D990ABAB5DA2173264D335EA35F0B769D60D6F661E2B01C055B407D9901D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4698D990ABAB5DA2173264D335EA35F0B769D60D6F661E2B01C055B407D9901D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-64746575": {
+      "Kind": "Terrain",
+      "Label": "Main course moving platforms and ice overhang",
+      "VisualFingerprint": "24DC9E2351C3CEA1D6E3D3F716D60C5B84191DA6493BE3D8ECF96F86E56F7AF8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "24DC9E2351C3CEA1D6E3D3F716D60C5B84191DA6493BE3D8ECF96F86E56F7AF8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-70717071": {
+      "Kind": "Terrain",
+      "Label": "Main course moving platforms and ice overhang",
+      "VisualFingerprint": "C223CBA397E9F41740065E044D91F2653E6A273FD16E1AC7BD73ABCA58261021",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C223CBA397E9F41740065E044D91F2653E6A273FD16E1AC7BD73ABCA58261021",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-05350636": {
+      "Kind": "Terrain",
+      "Label": "Main course moving platforms and ice overhang",
+      "VisualFingerprint": "93352625770D0D30C866FED3928569D94F19D497B6A379441665B18CCAEAC91E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "93352625770D0D30C866FED3928569D94F19D497B6A379441665B18CCAEAC91E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    }
+  }
+}

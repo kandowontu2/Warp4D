@@ -1,0 +1,127 @@
+diff --git a/Core/BaseMapper.cpp b/Core/BaseMapper.cpp
+index 6f04129..6ac008f 100644
+--- a/Core/BaseMapper.cpp
++++ b/Core/BaseMapper.cpp
+@@ -1027,7 +1027,7 @@ void BaseMapper::GetPpuAbsoluteAddressAndType(uint32_t relativeAddr, PpuAddressT
+ 		info->Type = PpuAddressType::PaletteRam;
+ 	} else {
+ 		uint8_t *addr = _chrPages[relativeAddr >> 8] + (uint8_t)relativeAddr;
+-		if(addr >= _chrRom && addr < _chrRom + _chrRomSize) {
++		if(!_onlyChrRam && addr >= _chrRom && addr < _chrRom + _chrRomSize) {
+ 			info->Address = (uint32_t)(addr - _chrRom);
+ 			info->Type = PpuAddressType::ChrRom;
+ 		} else if(addr >= _chrRam && addr < _chrRam + _chrRamSize) {
+@@ -1043,10 +1043,43 @@ void BaseMapper::GetPpuAbsoluteAddressAndType(uint32_t relativeAddr, PpuAddressT
+ 	}
+ }
+ 
++uint32_t BaseMapper::TestChrRamAddressClassification()
++{
++    class Probe : public BaseMapper {
++        void InitMapper() override {}
++        uint16_t GetPRGPageSize() override { return 0x4000; }
++        uint16_t GetCHRPageSize() override { return 0x2000; }
++    public:
++        Probe() {
++            _chrRamSize = _chrRomSize = 0x2000;
++            _chrRam = new uint8_t[_chrRamSize];
++            // A zero-length CHR-ROM allocation can sit within 8K of live RAM.
++            // Force overlap deterministically instead of relying on the heap.
++            _chrRom = _chrRam;
++            SetPpuMemoryMapping(0, 0x1fff, _chrRam, MemoryAccessType::ReadWrite);
++        }
++        ~Probe() { _chrRom = nullptr; }
++    };
++    Probe mapper;
++    mapper._onlyChrRam = true;
++    uint32_t checks = 0;
++    for(uint16_t address = 0; address < 0x2000; address++) {
++        PpuAddressTypeInfo info;
++        mapper.GetPpuAbsoluteAddressAndType(address, &info);
++        if(info.Type != PpuAddressType::ChrRam || info.Address != address) return checks;
++        checks++;
++        if(mapper.ToAbsoluteChrAddress(address) != address) return checks;
++        checks++;
++        if(mapper.ToAbsoluteChrRomAddress(address) != -1) return checks;
++        checks++;
++    }
++    return checks;
++}
++
+ int32_t BaseMapper::ToAbsoluteChrAddress(uint16_t addr)
+ {
+ 	uint8_t *chrAddr = _chrPages[addr >> 8] + (uint8_t)addr;
+-	if(chrAddr >= _chrRom && chrAddr < _chrRom + _chrRomSize) {
++	if(!_onlyChrRam && chrAddr >= _chrRom && chrAddr < _chrRom + _chrRomSize) {
+ 		return (uint32_t)(chrAddr - _chrRom);
+ 	}
+ 	if(chrAddr >= _chrRam && chrAddr < _chrRam + _chrRamSize) {
+@@ -1067,7 +1100,7 @@ int32_t BaseMapper::ToAbsoluteChrRamAddress(uint16_t addr)
+ int32_t BaseMapper::ToAbsoluteChrRomAddress(uint16_t addr)
+ {
+ 	uint8_t *chrAddr = _chrPages[addr >> 8] + (uint8_t)addr;
+-	if(chrAddr >= _chrRom && chrAddr < _chrRom + _chrRomSize) {
++	if(!_onlyChrRam && chrAddr >= _chrRom && chrAddr < _chrRom + _chrRomSize) {
+ 		return (uint32_t)(chrAddr - _chrRom);
+ 	}
+ 	return -1;
+@@ -1261,4 +1294,4 @@ void BaseMapper::CopyPrgChrRom(shared_ptr<BaseMapper> mapper)
+ 			memcpy(_chrRom, mapper->_chrRom, _chrRomSize);
+ 		}
+ 	}
+-}
+\ No newline at end of file
++}
+diff --git a/Core/BaseMapper.h b/Core/BaseMapper.h
+index af69cff..11b8015 100644
+--- a/Core/BaseMapper.h
++++ b/Core/BaseMapper.h
+@@ -153,6 +153,8 @@ protected:
+ 	uint8_t InternalReadVRAM(uint16_t addr);
+ 
+ public:
++    // Warp4D regression diagnostic; synthetic buffers, no cartridge required.
++    static uint32_t TestChrRamAddressClassification();
+ 	static constexpr uint32_t NametableCount = 0x10;
+ 	static constexpr uint32_t NametableSize = 0x400;
+ 	
+@@ -239,4 +241,4 @@ public:
+ 	void RevertPrgChrChanges();
+ 	bool HasPrgChrChanges();
+ 	void CopyPrgChrRom(shared_ptr<BaseMapper> mapper);
+-};
+\ No newline at end of file
++};
+diff --git a/InteropDLL/DebugWrapper.cpp b/InteropDLL/DebugWrapper.cpp
+index e14be2c..732b756 100644
+--- a/InteropDLL/DebugWrapper.cpp
++++ b/InteropDLL/DebugWrapper.cpp
+@@ -1,5 +1,6 @@
+ #include "stdafx.h"
+ #include "../Core/Console.h"
++#include "../Core/BaseMapper.h"
+ #include "../Core/Debugger.h"
+ #include "../Core/CodeDataLogger.h"
+ #include "../Core/LabelManager.h"
+@@ -26,6 +27,10 @@ shared_ptr<Debugger> GetDebugger()
+ 
+ extern "C"
+ {
++    DllExport uint32_t __stdcall Warp4DTestChrRamAddressClassification()
++    {
++        return BaseMapper::TestChrRamAddressClassification();
++    }
+ 	//Debugger wrapper
+ 	DllExport void __stdcall DebugInitialize()
+ 	{
+diff --git a/Utilities/AutoResetEvent.cpp b/Utilities/AutoResetEvent.cpp
+index f04943c..5d0b431 100644
+--- a/Utilities/AutoResetEvent.cpp
++++ b/Utilities/AutoResetEvent.cpp
+@@ -1,5 +1,6 @@
+ #include "stdafx.h"
+ #include "AutoResetEvent.h"
++#include <chrono>
+ 
+ AutoResetEvent::AutoResetEvent()
+ {

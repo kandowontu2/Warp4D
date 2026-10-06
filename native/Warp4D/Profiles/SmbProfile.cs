@@ -7,6 +7,17 @@ namespace Warp4D.Profiles;
 
 internal sealed class SmbProfile
 {
+    internal bool UseBulkSpriteDecodingForTest {get;set;}=true;
+    internal bool UseSpriteArtworkPreflightForTest {get;set;}=false;
+    internal bool UseDirectBackdropCountingForTest {get;set;}=false;
+    internal bool UseRunBackdropCountingForTest {get;set;}=false;
+    internal bool UseBackdropCacheForTest {get;set;}=true;
+    private BackdropColorCache? _backdropCache;
+    internal object BackdropCacheStatsForTest=>new{Hits=_backdropCache?.Hits??0,Misses=_backdropCache?.Misses??0,StoredPixels=_backdropCache?.StoredPixels??0};
+    internal bool UseFusedBackdropVisibilityForTest {get;set;}=true;
+    internal bool UseCombinedArtworkExtractionForTest {get;set;}=true;
+    internal Action<ProfileBuildTiming>? BuildObserverForTest {get;set;}
+    internal Action<BackgroundBuildTiming>? BackgroundObserverForTest {get;set;}
     private const int OperModeAddress = 0x0770;
     private const int OperModeTaskAddress = 0x0772;
     private const int DemoTimerAddress = 0x07A2;
@@ -45,6 +56,15 @@ internal sealed class SmbProfile
     [
         Pack(0x45, 0x47, 0x45, 0x47), Pack(0x47, 0x47, 0x47, 0x47)
     ];
+    private static readonly HashSet<int> GroundMetatiles =
+    [
+        Pack(0xB4, 0xB6, 0xB5, 0xB7), Pack(0xB0, 0xB1, 0xB2, 0xB3)
+    ];
+    private static readonly HashSet<int> SolidMetatiles =
+    [
+        Pack(0xAB, 0xAC, 0xAD, 0xAE), Pack(0x5D, 0x5E, 0x5D, 0x5E),
+        Pack(0x82, 0x83, 0x84, 0x85)
+    ];
     private static readonly HashSet<int> CastleMetatiles =
     [
         Pack(0x9D, 0x47, 0x9E, 0x47), Pack(0x47, 0x47, 0x27, 0x27),
@@ -60,6 +80,41 @@ internal sealed class SmbProfile
     [
         Pack(0x53, 0x55, 0x54, 0x56), Pack(0x57, 0x59, 0x58, 0x5A)
     ];
+
+    // Remaining visible entries in the verified SMB metatile catalog. Keep
+    // blank tiles and solid water/lava backdrop flat; classify actual objects.
+    // Existing enum kinds preserve user class settings and profile formats.
+    private static readonly Dictionary<(byte Palette,int Tiles),BackgroundObjectIdentity> SupplementalMetatiles = new()
+    {
+        [(0,Pack(0x24,0xc0,0x24,0xc0))]=new(SceneObjectKind.Sprite,"Bridge rail",true),
+        [(0,Pack(0x24,0x7f,0x7f,0x24))]=new(SceneObjectKind.Sprite,"Chain",true),
+        [(0,Pack(0x6b,0x70,0x2c,0x2d))]=new(SceneObjectKind.Tree,"Mushroom platform"),
+        [(0,Pack(0x6c,0x71,0x6d,0x72))]=new(SceneObjectKind.Tree,"Mushroom platform"),
+        [(0,Pack(0x6e,0x73,0x6f,0x74))]=new(SceneObjectKind.Tree,"Mushroom platform"),
+        [(0,Pack(0xa4,0xe9,0xea,0xeb))]=new(SceneObjectKind.Bush,"Sea plant"),
+        [(1,Pack(0xa2,0xa2,0xa3,0xa3))]=new(SceneObjectKind.Sprite,"Rope",true),
+        [(1,Pack(0x99,0x24,0x99,0x24))]=new(SceneObjectKind.Sprite,"Rope",true),
+        [(1,Pack(0x24,0xa2,0x3e,0x3f))]=new(SceneObjectKind.Sprite,"Pulley",true),
+        [(1,Pack(0x5b,0x5c,0x24,0xa3))]=new(SceneObjectKind.Sprite,"Pulley",true),
+        [(1,Pack(0x52,0x52,0x52,0x52))]=new(SceneObjectKind.Tree,"Tree"),
+        [(1,Pack(0x80,0xa0,0x81,0xa1))]=new(SceneObjectKind.Tree,"Fence"),
+        [(1,Pack(0xbe,0xbe,0xbf,0xbf))]=new(SceneObjectKind.Tree,"Tree"),
+        [(1,Pack(0x75,0xba,0x76,0xbb))]=new(SceneObjectKind.Tree,"Mushroom platform"),
+        [(1,Pack(0xba,0xba,0xbb,0xbb))]=new(SceneObjectKind.Tree,"Mushroom platform"),
+        [(1,Pack(0xc1,0x24,0xc1,0x24))]=new(SceneObjectKind.Terrain,"Bridge",true),
+        [(1,Pack(0xc6,0xc8,0xc7,0xc9))]=new(SceneObjectKind.Pipe,"Bullet Bill cannon"),
+        [(1,Pack(0xca,0xcc,0xcb,0xcd))]=new(SceneObjectKind.Pipe,"Bullet Bill cannon"),
+        [(1,Pack(0x2a,0x2a,0x40,0x40))]=new(SceneObjectKind.Pipe,"Bullet Bill cannon"),
+        [(1,Pack(0x24,0x47,0x24,0x47))]=new(SceneObjectKind.Brick,"Half brick",true),
+        [(1,Pack(0x86,0x8a,0x87,0x8b))]=new(SceneObjectKind.Pipe,"Pipe"),
+        [(1,Pack(0x8e,0x91,0x8f,0x92))]=new(SceneObjectKind.Pipe,"Pipe"),
+        [(1,Pack(0x24,0x2f,0x24,0x3d))]=new(SceneObjectKind.Flagpole,"Flagpole"),
+        [(2,Pack(0x41,0x26,0x41,0x26))]=new(SceneObjectKind.Terrain,"Water / lava surface",true),
+        [(2,Pack(0x77,0x79,0x77,0x79))]=new(SceneObjectKind.Terrain,"Castle bridge"),
+        [(3,Pack(0xa5,0xa7,0xa6,0xa8))]=new(SceneObjectKind.Item,"Coin",true),
+        [(3,Pack(0xc2,0xc4,0xc3,0xc5))]=new(SceneObjectKind.Item,"Underwater coin",true),
+        [(3,Pack(0x7b,0x7d,0x7c,0x7e))]=new(SceneObjectKind.Item,"Axe",true)
+    };
 
     private static readonly Dictionary<SceneObjectKind, Color> Accents = new()
     {
@@ -99,22 +154,53 @@ internal sealed class SmbProfile
         GameRecognitionProfile? gameProfile = null)
     {
         projectionProfile ??= DefaultProjectionProfile;
-        Bitmap background = ComposeBackground(frame, exactProfile);
+        var observer=BuildObserverForTest;
+        long timingStart=observer is null?0:System.Diagnostics.Stopwatch.GetTimestamp();
+        bool active = (gameProfile?.IsActive(frame) ?? true) &&
+            (frame.PpuMask is not byte mask || (mask&0x18)!=0) && !frame.IsUniformPairedFade();
+        Bitmap background = ComposeBackground(frame, exactProfile, gameProfile, !active);
+        double composeMs=Elapsed();
         List<SceneObject> objects = [];
 
         bool normalGameplay = ReadRam(frame, OperModeAddress) == 1;
         bool attractDemo = exactProfile && IsAttractDemo(frame);
         bool hasCustomBackgroundRules = gameProfile?.BackgroundRules.Count > 0;
-        if ((exactProfile && (normalGameplay || attractDemo)) || (!exactProfile && hasCustomBackgroundRules))
+        bool backgroundVisible = frame.PpuMask is not byte backgroundMask || (backgroundMask & 0x08) != 0;
+        bool spritesVisible = frame.PpuMask is not byte spriteMask || (spriteMask & 0x10) != 0;
+        if (active && backgroundVisible && ((exactProfile && (normalGameplay || attractDemo)) || (!exactProfile && hasCustomBackgroundRules)))
         {
             objects.AddRange(ExtractBackgroundObjects(
                 background,
                 frame,
                 projectionProfile,
                 exactProfile,
-                gameProfile));
+                gameProfile,BackgroundObserverForTest,UseDirectBackdropCountingForTest,UseFusedBackdropVisibilityForTest,UseCombinedArtworkExtractionForTest,UseRunBackdropCountingForTest,UseBackdropCacheForTest?(_backdropCache??=new()):null));
         }
-        objects.AddRange(ExtractSprites(frame, exactProfile, projectionProfile));
+        double backgroundMs=Elapsed();
+        if (active && spritesVisible) objects.AddRange(ExtractSprites(frame, exactProfile, projectionProfile, gameProfile,UseBulkSpriteDecodingForTest,UseSpriteArtworkPreflightForTest));
+        double spritesMs=Elapsed();
+        bool playerOverlaysHud=active && (exactProfile
+            ? objects.Any(o=>o.Kind==SceneObjectKind.Player && o.ProjectionEnabled && o.Bounds.Top<32)
+            : gameProfile?.PlayerOverlaysFlatHud==true);
+        // Exact SMB already builds a raw nametable HUD plus separate flat
+        // OAM objects, so its player is not duplicated in a native HUD copy.
+        if(playerOverlaysHud && !exactProfile && frame.NativeScreenPixels is {Length:61440} native)
+        {
+            // Remove the duplicate native body from the copied HUD layer,
+            // never whole actor rectangles or unlike-colored HUD glyphs.
+            // Restore the same raw nametable background used elsewhere.
+            foreach(var actor in objects.Where(o=>o.Kind==SceneObjectKind.Player && o.ProjectionEnabled))
+            for(int py=0;py<actor.Image.Height;py++)for(int px=0;px<actor.Image.Width;px++)
+            {
+                int x=actor.Bounds.X+px,y=actor.Bounds.Y+py;
+                if(x<0||x>=256||y<0||y>=240||!gameProfile!.Protects(new(x,y,1,1)))continue;
+                Color pixel=actor.Image.GetPixel(px,py);
+                if(pixel.A==0 || (pixel.ToArgb()&0xffffff)!=(native[y*256+x]&0xffffff))continue;
+                int wx=(x+frame.ScrollX)&511,wy=Mod(y+frame.ScrollY,480);
+                int table=(wy>=240?2:0)+(wx>=256?1:0);
+                background.SetPixel(x,y,Color.FromArgb(frame.NametablePixels[table][(wy%240)*256+(wx&255)]|unchecked((int)0xff000000)));
+            }
+        }
 
         int world = ReadRam(frame, 0x075F) + 1;
         int level = ReadRam(frame, 0x075C) + 1;
@@ -122,19 +208,30 @@ internal sealed class SmbProfile
             ? $"SMB  {world}-{level}{(attractDemo ? "  ·  ATTRACT DEMO" : string.Empty)}"
             : gameProfile?.Name ?? "Generic NES";
         string recognitionProfileName = exactProfile
-            ? gameProfile is null ? "SMB WORLD" : $"SMB WORLD + {gameProfile.Name}"
+            ? gameProfile is null ? "SMB BUILT-IN" : $"SMB + {gameProfile.Name}"
             : gameProfile?.Name ?? "GENERIC SPRITES";
 
-        return new SmbScene
+        SmbScene scene=new()
         {
             Background = background,
             Objects = objects,
             Location = location,
             ExactProfile = exactProfile,
+            FlatRegions = gameProfile?.FlatRegionsFor(frame).ToArray() ?? [],
             RecognitionProfileName = recognitionProfileName,
             ProjectionProfileName = projectionProfile.Name,
-            Sequence = frame.Sequence
+            Sequence = frame.Sequence,
+            PlayerOverlaysFlatHud = playerOverlaysHud
         };
+        observer?.Invoke(new(frame.Sequence,composeMs,backgroundMs,spritesMs,Elapsed()));
+        return scene;
+        double Elapsed()
+        {
+            if(observer is null)return 0;
+            long now=System.Diagnostics.Stopwatch.GetTimestamp();
+            double ms=(now-timingStart)*1000d/System.Diagnostics.Stopwatch.Frequency;
+            timingStart=now;return ms;
+        }
     }
 
     internal static bool IsAttractDemo(NesFrame frame) =>
@@ -142,7 +239,7 @@ internal sealed class SmbProfile
         ReadRam(frame, OperModeTaskAddress) == 3 &&
         ReadRam(frame, DemoTimerAddress) == 0;
 
-    internal static Bitmap ComposeBackground(NesFrame frame, bool exactProfile)
+    internal static Bitmap ComposeBackground(NesFrame frame, bool exactProfile, GameRecognitionProfile? profile = null, bool flatScreen = false)
     {
         Bitmap bitmap = new(NesFrame.ScreenWidth, NesFrame.ScreenHeight, PixelFormat.Format32bppArgb);
         BitmapData data = bitmap.LockBits(
@@ -161,11 +258,23 @@ internal sealed class SmbProfile
                 int localY = worldY % 240;
                 for (int x = 0; x < NesFrame.ScreenWidth; x++)
                 {
-                    int worldX = smbStatusBar ? x : Mod(x + frame.ScrollX, 512);
+                    int worldX = smbStatusBar ? x : (x + frame.ScrollX) & 511;
                     int table = tableY + (worldX >= 256 ? 1 : 0);
                     int localX = worldX & 0xFF;
                     int color = frame.NametablePixels[table][localY * 256 + localX];
                     target[y * (data.Stride / 4) + x] = color | unchecked((int)0xFF000000);
+                }
+            }
+            if(frame.NativeScreenPixels is {Length:256*240} native)
+            {
+                // Copy protected rectangles once, not a LINQ region scan and
+                // closure allocation for every one of the 61,440 pixels.
+                IReadOnlyList<Rectangle> flat=flatScreen ? [new(0,0,256,240)] : profile?.FlatRegionsFor(frame) ?? [];
+                foreach(Rectangle region in flat)
+                {
+                    Rectangle clipped=Rectangle.Intersect(region,new(0,0,256,240));
+                    for(int y=clipped.Top;y<clipped.Bottom;y++)for(int x=clipped.Left;x<clipped.Right;x++)
+                        target[y*(data.Stride/4)+x]=native[y*256+x]|unchecked((int)0xFF000000);
                 }
             }
         }
@@ -179,23 +288,34 @@ internal sealed class SmbProfile
         NesFrame frame,
         ProjectionProfile projectionProfile,
         bool exactProfile,
-        GameRecognitionProfile? gameProfile)
+        GameRecognitionProfile? gameProfile,Action<BackgroundBuildTiming>? observer=null,bool directBackdrop=false,bool fusedVisibility=true,bool combinedArtwork=true,bool runBackdrop=false,BackdropColorCache? backdropCache=null)
     {
+        long start=observer is null?0:System.Diagnostics.Stopwatch.GetTimestamp();
         Dictionary<(int X, int Y), BackgroundObjectIdentity> classified = [];
-        int backdropRgb = FindDominantRgb(background);
+        int backdropRgb = backdropCache?.Find(background)??FindDominantRgb(background,directBackdrop,runBackdrop);
+        double backdropMs=Elapsed(),groupingMs=0,artworkMs=0;
+        double metadataMs=0,cropMs=0,transparencyMs=0,eraseMs=0;
+        int groupCount=0,objectCount=0;
 
         int startTileX = (frame.ScrollX / 8) - 1;
         int startTileY = (frame.ScrollY / 8) - 1;
         int endTileX = ((frame.ScrollX + 255) / 8) + 1;
         int endTileY = ((frame.ScrollY + 239) / 8) + 1;
 
-        int firstMetatileX = (startTileX & ~1) - 2;
-        int firstMetatileY = (startTileY & ~1) - 2;
-        for (int worldTileY = firstMetatileY; worldTileY <= endTileY; worldTileY += 2)
+        int step = (gameProfile?.CellSize ?? 16) / 8;
+        int firstMetatileX = startTileX / step * step - step;
+        int firstMetatileY = startTileY / step * step - step;
+        for (int worldTileY = firstMetatileY; worldTileY <= endTileY; worldTileY += step)
         {
-            for (int worldTileX = firstMetatileX; worldTileX <= endTileX; worldTileX += 2)
+            // Never classify/erase status text as world scenery, including when
+            // a streamed nametable happens to contain matching tiles above it.
+            if (exactProfile && worldTileY * 8 - frame.ScrollY < 32) continue;
+            for (int worldTileX = firstMetatileX; worldTileX <= endTileX; worldTileX += step)
             {
-                MetatileSignature signature = MetatileSignature.Read(frame, worldTileX, worldTileY);
+                Rectangle visibleCell = Rectangle.Intersect(new(worldTileX*8-frame.ScrollX,worldTileY*8-frame.ScrollY,step*8,step*8),new(0,0,256,240));
+                if (visibleCell.Width<=0 || visibleCell.Height<=0) continue;
+                if (gameProfile is not null && !gameProfile.Allows(new(worldTileX*8-frame.ScrollX, worldTileY*8-frame.ScrollY, step*8, step*8), frame)) continue;
+                MetatileSignature signature = MetatileSignature.Read(frame, worldTileX, worldTileY, step*8);
                 BackgroundObjectIdentity? identity = ClassifyMetatile(
                     signature,
                     exactProfile,
@@ -205,16 +325,20 @@ internal sealed class SmbProfile
                     worldTileY);
                 if (identity is not null)
                 {
-                    classified[(worldTileX, worldTileY)] = identity.Value;
-                    classified[(worldTileX, worldTileY + 1)] = identity.Value;
-                    classified[(worldTileX + 1, worldTileY)] = identity.Value;
-                    classified[(worldTileX + 1, worldTileY + 1)] = identity.Value;
+                    for (int dy=0;dy<step;dy++) for (int dx=0;dx<step;dx++) classified[(worldTileX+dx,worldTileY+dy)] = identity.Value;
                 }
             }
         }
 
-        foreach (List<(int X, int Y)> group in GroupTiles(classified))
+        if (exactProfile) ResolveCastleTiles(classified, frame, gameProfile);
+        double classificationMs=Elapsed();
+        using var groups=GroupTiles(classified, exactProfile || gameProfile?.SeparateMetatiles == true, step).GetEnumerator();
+        while(true)
         {
+            if(observer is not null)start=System.Diagnostics.Stopwatch.GetTimestamp();
+            bool more=groups.MoveNext();groupingMs+=Elapsed();
+            if(!more)break;
+            List<(int X,int Y)> group=groups.Current;groupCount++;
             BackgroundObjectIdentity identity = classified[group[0]];
             SceneObjectKind kind = identity.Kind;
             int left = group.Min(point => point.X * 8 - frame.ScrollX);
@@ -227,21 +351,40 @@ internal sealed class SmbProfile
 
             if (bounds.Width <= 0 || bounds.Height <= 0)
             {
+                metadataMs+=ArtworkElapsed();
                 continue;
             }
 
-            Bitmap crop = CropWithTileMask(background, bounds, group, frame.ScrollX, frame.ScrollY);
-            if (kind is SceneObjectKind.Bush or SceneObjectKind.Cloud or SceneObjectKind.Hill or
-                SceneObjectKind.Tree or SceneObjectKind.Pipe or SceneObjectKind.Flagpole)
+            metadataMs+=ArtworkElapsed();
+            bool transparent=gameProfile?.TransparentBackdrop == true || identity.TransparentBackdrop || kind is SceneObjectKind.Bush or SceneObjectKind.Cloud or SceneObjectKind.Hill or
+                SceneObjectKind.Tree or SceneObjectKind.Pipe or SceneObjectKind.Flagpole;
+            Bitmap crop;
+            if(combinedArtwork)
             {
-                MakeBackdropTransparent(crop, backdropRgb);
+                crop=ExtractObjectArtwork(background,bounds,group,frame.ScrollX,frame.ScrollY,backdropRgb,transparent,out bool visible);
+                cropMs+=ArtworkElapsed();
+                if(transparent&&!visible){crop.Dispose();transparencyMs+=ArtworkElapsed();continue;}
             }
-            EraseObjectFromBackground(background, crop, bounds, backdropRgb);
+            else
+            {
+                crop = CropWithTileMask(background, bounds, group, frame.ScrollX, frame.ScrollY);
+                cropMs+=ArtworkElapsed();
+                if(transparent)
+                {
+                    bool visible=MakeBackdropTransparent(crop, backdropRgb,fusedVisibility);
+                    // Empty artwork must not acquire a projection outline.
+                    if (!(fusedVisibility?visible:HasVisiblePixel(crop))) { crop.Dispose(); transparencyMs+=ArtworkElapsed(); continue; }
+                }
+                transparencyMs+=ArtworkElapsed();
+                EraseObjectFromBackground(background, crop, bounds, backdropRgb);
+                eraseMs+=ArtworkElapsed();
+            }
             ObjectProjectionRule rule = projectionProfile.RuleFor(kind);
-            yield return new SceneObject
+            SceneObject item=new()
             {
                 Kind = kind,
                 Label = identity.Label,
+                IdentityKey = $"background:{kind}:{group.Min(point => point.X)}:{group.Min(point => point.Y)}",
                 Bounds = bounds,
                 Image = crop,
                 Accent = Accents[kind],
@@ -249,6 +392,15 @@ internal sealed class SmbProfile
                 ProjectionEnabled = rule.Enabled,
                 SortOrder = kind is SceneObjectKind.Terrain ? -5 : 0
             };
+            objectCount++;metadataMs+=ArtworkElapsed();yield return item;
+        }
+        observer?.Invoke(new(frame.Sequence,backdropMs,classificationMs,groupingMs,artworkMs,groupCount,objectCount,metadataMs,cropMs,transparencyMs,eraseMs,combinedArtwork));
+        double ArtworkElapsed(){double ms=Elapsed();artworkMs+=ms;return ms;}
+        double Elapsed()
+        {
+            if(observer is null)return 0;
+            long now=System.Diagnostics.Stopwatch.GetTimestamp();
+            double ms=(now-start)*1000d/System.Diagnostics.Stopwatch.Frequency;start=now;return ms;
         }
     }
 
@@ -273,6 +425,7 @@ internal sealed class SmbProfile
 
         int metatile = Pack(signature.TopLeft, signature.BottomLeft, signature.TopRight, signature.BottomRight);
         byte palette = signature.Palette;
+        if(SupplementalMetatiles.TryGetValue((palette,metatile),out var supplemental))return supplemental;
         SceneObjectKind? kind = null;
         if (palette == 0 && BushMetatiles.Contains(metatile)) kind = SceneObjectKind.Bush;
         else if (palette == 0 && HillMetatiles.Contains(metatile)) kind = SceneObjectKind.Hill;
@@ -282,12 +435,14 @@ internal sealed class SmbProfile
         else if (palette == 2 && CloudMetatiles.Contains(metatile)) kind = SceneObjectKind.Cloud;
         else if (palette == 1 && CastleMetatiles.Contains(metatile)) kind = SceneObjectKind.Castle;
         else if (palette == 1 && BrickMetatiles.Contains(metatile)) kind = SceneObjectKind.Brick;
+        else if (palette is 1 or 2 && GroundMetatiles.Contains(metatile)) kind = SceneObjectKind.Terrain;
+        else if (palette == 1 && SolidMetatiles.Contains(metatile)) return new(SceneObjectKind.Brick, "Solid block");
         else if (palette == 3 && QuestionMetatiles.Contains(metatile)) kind = SceneObjectKind.QuestionBlock;
         return kind is null ? null : new BackgroundObjectIdentity(kind.Value, KindLabel(kind.Value));
     }
 
     private static IEnumerable<List<(int X, int Y)>> GroupTiles(
-        Dictionary<(int X, int Y), BackgroundObjectIdentity> classified)
+        Dictionary<(int X, int Y), BackgroundObjectIdentity> classified, bool separateBlocks = false, int cellStep = 2)
     {
         HashSet<(int X, int Y)> remaining = [.. classified.Keys];
         while (remaining.Count > 0)
@@ -309,7 +464,9 @@ internal sealed class SmbProfile
                     (point.X, point.Y - 1), (point.X, point.Y + 1)
                 })
                 {
-                    if (remaining.Contains(neighbor) && classified[neighbor] == identity)
+                bool individualBlock = separateBlocks && (identity.Kind is SceneObjectKind.Brick or SceneObjectKind.Terrain or SceneObjectKind.QuestionBlock or SceneObjectKind.Enemy or SceneObjectKind.Item);
+                    bool sameBlock = !individualBlock || neighbor.X / cellStep == seed.X / cellStep && neighbor.Y / cellStep == seed.Y / cellStep;
+                    if (sameBlock && remaining.Contains(neighbor) && classified[neighbor] == identity)
                     {
                         remaining.Remove(neighbor);
                         queue.Enqueue(neighbor);
@@ -321,7 +478,30 @@ internal sealed class SmbProfile
         }
     }
 
-    private static unsafe Bitmap CropWithTileMask(
+    private static void ResolveCastleTiles(Dictionary<(int X, int Y), BackgroundObjectIdentity> classified, NesFrame frame, GameRecognitionProfile? custom)
+    {
+        // Castle masonry shares patterns with ordinary bricks. Only a connected
+        // component containing a distinctive castle cap/door is a whole castle.
+        foreach (var group in GroupTiles(classified).Where(g => classified[g[0]].Kind == SceneObjectKind.Castle).ToArray())
+        {
+            bool anchored = group.Any(p =>
+            {
+                var s = MetatileSignature.Read(frame, p.X & ~1, p.Y & ~1);
+                if (custom?.Match(s, frame, p.X & ~1, p.Y & ~1) is not null) return true;
+                return s.TopLeft is 0x9d or 0xa9 or 0x9b;
+            });
+            if (anchored) continue;
+            foreach (var p in group)
+            {
+                var s = MetatileSignature.Read(frame, p.X & ~1, p.Y & ~1);
+                int pattern = Pack(s.TopLeft, s.BottomLeft, s.TopRight, s.BottomRight);
+                if (BrickMetatiles.Contains(pattern)) classified[p] = new(SceneObjectKind.Brick, "Brick");
+                else classified.Remove(p);
+            }
+        }
+    }
+
+    internal static unsafe Bitmap CropWithTileMask(
         Bitmap source,
         Rectangle bounds,
         List<(int X, int Y)> tiles,
@@ -369,20 +549,70 @@ internal sealed class SmbProfile
         return crop;
     }
 
-    private static void MakeBackdropTransparent(Bitmap bitmap, int backdropRgb)
+    internal static unsafe bool MakeBackdropTransparent(Bitmap bitmap, int backdropRgb,bool detectVisible=false)
     {
-        for (int y = 0; y < bitmap.Height; y++)
-        for (int x = 0; x < bitmap.Width; x++)
+        BitmapData data = bitmap.LockBits(new Rectangle(Point.Empty, bitmap.Size), ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
+        bool visible=false;
+        try
         {
-            Color color = bitmap.GetPixel(x, y);
-            if ((color.ToArgb() & 0x00FFFFFF) == backdropRgb)
+            for (int y = 0; y < bitmap.Height; y++)
             {
-                bitmap.SetPixel(x, y, Color.Transparent);
+                int* row = (int*)((byte*)data.Scan0 + y * data.Stride);
+                for (int x = 0; x < bitmap.Width; x++)
+                {
+                    if ((row[x] & 0xffffff) == backdropRgb) row[x] = 0;
+                    else if(detectVisible && (row[x]&unchecked((int)0xff000000))!=0)visible=true;
+                }
             }
         }
+        finally { bitmap.UnlockBits(data); }
+        return visible;
     }
 
-    private static unsafe int FindDominantRgb(Bitmap bitmap)
+    // GroupTiles supplies unique, disjoint 8x8 cells. Erasing a copied cell
+    // cannot alter a later cell in this object, preserving snapshot semantics.
+    internal static unsafe Bitmap ExtractObjectArtwork(Bitmap background,Rectangle bounds,List<(int X,int Y)> tiles,int scrollX,int scrollY,int backdropRgb,bool transparent,out bool visible)
+    {
+        if(bounds.Width<=0||bounds.Height<=0||!new Rectangle(Point.Empty,background.Size).Contains(bounds))throw new ArgumentOutOfRangeException(nameof(bounds));
+        Bitmap crop=new(bounds.Width,bounds.Height,PixelFormat.Format32bppArgb);
+        visible=false;
+        BitmapData? source=null,target=null;
+        try
+        {
+            try
+            {
+                source=background.LockBits(new Rectangle(Point.Empty,background.Size),ImageLockMode.ReadWrite,PixelFormat.Format32bppArgb);
+                target=crop.LockBits(new Rectangle(Point.Empty,crop.Size),ImageLockMode.WriteOnly,PixelFormat.Format32bppArgb);
+                for(int y=0;y<crop.Height;y++)new Span<int>((byte*)target.Scan0+y*target.Stride,crop.Width).Clear();
+                int replacement=unchecked((int)0xff000000)|backdropRgb;
+                foreach((int tileX,int tileY) in tiles)
+                {
+                    Rectangle cell=Rectangle.Intersect(new Rectangle(tileX*8-scrollX,tileY*8-scrollY,8,8),bounds);
+                    for(int y=cell.Top;y<cell.Bottom;y++)
+                    {
+                        int* from=(int*)((byte*)source.Scan0+y*source.Stride)+cell.Left;
+                        int* to=(int*)((byte*)target.Scan0+(y-bounds.Y)*target.Stride)+cell.Left-bounds.X;
+                        for(int x=0;x<cell.Width;x++)
+                        {
+                            int pixel=from[x];
+                            if(transparent&&(pixel&0xffffff)==backdropRgb)pixel=0;
+                            to[x]=pixel;
+                            if((pixel&unchecked((int)0xff000000))!=0){visible=true;from[x]=replacement;}
+                        }
+                    }
+                }
+            }
+            finally
+            {
+                if(target is not null)crop.UnlockBits(target);
+                if(source is not null)background.UnlockBits(source);
+            }
+            return crop;
+        }
+        catch{crop.Dispose();throw;}
+    }
+
+    internal static unsafe int FindDominantRgb(Bitmap bitmap,bool direct=false,bool runs=false)
     {
         Dictionary<int, int> colors = [];
         BitmapData data = bitmap.LockBits(
@@ -391,6 +621,38 @@ internal sealed class SmbProfile
             PixelFormat.Format32bppArgb);
         try
         {
+            if(runs)
+            {
+                // Preserve row-major first-occurrence insertion order, including
+                // tied maxima and colors with differing alpha. Only dictionary
+                // updates are coalesced; every RGB pixel is still examined.
+                for(int y=32;y<bitmap.Height;y++)
+                {
+                    int* row=(int*)((byte*)data.Scan0+y*data.Stride);
+                    int x=0;
+                    while(x<bitmap.Width)
+                    {
+                        int rgb=row[x]&0xffffff,start=x++;
+                        while(x<bitmap.Width&&(row[x]&0xffffff)==rgb)x++;
+                        colors[rgb]=colors.GetValueOrDefault(rgb)+x-start;
+                    }
+                }
+            }
+            else if(direct)
+            {
+                for(int y=32;y<bitmap.Height;y++)
+                {
+                    int* row=(int*)((byte*)data.Scan0+y*data.Stride);
+                    for(int x=0;x<bitmap.Width;x++)
+                    {
+                        int rgb=row[x]&0xffffff;
+                        ref int count=ref System.Runtime.InteropServices.CollectionsMarshal.GetValueRefOrAddDefault(colors,rgb,out _);
+                        count++;
+                    }
+                }
+            }
+            else
+            {
             for (int y = 32; y < bitmap.Height; y++)
             {
                 int* row = (int*)((byte*)data.Scan0 + y * data.Stride);
@@ -400,6 +662,7 @@ internal sealed class SmbProfile
                     colors[rgb] = colors.GetValueOrDefault(rgb) + 1;
                 }
             }
+            }
         }
         finally
         {
@@ -408,7 +671,7 @@ internal sealed class SmbProfile
         return colors.Count == 0 ? 0 : colors.MaxBy(pair => pair.Value).Key;
     }
 
-    private static unsafe void EraseObjectFromBackground(
+    internal static unsafe void EraseObjectFromBackground(
         Bitmap background,
         Bitmap objectImage,
         Rectangle bounds,
@@ -448,7 +711,7 @@ internal sealed class SmbProfile
     private static IEnumerable<SceneObject> ExtractSprites(
         NesFrame frame,
         bool exactProfile,
-        ProjectionProfile projectionProfile)
+        ProjectionProfile projectionProfile, GameRecognitionProfile? gameProfile = null,bool bulk=true,bool preflight=false)
     {
         List<SpriteTile> tiles = [];
         for (int index = 0; index < 64; index++)
@@ -461,14 +724,22 @@ internal sealed class SmbProfile
                 continue;
             }
 
+            // NES color index0 is transparent; all other indices are opaque,
+            // even if their palette RGB is black. Any set CHR bit therefore
+            // proves visible artwork, independent of flips/palette selection.
+            // Check the exact decoder slice before allocation, not a bitmap
+            // scan afterwards. Keep the previous path for paired diagnostics.
+            if(preflight && !SpriteTileHasArtwork(frame.Chr,frame.Palette,
+                frame.Oam[offset+1],frame.SpritePatternBase,frame.LargeSprites))continue;
+
             Bitmap tile = DecodeSpriteTile(
                 frame.Chr,
                 frame.Palette,
                 frame.Oam[offset + 1],
-                frame.Oam[offset + 2]);
-            if (HasVisiblePixel(tile))
+                frame.Oam[offset + 2], frame.SpritePatternBase, frame.LargeSprites,bulk);
+            if (preflight || HasVisiblePixel(tile))
             {
-                tiles.Add(new SpriteTile(index, new Rectangle(x, y, 8, 8), tile));
+                tiles.Add(new SpriteTile(index, new Rectangle(x, y, 8, frame.LargeSprites ? 16 : 8), tile, frame.Oam[offset+2]&3));
             }
             else
             {
@@ -476,7 +747,86 @@ internal sealed class SmbProfile
             }
         }
 
-        foreach (List<SpriteTile> cluster in ClusterSpriteTiles(tiles))
+        List<SpriteTile>? ownedBody=null;
+        if(exactProfile)
+        {
+            // Verified SMB reserves OAM slots1..8 for Mario's four two-tile
+            // rows. DefaultSprOffsets[0]=$04 and SpriteShuffler skips <$28.
+            // Do not merge a touching enemy/effect into the player's body.
+            var body=tiles.Where(t=>t.OamIndex is >=1 and <=8).ToList();
+            if(body.Count>0)
+            {
+                ownedBody=body;
+                tiles.RemoveAll(t=>t.OamIndex is >=1 and <=8);
+            }
+        }
+        else if(gameProfile?.PlayerTracking is {BodyAssembly:not null} layoutTracking&&layoutTracking.TryGetBodySlots(frame,out var layoutSlots))
+        {
+            // A complete published layout already verifies native coordinates
+            // and ownership; don't rescan every pose for each individual tile.
+            var body=tiles.Where(t=>layoutSlots.Contains(t.OamIndex)).ToList();
+            if(body.Count==layoutSlots.Length)
+            {
+                ownedBody=body.Select(t=>t with{Bounds=layoutTracking.UnwrapBodyTile(frame,t.Bounds,rangeVerified:true)}).ToList();
+                tiles.RemoveAll(t=>layoutSlots.Contains(t.OamIndex));
+            }
+        }
+        else if(gameProfile?.PlayerTracking is {} bodyTracking&&bodyTracking.TryGetBodyRange(frame,out int first,out int count))
+        {
+            // The native animation range was verified once above. Rechecking
+            // every possible pose for every tile would multiply this scan.
+            bool Owns(int index)=>bodyTracking.BodyTilesByAnimation is not null
+                ? index>=first&&index<first+count : bodyTracking.OwnsBodySlot(frame,index);
+            var body=tiles.Where(t=>Owns(t.OamIndex)).ToList();
+            if(body.Count>0)
+                body=body.Select(tile=>tile with{Bounds=bodyTracking.UnwrapBodyTile(frame,tile.Bounds,rangeVerified:true)}).ToList();
+            if(body.Count>0&&bodyTracking.Matches(frame,body.Select(t=>t.Bounds).Aggregate(Rectangle.Union),body.Select(t=>t.OamIndex)))
+            {
+                ownedBody=body;
+                // Native ownership precedes proximity. Merchandise, arrows or
+                // enemies sharing the player's palette remain separate objects.
+                tiles.RemoveAll(t=>Owns(t.OamIndex));
+            }
+        }
+        // Separate HUD ownership before proximity clustering. A touching actor
+        // must never become part of a flat score/health sprite group.
+        List<SpriteTile>? hudTiles=null;
+        if(gameProfile is not null && (gameProfile.FlatSpriteRegions is not null || gameProfile.FlatSpriteSlotsByState is not null))
+        {
+            bool IsHud(SpriteTile tile)=>gameProfile.ProtectsSprite(tile.Bounds,frame)||gameProfile.ProtectsSpriteSlot(frame,tile.OamIndex);
+            hudTiles=tiles.Where(IsHud).ToList();
+            tiles.RemoveAll(tile=>IsHud(tile));
+        }
+        List<List<SpriteTile>> assembled=[];
+        if(!exactProfile && gameProfile?.SpriteAssemblies is {} assemblies)
+        {
+            var candidates=assemblies.SelectMany(a=>a.Match(frame)).GroupBy(slots=>string.Join(',',slots)).Select(g=>g.First()).ToArray();
+            foreach(var slots in candidates)
+            {
+                // Conflicting complete layouts are ambiguous, not permission to
+                // steal a subset from another actor or a protected HUD/player.
+                if(candidates.Any(other=>!ReferenceEquals(other,slots)&&other.Intersect(slots).Any()))continue;
+                var body=tiles.Where(t=>slots.Contains(t.OamIndex)).ToList();
+                if(body.Count!=slots.Length)continue;
+                assembled.Add(body);
+                tiles.RemoveAll(t=>slots.Contains(t.OamIndex));
+            }
+        }
+        IEnumerable<List<SpriteTile>> clusters=ClusterSpriteTiles(tiles,separatePalettes:!exactProfile && gameProfile?.PlayerTracking is not null).Concat(assembled);
+        if(hudTiles is {Count:>0})clusters=clusters.Concat(ClusterSpriteTiles(hudTiles,separatePalettes:true));
+        if(ownedBody is not null)clusters=clusters.Append(ownedBody);
+        List<SpriteTile>? trackedPlayer=null;
+        if(!exactProfile && gameProfile?.PlayerTracking is {} tracking)
+        {
+            var candidates=clusters.ToList();
+            // At most one actor. Ambiguous overlapping clusters prefer the
+            // smaller bounds, not whichever enemy happened to occupy OAM 0.
+            trackedPlayer=ownedBody??candidates.Where(c=>tracking.Matches(frame,
+                c.Select(t=>t.Bounds).Aggregate(Rectangle.Union),c.Select(t=>t.OamIndex)))
+                .OrderBy(c=>{var b=c.Select(t=>t.Bounds).Aggregate(Rectangle.Union);return b.Width*b.Height;}).FirstOrDefault();
+            clusters=candidates;
+        }
+        foreach (List<SpriteTile> cluster in clusters)
         {
             Rectangle bounds = cluster.Select(item => item.Bounds).Aggregate(Rectangle.Union);
             Bitmap image = new(bounds.Width, bounds.Height, PixelFormat.Format32bppArgb);
@@ -495,24 +845,63 @@ internal sealed class SmbProfile
             }
 
             (SceneObjectKind kind, string label) = IdentifySprite(frame, bounds, exactProfile);
+            if(exactProfile && ReferenceEquals(cluster,ownedBody))
+                (kind,label)=(SceneObjectKind.Player,ReadRam(frame,0x0753)==1?"Luigi":"Mario");
+            // Explicit profile-declared actor slots, not guessed identities for
+            // unknown cartridges. HUD/region protection still wins below.
+            if(!exactProfile && gameProfile is not null &&
+                (ReferenceEquals(cluster,trackedPlayer) || cluster.Any(tile=>gameProfile.PlayerOamIndices.Contains(tile.OamIndex))))
+                (kind,label)=(SceneObjectKind.Player,gameProfile.PlayerLabel);
+            bool verifiedTrackedPlayer=ReferenceEquals(cluster,trackedPlayer);
+            bool statusSprite = (exactProfile && bounds.Top < 32 && !ReferenceEquals(cluster,ownedBody)) || gameProfile?.ProtectsSprite(bounds,frame)==true || cluster.Any(tile=>gameProfile?.ProtectsSpriteSlot(frame,tile.OamIndex)==true) || (gameProfile is not null &&
+                !(verifiedTrackedPlayer ? gameProfile.AllowsTrackedPlayer(bounds,frame) : gameProfile.Allows(bounds,frame)));
+            if (statusSprite) { kind = SceneObjectKind.Sprite; label = exactProfile ? "HUD coin" : "HUD / interface"; }
+            // State-owned HUD slots can contain a later OAM update than the
+            // already-rendered scanline. Keep only decoded opaque pixels that
+            // actually appear in this paired native publication; never draw a
+            // stale glyph or recolor it using arbitrary nearby enemy pixels.
+            if(gameProfile is not null && cluster.All(tile=>gameProfile.ProtectsSpriteSlot(frame,tile.OamIndex)) &&
+               frame.NativeScreenPixels is {Length:61440} nativeHud && frame.CaptureScanline==96 && frame.NativeScreenSequence==frame.Sequence)
+                MaskUnpublishedHudPixels(image,bounds,nativeHud);
             ObjectProjectionRule rule = projectionProfile.RuleFor(kind);
             yield return new SceneObject
             {
                 Kind = kind,
                 Label = label,
+                IdentityKey = kind == SceneObjectKind.Player ? "sprite:player" : $"sprite:{kind}:oam:{cluster.Min(tile => tile.OamIndex)}",
                 Bounds = bounds,
                 Image = image,
                 Accent = Accents[kind],
                 Depth = (kind == SceneObjectKind.Player ? 1.25f : 1.05f) * rule.DepthScale,
-                ProjectionEnabled = rule.Enabled,
-                SortOrder = 20
+                ProjectionEnabled = rule.Enabled && !statusSprite,
+                SortOrder = statusSprite ? 100 : 20
             };
         }
     }
 
-    private static Bitmap DecodeSpriteTile(byte[] chr, byte[] palette, byte tileIndex, byte attributes)
+    private static unsafe void MaskUnpublishedHudPixels(Bitmap image,Rectangle bounds,int[] nativeHud)
     {
-        Bitmap bitmap = new(8, 8, PixelFormat.Format32bppArgb);
+        var pixels=image.LockBits(new Rectangle(Point.Empty,image.Size),ImageLockMode.ReadWrite,PixelFormat.Format32bppArgb);
+        try
+        {
+            int transparent=Color.Transparent.ToArgb();
+            for(int py=0;py<image.Height;py++)
+            {
+                int* row=(int*)((byte*)pixels.Scan0+py*pixels.Stride);int sy=bounds.Y+py;
+                for(int px=0;px<image.Width;px++)
+                {
+                    int sx=bounds.X+px,argb=row[px];
+                    if((uint)argb>>24!=0 && (sx<0||sx>=256||sy<0||sy>=240||(argb&0xffffff)!=(nativeHud[sy*256+sx]&0xffffff)))row[px]=transparent;
+                }
+            }
+        }
+        finally{image.UnlockBits(pixels);}
+    }
+
+    internal static unsafe Bitmap DecodeSpriteTile(byte[] chr, byte[] palette, byte tileIndex, byte attributes, int patternBase, bool large = false,bool bulk=true)
+    {
+        int height = large ? 16 : 8;
+        Bitmap bitmap = new(8, height, PixelFormat.Format32bppArgb);
         if (chr.Length < 4096 || palette.Length < 32)
         {
             return bitmap;
@@ -521,29 +910,64 @@ internal sealed class SmbProfile
         bool flipX = (attributes & 0x40) != 0;
         bool flipY = (attributes & 0x80) != 0;
         int paletteOffset = 0x10 + (attributes & 0x03) * 4;
-        int tileOffset = tileIndex * 16; // SMB uses the $0000 sprite pattern table.
+        // In 8x16 mode bit 0 selects the pattern table; the remaining
+        // bits select an even/odd tile pair. Vertical flip swaps both halves.
+        int tileOffset = large ? (tileIndex & 1) * 4096 + (tileIndex & 0xFE) * 16 : patternBase + tileIndex * 16;
+        if (tileOffset + (large ? 32 : 16) > chr.Length) return bitmap;
 
-        for (int outputY = 0; outputY < 8; outputY++)
+        if(!bulk)
         {
-            int sourceY = flipY ? 7 - outputY : outputY;
-            byte low = chr[tileOffset + sourceY];
-            byte high = chr[tileOffset + sourceY + 8];
+            // Original per-pixel implementation retained for explicit paired
+            // diagnostic comparisons, never the ordinary application default.
+            for(int y=0;y<height;y++)
+            {
+                int sy=flipY?height-1-y:y;
+                int row=tileOffset+(sy/8)*16+sy%8;
+                for(int x=0;x<8;x++)
+                {
+                    int bit=flipX?x:7-x;
+                    int color=((chr[row]>>bit)&1)|(((chr[row+8]>>bit)&1)<<1);
+                    if(color!=0)bitmap.SetPixel(x,y,NesPalette.Get(palette[paletteOffset+color]));
+                }
+            }
+            return bitmap;
+        }
+
+        Span<int> colors=stackalloc int[4];colors[0]=0;
+        for(int i=1;i<4;i++)colors[i]=NesPalette.Get(palette[paletteOffset+i]).ToArgb();
+        BitmapData data=bitmap.LockBits(new Rectangle(0,0,8,height),ImageLockMode.WriteOnly,PixelFormat.Format32bppArgb);
+        try
+        {
+        for (int outputY = 0; outputY < height; outputY++)
+        {
+            int* target=(int*)((byte*)data.Scan0+outputY*data.Stride);
+            int sourceY = flipY ? height - 1 - outputY : outputY;
+            int rowOffset = tileOffset + (sourceY / 8) * 16 + sourceY % 8;
+            byte low = chr[rowOffset];
+            byte high = chr[rowOffset + 8];
             for (int outputX = 0; outputX < 8; outputX++)
             {
                 int sourceX = flipX ? 7 - outputX : outputX;
                 int bit = 7 - sourceX;
                 int color = ((low >> bit) & 1) | (((high >> bit) & 1) << 1);
-                if (color == 0)
-                {
-                    continue;
-                }
-                bitmap.SetPixel(outputX, outputY, NesPalette.Get(palette[paletteOffset + color]));
+                target[outputX]=colors[color];
             }
         }
+        }
+        finally{bitmap.UnlockBits(data);}
         return bitmap;
     }
 
-    private static IEnumerable<List<SpriteTile>> ClusterSpriteTiles(List<SpriteTile> source)
+    internal static bool SpriteTileHasArtwork(byte[] chr,byte[] palette,byte tileIndex,int patternBase,bool large)
+    {
+        if(chr.Length<4096 || palette.Length<32)return false;
+        int offset=large?(tileIndex&1)*4096+(tileIndex&0xfe)*16:patternBase+tileIndex*16;
+        int bytes=large?32:16;
+        if(offset+bytes>chr.Length)return false;
+        return chr.AsSpan(offset,bytes).IndexOfAnyExcept((byte)0)>=0;
+    }
+
+    private static IEnumerable<List<SpriteTile>> ClusterSpriteTiles(List<SpriteTile> source,bool separatePalettes=false)
     {
         HashSet<SpriteTile> remaining = [.. source];
         while (remaining.Count > 0)
@@ -559,7 +983,8 @@ internal sealed class SmbProfile
                 SpriteTile tile = queue.Dequeue();
                 cluster.Add(tile);
                 Rectangle reach = Rectangle.Inflate(tile.Bounds, 3, 3);
-                foreach (SpriteTile neighbor in remaining.Where(candidate => reach.IntersectsWith(candidate.Bounds)).ToArray())
+                foreach (SpriteTile neighbor in remaining.Where(candidate => reach.IntersectsWith(candidate.Bounds) &&
+                    (!separatePalettes || candidate.Palette==tile.Palette)).ToArray())
                 {
                     remaining.Remove(neighbor);
                     queue.Enqueue(neighbor);
@@ -580,13 +1005,6 @@ internal sealed class SmbProfile
         }
 
         int screenLeft = ReadRam(frame, 0x071A) * 256 + ReadRam(frame, 0x071C);
-        int playerX = ReadRam(frame, 0x006D) * 256 + ReadRam(frame, 0x0086) - screenLeft;
-        int playerY = ReadRam(frame, 0x00CE);
-        if (Near(bounds, playerX, playerY, 22))
-        {
-            return (SceneObjectKind.Player, "Mario");
-        }
-
         for (int slot = 0; slot < 6; slot++)
         {
             if (ReadRam(frame, 0x000F + slot) == 0)
@@ -615,7 +1033,7 @@ internal sealed class SmbProfile
         return target.Contains(x, y) || target.Contains(x + 8, y + 8);
     }
 
-    private static bool HasVisiblePixel(Bitmap bitmap)
+    internal static bool HasVisiblePixel(Bitmap bitmap)
     {
         for (int y = 0; y < bitmap.Height; y++)
         for (int x = 0; x < bitmap.Width; x++)
@@ -654,6 +1072,6 @@ internal sealed class SmbProfile
 
     private static int Mod(int value, int modulus) => (value % modulus + modulus) % modulus;
 
-    private sealed record SpriteTile(int OamIndex, Rectangle Bounds, Bitmap Image);
-    private readonly record struct BackgroundObjectIdentity(SceneObjectKind Kind, string Label);
+    private sealed record SpriteTile(int OamIndex, Rectangle Bounds, Bitmap Image, int Palette);
+    private readonly record struct BackgroundObjectIdentity(SceneObjectKind Kind, string Label, bool TransparentBackdrop=false);
 }

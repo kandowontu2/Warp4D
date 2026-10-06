@@ -1,0 +1,2851 @@
+{
+  "FormatVersion": 19,
+  "Name": "Kid Icarus \u00B7 built-in",
+  "RomName": "Kid Icarus.nes",
+  "RomSha256": "",
+  "GameplayStateAddress": -1,
+  "GameplayStateValue": 2,
+  "TransparentBackdrop": true,
+  "SeparateMetatiles": true,
+  "AllowMaskedLeftEdgeArtwork": false,
+  "CellSize": 16,
+  "RequireRecognizedScene": true,
+  "MinimumScenePatterns": 2,
+  "SceneAnchors": [],
+  "FlatRegions": [],
+  "FlatSpriteRegions": [
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 16,
+        "Y": 8
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 48,
+        "Height": 24
+      },
+      "X": 16,
+      "Y": 8,
+      "Width": 48,
+      "Height": 24,
+      "Left": 16,
+      "Top": 8,
+      "Right": 64,
+      "Bottom": 32,
+      "IsEmpty": false
+    }
+  ],
+  "FlatSpriteStateAddress": 160,
+  "FlatSpriteSlotsByState": {
+    "3": [0, 1, 2, 3, 4, 5, 6, 7, 57, 58, 59, 60, 61, 62, 63],
+    "5": [0, 1, 2, 3, 4, 5, 6, 7, 57, 58, 59, 60, 61, 62, 63],
+    "7": [0, 1, 2, 3, 4, 5, 6, 7, 57, 58, 59, 60, 61, 62, 63]
+  },
+  "ConditionalFlatRegions": [
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 48,
+          "Y": 40
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 144,
+          "Height": 80
+        },
+        "X": 48,
+        "Y": 40,
+        "Width": 144,
+        "Height": 80,
+        "Left": 48,
+        "Top": 40,
+        "Right": 192,
+        "Bottom": 120,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "160": 2,
+        "59": 37
+      },
+      "ExcludedRam": {
+        "58": 0
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 48,
+          "Y": 40
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 144,
+          "Height": 80
+        },
+        "X": 48,
+        "Y": 40,
+        "Width": 144,
+        "Height": 80,
+        "Left": 48,
+        "Top": 40,
+        "Right": 192,
+        "Bottom": 120,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "160": 2,
+        "59": 38
+      },
+      "ExcludedRam": {
+        "58": 0
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 0,
+          "Y": 208
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 256,
+          "Height": 32
+        },
+        "X": 0,
+        "Y": 208,
+        "Width": 256,
+        "Height": 32,
+        "Left": 0,
+        "Top": 208,
+        "Right": 256,
+        "Bottom": 240,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "160": 3
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 0,
+          "Y": 208
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 256,
+          "Height": 32
+        },
+        "X": 0,
+        "Y": 208,
+        "Width": 256,
+        "Height": 32,
+        "Left": 0,
+        "Top": 208,
+        "Right": 256,
+        "Bottom": 240,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "160": 5
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 0,
+          "Y": 208
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 256,
+          "Height": 32
+        },
+        "X": 0,
+        "Y": 208,
+        "Width": 256,
+        "Height": 32,
+        "Left": 0,
+        "Top": 208,
+        "Right": 256,
+        "Bottom": 240,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "160": 7
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 48,
+          "Y": 40
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 160,
+          "Height": 32
+        },
+        "X": 48,
+        "Y": 40,
+        "Width": 160,
+        "Height": 32,
+        "Left": 48,
+        "Top": 40,
+        "Right": 208,
+        "Bottom": 72,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "59": 35,
+        "160": 2
+      },
+      "ExcludedRam": {
+        "58": 0
+      }
+    }
+  ],
+  "ObjectRegions": [],
+  "PlayerOamIndices": [],
+  "PlayerLabel": "Pit",
+  "PlayerTracking": {
+    "XAddress": 1827,
+    "YAddress": 1824,
+    "SpritePalette": 0,
+    "MaximumWidth": 64,
+    "MaximumHeight": 48,
+    "PositionTolerance": 2,
+    "PaletteStateAddress": 160,
+    "PaletteOamByState": {
+      "2": 8,
+      "3": 8,
+      "4": 8,
+      "5": 8,
+      "6": 8,
+      "7": 8,
+      "8": 8
+    },
+    "BodyOamCountByState": {
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 6,
+      "8": 6
+    },
+    "BodyExtraOamIndicesByState": {
+      "8": [
+        18,
+        19
+      ]
+    }
+  },
+  "BackgroundRules": {
+    "P1-C4DBC5DD": {
+      "Kind": "Terrain",
+      "Label": "Underworld masonry",
+      "VisualFingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-91939294": {
+      "Kind": "Terrain",
+      "Label": "Underworld masonry",
+      "VisualFingerprint": "2B16F2046FB1CE642CBBF23BC52E26C4BFAB7EFCCED4CB3637D48969F2153789",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2B16F2046FB1CE642CBBF23BC52E26C4BFAB7EFCCED4CB3637D48969F2153789",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-70727173": {
+      "Kind": "Pipe",
+      "Label": "Underworld column",
+      "VisualFingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D9D9D9D9": {
+      "Kind": "Pipe",
+      "Label": "Underworld column",
+      "VisualFingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D9D9D9D9": {
+      "Kind": "Pipe",
+      "Label": "Underworld column",
+      "VisualFingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-8F919092": {
+      "Kind": "Pipe",
+      "Label": "Underworld column",
+      "VisualFingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-93959292": {
+      "Kind": "Pipe",
+      "Label": "Underworld column",
+      "VisualFingerprint": "6A7B596FA1F2B0534913304FDB597C1234E54FE6E6C271D78505EA1B685EB13C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6A7B596FA1F2B0534913304FDB597C1234E54FE6E6C271D78505EA1B685EB13C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C4DBC5DD": {
+      "Kind": "Terrain",
+      "Label": "Underworld masonry",
+      "VisualFingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C4DBC5DD": {
+      "Kind": "Pipe",
+      "Label": "Underworld column",
+      "VisualFingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-60626163": {
+      "Kind": "Item",
+      "Label": "Doorway",
+      "VisualFingerprint": "EDEBA78EF455FE67614216E8BA0174A781993800BB9DB55A74C43E844545FC06",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EDEBA78EF455FE67614216E8BA0174A781993800BB9DB55A74C43E844545FC06",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-8F919092": {
+      "Kind": "Pipe",
+      "Label": "Underworld column",
+      "VisualFingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-62626363": {
+      "Kind": "Item",
+      "Label": "Doorway",
+      "VisualFingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-D9D9D9D9": {
+      "Kind": "Item",
+      "Label": "Doorway",
+      "VisualFingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C4DBC5DD": {
+      "Kind": "Terrain",
+      "Label": "Underworld masonry",
+      "VisualFingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BE6502A4D419AC0C20650BF643DADC653D223EBA9B5B0305DB279F226A47560D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-8F919092": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A0BDC5935501183A76A9C319190FE3CFC5C4FBDDB88E542E659C71CF871EF643",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-916D926E": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "A0F0D590EAB4E6800B2FDA0494D9D8E06672E4EBE436E3EE6A23031F8EA2A846",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A0F0D590EAB4E6800B2FDA0494D9D8E06672E4EBE436E3EE6A23031F8EA2A846",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "13438D158498DAF4C2CC6EA50435BAFC5B8A6D3C82260E9FD022669A1F73A4E1",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E0E2E1D7": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "371D3FEB55C82E3D2BBF582ADEAF5B6D4B65EA58A202105BD140FC576C34643B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "371D3FEB55C82E3D2BBF582ADEAF5B6D4B65EA58A202105BD140FC576C34643B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-4E4F4F4E": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "771075C026F70A76FEDB76C91CBC4A0CB16FACFD3B68B4954F26A6210DE7C12E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "771075C026F70A76FEDB76C91CBC4A0CB16FACFD3B68B4954F26A6210DE7C12E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D95BB1D4735009F47D90720BD0B2AE898D287944EBC50EFDAAB4FD72B08CD6AB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-4E4F4F4E": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "771075C026F70A76FEDB76C91CBC4A0CB16FACFD3B68B4954F26A6210DE7C12E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "771075C026F70A76FEDB76C91CBC4A0CB16FACFD3B68B4954F26A6210DE7C12E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D95BB1D4735009F47D90720BD0B2AE898D287944EBC50EFDAAB4FD72B08CD6AB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-70727173": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-DEDEDFDF": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "D7A5DA568FB688B3BD9C21EBB0AC693E0E7BF4F1C436C3AA8CFA08DB4586BCD6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D7A5DA568FB688B3BD9C21EBB0AC693E0E7BF4F1C436C3AA8CFA08DB4586BCD6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-CECECFCF": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "24D3088E00368C9A889C98698D560ACAFF5C798BE19EA66D267496DC1FAA7FF9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "24D3088E00368C9A889C98698D560ACAFF5C798BE19EA66D267496DC1FAA7FF9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-60626163": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "EDEBA78EF455FE67614216E8BA0174A781993800BB9DB55A74C43E844545FC06",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EDEBA78EF455FE67614216E8BA0174A781993800BB9DB55A74C43E844545FC06",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1009EE0108D101357E2A2820538EBF283E2B2671378B4278B8EFD6CD46E330AC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-62626363": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-B1B1B1B1": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-B1B1B1B1": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8B3451D5203E0F939F27D377B981BE0B92BCEE540572AE7B838A4F28DB4C79B2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A5A7A6A8": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "8CCC55622B3B1BD0F5481B5B6C86C660C7EF46D56DAD7E06F7259E634B8B8C98",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8CCC55622B3B1BD0F5481B5B6C86C660C7EF46D56DAD7E06F7259E634B8B8C98",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-7A6D7A6E": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "04B90B43BB52E5C9690E97A6AABB221BA7036A8EAAA0836D353D1869A7A08571",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "04B90B43BB52E5C9690E97A6AABB221BA7036A8EAAA0836D353D1869A7A08571",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-DEDEDFDF": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "D7A5DA568FB688B3BD9C21EBB0AC693E0E7BF4F1C436C3AA8CFA08DB4586BCD6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D7A5DA568FB688B3BD9C21EBB0AC693E0E7BF4F1C436C3AA8CFA08DB4586BCD6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-C0C2C1C3": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F6C49235FD370A280182EC4EE32BE27BB673C54A787130C78C351BED052EFB59",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FF0857FDB0F9FC9EA5A16BFFE96BA93F16EEE2728BE446A3C10758DFDF221B4D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C0C2C1C3": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F6C49235FD370A280182EC4EE32BE27BB673C54A787130C78C351BED052EFB59",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FF0857FDB0F9FC9EA5A16BFFE96BA93F16EEE2728BE446A3C10758DFDF221B4D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-696B6A6C": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "546F57F10CD6CBB9B2CABC41056E28D67F862DA3A8BDEE3A9034EA2A34D822DD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "546F57F10CD6CBB9B2CABC41056E28D67F862DA3A8BDEE3A9034EA2A34D822DD",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8C379FBCF17DC95E3F6A429EBD6733D63B903024E56DA9D6CDD80D1BC6829EB9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A5A7A6A8": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "8CCC55622B3B1BD0F5481B5B6C86C660C7EF46D56DAD7E06F7259E634B8B8C98",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8CCC55622B3B1BD0F5481B5B6C86C660C7EF46D56DAD7E06F7259E634B8B8C98",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "92C8EDD5BAD8B9FE499E253F474BAE32E92AC8A6D155CD3FEF475DC2B85CB70A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-8F6D906E": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "0DE927BFB269614E48EC06118B9BACECF1E44D8B7B7DDE65296DC361EEA00237",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0DE927BFB269614E48EC06118B9BACECF1E44D8B7B7DDE65296DC361EEA00237",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CDED88A323B066A7A311C224383F8D97637046FCB20AE03C98061106A3774024",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-8F6D906E": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "0DE927BFB269614E48EC06118B9BACECF1E44D8B7B7DDE65296DC361EEA00237",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0DE927BFB269614E48EC06118B9BACECF1E44D8B7B7DDE65296DC361EEA00237",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CDED88A323B066A7A311C224383F8D97637046FCB20AE03C98061106A3774024",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-8F919092": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4570590AE39944FA367414BC5837138B373A40A04997131110323339DD16BFF7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A0BDC5935501183A76A9C319190FE3CFC5C4FBDDB88E542E659C71CF871EF643",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-916D926E": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "A0F0D590EAB4E6800B2FDA0494D9D8E06672E4EBE436E3EE6A23031F8EA2A846",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A0F0D590EAB4E6800B2FDA0494D9D8E06672E4EBE436E3EE6A23031F8EA2A846",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "13438D158498DAF4C2CC6EA50435BAFC5B8A6D3C82260E9FD022669A1F73A4E1",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-60646165": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "105F63050D8BD0DEE113E54F03E26B72A2A6567FBF711D19882E745E96BDCB32",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "105F63050D8BD0DEE113E54F03E26B72A2A6567FBF711D19882E745E96BDCB32",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1EE75029EA77643C40637D7156EBF331168D3CB74F18B60189FB72C8EBF29276",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-64646565": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "DE566CA3EED6D00F5E515801101E07943B9E53AB7A05A62A4E91AEE77171FA8A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DE566CA3EED6D00F5E515801101E07943B9E53AB7A05A62A4E91AEE77171FA8A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-14151514": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "181D5ABD4E1C829310E797D8F3B91D43C59EBBD6BE7897245CF3352F2CD93BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "181D5ABD4E1C829310E797D8F3B91D43C59EBBD6BE7897245CF3352F2CD93BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-97129897": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "C8987616E365FCD33E6CACE3A1A03D9360B60E54F4128690447886E1E55C6FA3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C8987616E365FCD33E6CACE3A1A03D9360B60E54F4128690447886E1E55C6FA3",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-99991299": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "B732C7BF0140523C9CB9E7B087F96F20F9766BCC8CBB5FAF23ACCFD157FCE340",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B732C7BF0140523C9CB9E7B087F96F20F9766BCC8CBB5FAF23ACCFD157FCE340",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-79797979": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "EE91A48907C2E127A49C4E52A12635E09A9B9FC8A938C3FC04D1C3A5723D2425",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EE91A48907C2E127A49C4E52A12635E09A9B9FC8A938C3FC04D1C3A5723D2425",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-80828183": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "50B46678647EF4CF4CE55E844071B4C5C99B64BB1E12F031D330FD64192CE1CA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "50B46678647EF4CF4CE55E844071B4C5C99B64BB1E12F031D330FD64192CE1CA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B6105AE246B61B22750E075200AE9745056D37318BBD5CDF65A6206DE6BA7806",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-80801212": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "DCDA2A53CE7C3A908A709AD3B7206816AFDA9EA50259532AD7FAB53AC111F8BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DCDA2A53CE7C3A908A709AD3B7206816AFDA9EA50259532AD7FAB53AC111F8BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A8755F34300578F0D4A59DF9EED0FDE23AEE8BCB38C9A517DA7C011AAD345094",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-70D371D4": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "7490BD358965067EBE78D138B4CF45C85661F8F47D40AB0C6A5C53BD537BCF21",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7490BD358965067EBE78D138B4CF45C85661F8F47D40AB0C6A5C53BD537BCF21",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D3D3D4D4": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "D44C80EAF8F653F515A1DA02AF8586DF275300B0FC6BA34934A7506DBC6586D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D44C80EAF8F653F515A1DA02AF8586DF275300B0FC6BA34934A7506DBC6586D2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-79636379": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "80C04601151992D9791436A74DA69419378883F3517AA33AE7B59DD95222192B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "80C04601151992D9791436A74DA69419378883F3517AA33AE7B59DD95222192B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-C9CBCACC": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5700FD4421952A2851BA6E73548AFCC464228485FF79A48E53F827EDF20132E8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-79636379": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "80C04601151992D9791436A74DA69419378883F3517AA33AE7B59DD95222192B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "80C04601151992D9791436A74DA69419378883F3517AA33AE7B59DD95222192B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-8F6D906E": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "0DE927BFB269614E48EC06118B9BACECF1E44D8B7B7DDE65296DC361EEA00237",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0DE927BFB269614E48EC06118B9BACECF1E44D8B7B7DDE65296DC361EEA00237",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CDED88A323B066A7A311C224383F8D97637046FCB20AE03C98061106A3774024",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-91919292": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "24D3088E00368C9A889C98698D560ACAFF5C798BE19EA66D267496DC1FAA7FF9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "24D3088E00368C9A889C98698D560ACAFF5C798BE19EA66D267496DC1FAA7FF9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-60646165": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "105F63050D8BD0DEE113E54F03E26B72A2A6567FBF711D19882E745E96BDCB32",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "105F63050D8BD0DEE113E54F03E26B72A2A6567FBF711D19882E745E96BDCB32",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1EE75029EA77643C40637D7156EBF331168D3CB74F18B60189FB72C8EBF29276",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-64646565": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "DE566CA3EED6D00F5E515801101E07943B9E53AB7A05A62A4E91AEE77171FA8A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DE566CA3EED6D00F5E515801101E07943B9E53AB7A05A62A4E91AEE77171FA8A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-BABCBBBD": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "F331C8E394969EE0330BECC7B6F860F4CF57A5BF2EF993B5E67BEA2601A0F860",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F331C8E394969EE0330BECC7B6F860F4CF57A5BF2EF993B5E67BEA2601A0F860",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E3121212": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-696B6A6C": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "546F57F10CD6CBB9B2CABC41056E28D67F862DA3A8BDEE3A9034EA2A34D822DD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "546F57F10CD6CBB9B2CABC41056E28D67F862DA3A8BDEE3A9034EA2A34D822DD",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8C379FBCF17DC95E3F6A429EBD6733D63B903024E56DA9D6CDD80D1BC6829EB9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C7C7C8C8": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "9CF7BD32C8BE9A8982639E2C30695F09E676E3360DA6C47D88E9B7CDAEC25365",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9CF7BD32C8BE9A8982639E2C30695F09E676E3360DA6C47D88E9B7CDAEC25365",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-79636379": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "80C04601151992D9791436A74DA69419378883F3517AA33AE7B59DD95222192B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "80C04601151992D9791436A74DA69419378883F3517AA33AE7B59DD95222192B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-9F9FA0A0": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "3036F7098AB2497A9F40C5DBECEC6569F36049B618F6DE138B077F326D4361B5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3036F7098AB2497A9F40C5DBECEC6569F36049B618F6DE138B077F326D4361B5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "535B8EA01AFFD6F0F960930AAC028CB2D85B75EA33C255401702F5FBBD9BBAE2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A0A09F9F": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry",
+      "VisualFingerprint": "4E1F1470FCB1B4CA18121B8EAFAB4A9F1251BB1AEA85FCAFEE15D6F7FA4C0F3E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4E1F1470FCB1B4CA18121B8EAFAB4A9F1251BB1AEA85FCAFEE15D6F7FA4C0F3E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "28D399C5CFEA2DBD9E2EAA1BC1D76B030AF245ED7E85A4EF2254739C620BFDBA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D0C4D1C5": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "F677AD3B0DA055CD109D51BEA0244FF4879B2AF508E5529C5DBC859BE2922DC9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F677AD3B0DA055CD109D51BEA0244FF4879B2AF508E5529C5DBC859BE2922DC9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D2C5D1C6": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D2C5D3C7": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "E43ACDEBBA949DD1D09B80104E022211B058CE9FD006408D28D6CADC5695BA91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E43ACDEBBA949DD1D09B80104E022211B058CE9FD006408D28D6CADC5695BA91",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-E0E2E1E3": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "80E0DAFC7AB69D7D8908E04AC9CEA59D8C59090F320DEE645A8F747689A6C5DA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "80E0DAFC7AB69D7D8908E04AC9CEA59D8C59090F320DEE645A8F747689A6C5DA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-DFDEDEE3": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "B213528A0137ECE6F1474355B916802DF9A2CC3C96A09B4D539203F5B33ED3E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B213528A0137ECE6F1474355B916802DF9A2CC3C96A09B4D539203F5B33ED3E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-70727173": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-72727373": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "D8E62B82C90F5A53B7DB1C4BFA809DC56D26C0498173702E56626756355F0C52",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D8E62B82C90F5A53B7DB1C4BFA809DC56D26C0498173702E56626756355F0C52",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E0E2E1E3": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "80E0DAFC7AB69D7D8908E04AC9CEA59D8C59090F320DEE645A8F747689A6C5DA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "80E0DAFC7AB69D7D8908E04AC9CEA59D8C59090F320DEE645A8F747689A6C5DA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-91919292": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "09877596CD87F912084DC7C054CB459D712917BB5169C4FE661866A971CDC066",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "09877596CD87F912084DC7C054CB459D712917BB5169C4FE661866A971CDC066",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-60626163": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "1009EE0108D101357E2A2820538EBF283E2B2671378B4278B8EFD6CD46E330AC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1009EE0108D101357E2A2820538EBF283E2B2671378B4278B8EFD6CD46E330AC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-E0E2E1E3": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "80E0DAFC7AB69D7D8908E04AC9CEA59D8C59090F320DEE645A8F747689A6C5DA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "80E0DAFC7AB69D7D8908E04AC9CEA59D8C59090F320DEE645A8F747689A6C5DA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-DFDEDEE3": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "B213528A0137ECE6F1474355B916802DF9A2CC3C96A09B4D539203F5B33ED3E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B213528A0137ECE6F1474355B916802DF9A2CC3C96A09B4D539203F5B33ED3E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-62626363": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-8F6D906E": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "CDED88A323B066A7A311C224383F8D97637046FCB20AE03C98061106A3774024",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CDED88A323B066A7A311C224383F8D97637046FCB20AE03C98061106A3774024",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-D2C5D1C6": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-53525253": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "AD196586A9CBB739FE784D45683239C626CF510352A2A51EA4FD876B406ADB8D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD196586A9CBB739FE784D45683239C626CF510352A2A51EA4FD876B406ADB8D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-53525253": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "AD196586A9CBB739FE784D45683239C626CF510352A2A51EA4FD876B406ADB8D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD196586A9CBB739FE784D45683239C626CF510352A2A51EA4FD876B406ADB8D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D2C5D3C7": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "E43ACDEBBA949DD1D09B80104E022211B058CE9FD006408D28D6CADC5695BA91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E43ACDEBBA949DD1D09B80104E022211B058CE9FD006408D28D6CADC5695BA91",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-E4121212": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D0C4D1C5": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "F677AD3B0DA055CD109D51BEA0244FF4879B2AF508E5529C5DBC859BE2922DC9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F677AD3B0DA055CD109D51BEA0244FF4879B2AF508E5529C5DBC859BE2922DC9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D2C5D1C6": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-D8DAD9DB": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "655431CEC151510BC594FD332A49E5280B200967EC0070112561D8BAED65EC7A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "655431CEC151510BC594FD332A49E5280B200967EC0070112561D8BAED65EC7A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-DFDEDEE3": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "B213528A0137ECE6F1474355B916802DF9A2CC3C96A09B4D539203F5B33ED3E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B213528A0137ECE6F1474355B916802DF9A2CC3C96A09B4D539203F5B33ED3E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-62626363": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BD03139242483CF6AE7E92E34F13D488F16198272A5E80494038C745FAF88211",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-53525253": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "AD196586A9CBB739FE784D45683239C626CF510352A2A51EA4FD876B406ADB8D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD196586A9CBB739FE784D45683239C626CF510352A2A51EA4FD876B406ADB8D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-D9D9D9D9": {
+      "Kind": "Terrain",
+      "Label": "Underworld platforms",
+      "VisualFingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C42BD032B31B70E80C38E1ED426171C2E814B69B1989207AC5B0F4BDBF48D249",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-70D371D4": {
+      "Kind": "Terrain",
+      "Label": "Overworld structures",
+      "VisualFingerprint": "7490BD358965067EBE78D138B4CF45C85661F8F47D40AB0C6A5C53BD537BCF21",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7490BD358965067EBE78D138B4CF45C85661F8F47D40AB0C6A5C53BD537BCF21",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-4DB24DB2": {
+      "Kind": "Terrain",
+      "Label": "Overworld structures",
+      "VisualFingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-EAECEBD8": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "C4647A71AFB9897759859D2747C63106011473874490F7322E64908608451561",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C4647A71AFB9897759859D2747C63106011473874490F7322E64908608451561",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-CE121212": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-8B8D8C8E": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "1BBD8AFC9C58AF3A392B46D2D920A87FB9DA166E7D996FA84E860F05637DCC05",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1BBD8AFC9C58AF3A392B46D2D920A87FB9DA166E7D996FA84E860F05637DCC05",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-91919292": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "24D3088E00368C9A889C98698D560ACAFF5C798BE19EA66D267496DC1FAA7FF9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "24D3088E00368C9A889C98698D560ACAFF5C798BE19EA66D267496DC1FAA7FF9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "09877596CD87F912084DC7C054CB459D712917BB5169C4FE661866A971CDC066",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4E4F4F4E": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "771075C026F70A76FEDB76C91CBC4A0CB16FACFD3B68B4954F26A6210DE7C12E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "771075C026F70A76FEDB76C91CBC4A0CB16FACFD3B68B4954F26A6210DE7C12E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D95BB1D4735009F47D90720BD0B2AE898D287944EBC50EFDAAB4FD72B08CD6AB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-9F9FA0A0": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "3036F7098AB2497A9F40C5DBECEC6569F36049B618F6DE138B077F326D4361B5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3036F7098AB2497A9F40C5DBECEC6569F36049B618F6DE138B077F326D4361B5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "535B8EA01AFFD6F0F960930AAC028CB2D85B75EA33C255401702F5FBBD9BBAE2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A0A09F9F": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "4E1F1470FCB1B4CA18121B8EAFAB4A9F1251BB1AEA85FCAFEE15D6F7FA4C0F3E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4E1F1470FCB1B4CA18121B8EAFAB4A9F1251BB1AEA85FCAFEE15D6F7FA4C0F3E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "28D399C5CFEA2DBD9E2EAA1BC1D76B030AF245ED7E85A4EF2254739C620BFDBA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-75777678": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C0C2C1C3": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F6C49235FD370A280182EC4EE32BE27BB673C54A787130C78C351BED052EFB59",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FF0857FDB0F9FC9EA5A16BFFE96BA93F16EEE2728BE446A3C10758DFDF221B4D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-C012C112": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "C7F40D9175033BE09DFDB6AA36ACE9CFE6AA16EACF54C47528C40CA697B44318",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C7F40D9175033BE09DFDB6AA36ACE9CFE6AA16EACF54C47528C40CA697B44318",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FFFC219B6B82E422E858A3889C654A1E10FFA7374A1DC62FD0AB485C0CAC54D6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "543E65ABE9DA6E360B4636AEB64BB94653993EAE5F5F3C607118F53D53954FF8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C012C112": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "C7F40D9175033BE09DFDB6AA36ACE9CFE6AA16EACF54C47528C40CA697B44318",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C7F40D9175033BE09DFDB6AA36ACE9CFE6AA16EACF54C47528C40CA697B44318",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FFFC219B6B82E422E858A3889C654A1E10FFA7374A1DC62FD0AB485C0CAC54D6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "543E65ABE9DA6E360B4636AEB64BB94653993EAE5F5F3C607118F53D53954FF8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A1A3A2A4": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "49B0C74E540981524E7E5B38D46D11358225AA480FD647E50F130622083C7846",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "49B0C74E540981524E7E5B38D46D11358225AA480FD647E50F130622083C7846",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-B012B012": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "62420D8FEE5AA5123452EBBA1467C69F0679F2EC6176379EB5C02DF26A6B2292",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "62420D8FEE5AA5123452EBBA1467C69F0679F2EC6176379EB5C02DF26A6B2292",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-585A5966": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "2DEA55112940EA7C78F3F4218DA3A6956B839BE9234E42A412A0B73BFC4FBC1C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2DEA55112940EA7C78F3F4218DA3A6956B839BE9234E42A412A0B73BFC4FBC1C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C99132AD96B2C7C347A06CA13506ACD47800B60EEE45812EE22382024D969275",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-75777678": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-B012B012": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "62420D8FEE5AA5123452EBBA1467C69F0679F2EC6176379EB5C02DF26A6B2292",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "62420D8FEE5AA5123452EBBA1467C69F0679F2EC6176379EB5C02DF26A6B2292",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C012C112": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "C7F40D9175033BE09DFDB6AA36ACE9CFE6AA16EACF54C47528C40CA697B44318",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C7F40D9175033BE09DFDB6AA36ACE9CFE6AA16EACF54C47528C40CA697B44318",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FFFC219B6B82E422E858A3889C654A1E10FFA7374A1DC62FD0AB485C0CAC54D6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "543E65ABE9DA6E360B4636AEB64BB94653993EAE5F5F3C607118F53D53954FF8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-52535352": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "07DC3FD1DDD967D21FAEFA8D98269A42FD806874FF61A59AFBC432B7AEF3055E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "07DC3FD1DDD967D21FAEFA8D98269A42FD806874FF61A59AFBC432B7AEF3055E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C565C995BECF00B63ACBFF942587CD05FE7AC7E9EC14AA786C1F29CE58104756",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-54565557": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "EB4C351BB4AE46C57948E4B2228CEA245CFAB0AA0C27C03A1DA869470DD64851",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EB4C351BB4AE46C57948E4B2228CEA245CFAB0AA0C27C03A1DA869470DD64851",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F3455BC7ADBF456C53F64D54AA015339B93E38A72D0F4DC69BE6B9B3BECA9CDA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-9F9FA0A0": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "3036F7098AB2497A9F40C5DBECEC6569F36049B618F6DE138B077F326D4361B5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3036F7098AB2497A9F40C5DBECEC6569F36049B618F6DE138B077F326D4361B5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "535B8EA01AFFD6F0F960930AAC028CB2D85B75EA33C255401702F5FBBD9BBAE2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A0A09F9F": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "4E1F1470FCB1B4CA18121B8EAFAB4A9F1251BB1AEA85FCAFEE15D6F7FA4C0F3E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4E1F1470FCB1B4CA18121B8EAFAB4A9F1251BB1AEA85FCAFEE15D6F7FA4C0F3E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "28D399C5CFEA2DBD9E2EAA1BC1D76B030AF245ED7E85A4EF2254739C620BFDBA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-75777678": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-14151514": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "181D5ABD4E1C829310E797D8F3B91D43C59EBBD6BE7897245CF3352F2CD93BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "181D5ABD4E1C829310E797D8F3B91D43C59EBBD6BE7897245CF3352F2CD93BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-75777678": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "742CED956E7789141CBDA91FD75B7926BA10049933A729138BF3DAD8E79D9705",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-B1B1B1B1": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8B3451D5203E0F939F27D377B981BE0B92BCEE540572AE7B838A4F28DB4C79B2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-B1B1B1B1": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A2FB5D6036630FD06001327B12D6D86237D3A748173D41E6FC8C5DA903DA5551",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C0C2C1C3": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B37B10880468CAC35C80EA0B6C9CE3E2B11F2BF9198B4F037B79E800ACA55A3F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F6C49235FD370A280182EC4EE32BE27BB673C54A787130C78C351BED052EFB59",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FF0857FDB0F9FC9EA5A16BFFE96BA93F16EEE2728BE446A3C10758DFDF221B4D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-52535352": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "07DC3FD1DDD967D21FAEFA8D98269A42FD806874FF61A59AFBC432B7AEF3055E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "07DC3FD1DDD967D21FAEFA8D98269A42FD806874FF61A59AFBC432B7AEF3055E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C565C995BECF00B63ACBFF942587CD05FE7AC7E9EC14AA786C1F29CE58104756",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4DB24DB2": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-AAABAAAB": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "FA2127768FFDF364B242C3B9023B5C72A123A2C30A01FA4DE143FAD1D318D514",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FA2127768FFDF364B242C3B9023B5C72A123A2C30A01FA4DE143FAD1D318D514",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-14151514": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "181D5ABD4E1C829310E797D8F3B91D43C59EBBD6BE7897245CF3352F2CD93BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "181D5ABD4E1C829310E797D8F3B91D43C59EBBD6BE7897245CF3352F2CD93BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-9B9D9C9E": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "6B189B8BD71B6C2152328E277CA30B370001A25E48E0A59341B2388C96BF4E2E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6B189B8BD71B6C2152328E277CA30B370001A25E48E0A59341B2388C96BF4E2E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-9B9D9C9E": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "6B189B8BD71B6C2152328E277CA30B370001A25E48E0A59341B2388C96BF4E2E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6B189B8BD71B6C2152328E277CA30B370001A25E48E0A59341B2388C96BF4E2E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A9AFAE12": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "F613D98EEAF7D787B044598785B7DE840C034B7149D56AD44C19F3879B5E29A4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F613D98EEAF7D787B044598785B7DE840C034B7149D56AD44C19F3879B5E29A4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-AF12AE12": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "37360CCB2534C3E0C5BB6EB467999511129D6B4ED55F7ADF38EF9A01FF15B316",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "37360CCB2534C3E0C5BB6EB467999511129D6B4ED55F7ADF38EF9A01FF15B316",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D7DFD8E0": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "006970A6771A748E1C3BBBFC80E3925A262BC3002AA39F1D89BD22DEFF940AA9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "006970A6771A748E1C3BBBFC80E3925A262BC3002AA39F1D89BD22DEFF940AA9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D631E36D8DA3175637A333CCC3B4A2A851E85137313F5A7BA6F3C89875607464",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D8E1D9E2": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "B0A04336B0BD6C5A5867EA332CE1BEAC06039858F3549FFCBF6151004859383F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B0A04336B0BD6C5A5867EA332CE1BEAC06039858F3549FFCBF6151004859383F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "29CF60E3258832C75E950E977F04E2E13DF50B9A5DBAFBCE56D0A8647B1C686D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-D8E1D9E2": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "B0A04336B0BD6C5A5867EA332CE1BEAC06039858F3549FFCBF6151004859383F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B0A04336B0BD6C5A5867EA332CE1BEAC06039858F3549FFCBF6151004859383F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-9B9D9C9E": {
+      "Kind": "Terrain",
+      "Label": "Fortress masonry and platforms",
+      "VisualFingerprint": "6B189B8BD71B6C2152328E277CA30B370001A25E48E0A59341B2388C96BF4E2E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6B189B8BD71B6C2152328E277CA30B370001A25E48E0A59341B2388C96BF4E2E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-89898A8A": {
+      "Kind": "Terrain",
+      "Label": "Underworld scenery",
+      "VisualFingerprint": "527583F2AD73FA78EAEF4F3FE3681B5E5E5BB2EFB2FA3AC44E41C2215AC1B6AF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "527583F2AD73FA78EAEF4F3FE3681B5E5E5BB2EFB2FA3AC44E41C2215AC1B6AF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-60646165": {
+      "Kind": "Terrain",
+      "Label": "Underworld scenery",
+      "VisualFingerprint": "105F63050D8BD0DEE113E54F03E26B72A2A6567FBF711D19882E745E96BDCB32",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "105F63050D8BD0DEE113E54F03E26B72A2A6567FBF711D19882E745E96BDCB32",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-64646565": {
+      "Kind": "Terrain",
+      "Label": "Underworld scenery",
+      "VisualFingerprint": "DE566CA3EED6D00F5E515801101E07943B9E53AB7A05A62A4E91AEE77171FA8A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DE566CA3EED6D00F5E515801101E07943B9E53AB7A05A62A4E91AEE77171FA8A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-7489128A": {
+      "Kind": "Terrain",
+      "Label": "Underworld scenery",
+      "VisualFingerprint": "0B728A5972658277506B7AEBA250781E8A8B27795AD06C779A2D9DFFAB7E4D26",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0B728A5972658277506B7AEBA250781E8A8B27795AD06C779A2D9DFFAB7E4D26",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-91919496": {
+      "Kind": "Terrain",
+      "Label": "Underworld scenery",
+      "VisualFingerprint": "0FBA34E14D0D940EFC44261A346D2D9107DC0C5CAEC139223517E3D68DBECD5B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0FBA34E14D0D940EFC44261A346D2D9107DC0C5CAEC139223517E3D68DBECD5B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-E0E2E1D7": {
+      "Kind": "Terrain",
+      "Label": "Underworld scenery",
+      "VisualFingerprint": "371D3FEB55C82E3D2BBF582ADEAF5B6D4B65EA58A202105BD140FC576C34643B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "371D3FEB55C82E3D2BBF582ADEAF5B6D4B65EA58A202105BD140FC576C34643B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-70727173": {
+      "Kind": "Terrain",
+      "Label": "Underworld scenery",
+      "VisualFingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "96874FD12821398BFE7B22DA6FA8EACB562288DF526C76B9DD8F278E2E3F1E1B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-97129897": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "C8987616E365FCD33E6CACE3A1A03D9360B60E54F4128690447886E1E55C6FA3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C8987616E365FCD33E6CACE3A1A03D9360B60E54F4128690447886E1E55C6FA3",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A1A3A2A4": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "49B0C74E540981524E7E5B38D46D11358225AA480FD647E50F130622083C7846",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "49B0C74E540981524E7E5B38D46D11358225AA480FD647E50F130622083C7846",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-E3121212": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-12DCDCDC": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "F9A5A9D6DBCE2B730E1CC7B639BC25E3E9B7145FE42CE06156D231B6BCC75D18",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F9A5A9D6DBCE2B730E1CC7B639BC25E3E9B7145FE42CE06156D231B6BCC75D18",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-DEDD12DE": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "BA24B7F382763F3F918456C516D52B71BA0581CDAB0900759466FA09F50BEBC6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BA24B7F382763F3F918456C516D52B71BA0581CDAB0900759466FA09F50BEBC6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-C4E4C5E5": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "48EB6995BE801C59B5400A1D1A6C2600F66A13BED9087F2B28DBB1BE4CCB7BE0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "48EB6995BE801C59B5400A1D1A6C2600F66A13BED9087F2B28DBB1BE4CCB7BE0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-C6E4E6B3": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "AA05F030F7C4A2BC72E564A82A18A2A4E22645E66B8CB58378AA8EEC5878FC78",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AA05F030F7C4A2BC72E564A82A18A2A4E22645E66B8CB58378AA8EEC5878FC78",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-DE121212": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "1FEF1F2BD568336A1A71BFD798B05FAA9BAC575A2797C6F46241E637EA9CDB98",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1FEF1F2BD568336A1A71BFD798B05FAA9BAC575A2797C6F46241E637EA9CDB98",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-E9EBEAEC": {
+      "Kind": "Terrain",
+      "Label": "Skyworld scenery",
+      "VisualFingerprint": "AD84E7C95CE42BADCC94929EDCBF2F848E32048A6A260ADD044CB3ABCB1FC383",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD84E7C95CE42BADCC94929EDCBF2F848E32048A6A260ADD044CB3ABCB1FC383",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-E5E7E6E8": {
+      "Kind": "Terrain",
+      "Label": "Skyworld scenery",
+      "VisualFingerprint": "7C0257D41C9E5FB5CA4069EECED335D007EF3D39542135A3C1C01B8FC008161E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7C0257D41C9E5FB5CA4069EECED335D007EF3D39542135A3C1C01B8FC008161E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-E4121212": {
+      "Kind": "Terrain",
+      "Label": "Skyworld scenery",
+      "VisualFingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D65C75A8D72C3DADEF7D394909E424017EB0095C9E83B9E992B3FC037F4E815B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-51505051": {
+      "Kind": "Terrain",
+      "Label": "Chamber masonry",
+      "VisualFingerprint": "AB4DA521775E184B2F80C5730AC3AC8760B7F53835AAE4696F42337376D4B7C5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AB4DA521775E184B2F80C5730AC3AC8760B7F53835AAE4696F42337376D4B7C5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-5C5E5D5F": {
+      "Kind": "Terrain",
+      "Label": "Chamber masonry",
+      "VisualFingerprint": "42B474FB84D8D83D845F8B397CE1CD3D42AC585B1DB3688A6E8A7EE520BE2034",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "42B474FB84D8D83D845F8B397CE1CD3D42AC585B1DB3688A6E8A7EE520BE2034",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-5B795B79": {
+      "Kind": "Terrain",
+      "Label": "Chamber masonry",
+      "VisualFingerprint": "3AFBFF74FC77E4D72504AA30AACD39EB0DE1251BF8974A75759BE8900E595AD4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3AFBFF74FC77E4D72504AA30AACD39EB0DE1251BF8974A75759BE8900E595AD4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C9CBCACC": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5700FD4421952A2851BA6E73548AFCC464228485FF79A48E53F827EDF20132E8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-CACCC9CB": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "18D60DA32223B50CE3D363A76AEC6AA9FD6DED0BF9B55EA653A3C9DB494118FF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "18D60DA32223B50CE3D363A76AEC6AA9FD6DED0BF9B55EA653A3C9DB494118FF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "87455C265B89E9F443A85FEFD996D07B4FCBACE9CA5B93763D6BD1923793B899",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-CACCC9CB": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "18D60DA32223B50CE3D363A76AEC6AA9FD6DED0BF9B55EA653A3C9DB494118FF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "18D60DA32223B50CE3D363A76AEC6AA9FD6DED0BF9B55EA653A3C9DB494118FF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "87455C265B89E9F443A85FEFD996D07B4FCBACE9CA5B93763D6BD1923793B899",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-BEB8BFB9": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "1641E33C6CD8D4ADBC19238CE4E1E98569BB3159AA98D2943155810A7807EA88",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1641E33C6CD8D4ADBC19238CE4E1E98569BB3159AA98D2943155810A7807EA88",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-4DB24DB2": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-B2B2B2B2": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "FD2B2514E868176BF49C35D83C50B9C40400BDD7C56690659FF5AAC4A0EA58B0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FD2B2514E868176BF49C35D83C50B9C40400BDD7C56690659FF5AAC4A0EA58B0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-D2C5D1C6": {
+      "Kind": "Terrain",
+      "Label": "Angel Land scenery",
+      "VisualFingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F8342293B26FDD7D8B4CE74E1316BB789CBB46AEC033D68D5BD55457271E7589",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-B2B2B2B2": {
+      "Kind": "Terrain",
+      "Label": "Overworld structures",
+      "VisualFingerprint": "FD2B2514E868176BF49C35D83C50B9C40400BDD7C56690659FF5AAC4A0EA58B0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FD2B2514E868176BF49C35D83C50B9C40400BDD7C56690659FF5AAC4A0EA58B0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-EFF1F0F1": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "6E97798BB79BED778D9A5E0A37FB15EEB37041D2A8DEF5521AA093DE3EB0F58E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6E97798BB79BED778D9A5E0A37FB15EEB37041D2A8DEF5521AA093DE3EB0F58E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-F4F112F4": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "168D3F05189CE54ADEA0FECF475893C4CCDFD9AFEC541A08A4F123A63DF9D5C0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "168D3F05189CE54ADEA0FECF475893C4CCDFD9AFEC541A08A4F123A63DF9D5C0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-12F3F3F1": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "B7216ACEDFF2EC965D284C8B1FE4EA229FFD8CE60CA3E96FA075CBD419628CBA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B7216ACEDFF2EC965D284C8B1FE4EA229FFD8CE60CA3E96FA075CBD419628CBA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-EDF1EEF2": {
+      "Kind": "Pipe",
+      "Label": "Palutena temple columns",
+      "VisualFingerprint": "328064CA751A1809FA4E43BDB952B669EE8C0AD65066FD1F6CE2C178811E4A04",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "328064CA751A1809FA4E43BDB952B669EE8C0AD65066FD1F6CE2C178811E4A04",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-CACCC9CB": {
+      "Kind": "Terrain",
+      "Label": "Overworld scenery",
+      "VisualFingerprint": "87455C265B89E9F443A85FEFD996D07B4FCBACE9CA5B93763D6BD1923793B899",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "87455C265B89E9F443A85FEFD996D07B4FCBACE9CA5B93763D6BD1923793B899",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "18D60DA32223B50CE3D363A76AEC6AA9FD6DED0BF9B55EA653A3C9DB494118FF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-AAABAAAB": {
+      "Kind": "Terrain",
+      "Label": "Chamber masonry",
+      "VisualFingerprint": "FA2127768FFDF364B242C3B9023B5C72A123A2C30A01FA4DE143FAD1D318D514",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FA2127768FFDF364B242C3B9023B5C72A123A2C30A01FA4DE143FAD1D318D514",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D0D2D1D3": {
+      "Kind": "Terrain",
+      "Label": "Underworld platforms",
+      "VisualFingerprint": "9ADDF6EB66D414D41943D3BB9385CBEC90F68FD2FE6679E7BDA677C34DDA506A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9ADDF6EB66D414D41943D3BB9385CBEC90F68FD2FE6679E7BDA677C34DDA506A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-696B6A6C": {
+      "Kind": "Terrain",
+      "Label": "Underworld platforms",
+      "VisualFingerprint": "546F57F10CD6CBB9B2CABC41056E28D67F862DA3A8BDEE3A9034EA2A34D822DD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "546F57F10CD6CBB9B2CABC41056E28D67F862DA3A8BDEE3A9034EA2A34D822DD",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-7A6D7A6E": {
+      "Kind": "Terrain",
+      "Label": "Underworld platforms",
+      "VisualFingerprint": "04B90B43BB52E5C9690E97A6AABB221BA7036A8EAAA0836D353D1869A7A08571",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "04B90B43BB52E5C9690E97A6AABB221BA7036A8EAAA0836D353D1869A7A08571",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-916D926E": {
+      "Kind": "Terrain",
+      "Label": "Underworld platforms",
+      "VisualFingerprint": "A0F0D590EAB4E6800B2FDA0494D9D8E06672E4EBE436E3EE6A23031F8EA2A846",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A0F0D590EAB4E6800B2FDA0494D9D8E06672E4EBE436E3EE6A23031F8EA2A846",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D8DAD9DB": {
+      "Kind": "Terrain",
+      "Label": "Spring room tiles",
+      "VisualFingerprint": "655431CEC151510BC594FD332A49E5280B200967EC0070112561D8BAED65EC7A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "655431CEC151510BC594FD332A49E5280B200967EC0070112561D8BAED65EC7A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-D2C5D3C7": {
+      "Kind": "Terrain",
+      "Label": "Sky field column and platform",
+      "VisualFingerprint": "E43ACDEBBA949DD1D09B80104E022211B058CE9FD006408D28D6CADC5695BA91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E43ACDEBBA949DD1D09B80104E022211B058CE9FD006408D28D6CADC5695BA91",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-12120212": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "B67C98E578C0388B929DEB11D0E66AF838AC8288F54E323373D18C6FF647DCB9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B67C98E578C0388B929DEB11D0E66AF838AC8288F54E323373D18C6FF647DCB9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-01120012": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "A303F605EC07461F9532A59669C1704C62CF0126B94D55759425DD47C83739ED",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A303F605EC07461F9532A59669C1704C62CF0126B94D55759425DD47C83739ED",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-03120512": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "6BA73D2F9B98B3A32B420BED8864BF0A3D8CA2B7010635F1B36CFF736A30202A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6BA73D2F9B98B3A32B420BED8864BF0A3D8CA2B7010635F1B36CFF736A30202A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-00121212": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "171BA8F3CC24E245355F1951D644B8FC8A6CA07C56144201D0784B122186F369",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "171BA8F3CC24E245355F1951D644B8FC8A6CA07C56144201D0784B122186F369",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-12120312": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "631F7499C9CBE6F2C2BC6802CC0AD8BAB00A2A4E13AB1197DF5A4AA073413DE4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "631F7499C9CBE6F2C2BC6802CC0AD8BAB00A2A4E13AB1197DF5A4AA073413DE4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-09120012": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "AF455E376E1B99AAB56F17BEB09874A41CF1BE2DDA711716F6D589B3D8FABA0E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AF455E376E1B99AAB56F17BEB09874A41CF1BE2DDA711716F6D589B3D8FABA0E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-DADADADA": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "942AC7C0DCFC8A11C3D1E6158501F27402685013ADD7C45BD7728F7B871271F2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "942AC7C0DCFC8A11C3D1E6158501F27402685013ADD7C45BD7728F7B871271F2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C9CBCACC": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5700FD4421952A2851BA6E73548AFCC464228485FF79A48E53F827EDF20132E8",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-DADADADA": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "942AC7C0DCFC8A11C3D1E6158501F27402685013ADD7C45BD7728F7B871271F2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "942AC7C0DCFC8A11C3D1E6158501F27402685013ADD7C45BD7728F7B871271F2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-CACCC9CB": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "18D60DA32223B50CE3D363A76AEC6AA9FD6DED0BF9B55EA653A3C9DB494118FF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "18D60DA32223B50CE3D363A76AEC6AA9FD6DED0BF9B55EA653A3C9DB494118FF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "87455C265B89E9F443A85FEFD996D07B4FCBACE9CA5B93763D6BD1923793B899",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-80828183": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "50B46678647EF4CF4CE55E844071B4C5C99B64BB1E12F031D330FD64192CE1CA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "50B46678647EF4CF4CE55E844071B4C5C99B64BB1E12F031D330FD64192CE1CA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-7C7E7D7F": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "C52D5B5A11C508991522A5F1058E2D971516BAABADF1E97BC9E43F15149DED92",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C52D5B5A11C508991522A5F1058E2D971516BAABADF1E97BC9E43F15149DED92",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-80801212": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "DCDA2A53CE7C3A908A709AD3B7206816AFDA9EA50259532AD7FAB53AC111F8BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DCDA2A53CE7C3A908A709AD3B7206816AFDA9EA50259532AD7FAB53AC111F8BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-12127D7D": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "09E7A8C87CD61FE3F34C88B66E237F1668651EE1229761E69B8749B22B37834B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "09E7A8C87CD61FE3F34C88B66E237F1668651EE1229761E69B8749B22B37834B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-4DB24DB2": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A22C499535F29692548B42D17619FF93CF18570E95B640381678B47F0387D86E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-505B515B": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "6D89F33129998D5268DA01F9DC3E59276E2E0EF7D2837C1538387F3E95459328",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6D89F33129998D5268DA01F9DC3E59276E2E0EF7D2837C1538387F3E95459328",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-12120412": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "E6F37993847D5019910B2C6482A6CE4EADE27926D3437B10A43B5B3C524C0504",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E6F37993847D5019910B2C6482A6CE4EADE27926D3437B10A43B5B3C524C0504",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-08120012": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "F17EE2129E35EFEEC19E69A0CE0E2296E444DA61B7B92EA1B1482525F957DD4F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F17EE2129E35EFEEC19E69A0CE0E2296E444DA61B7B92EA1B1482525F957DD4F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-05120012": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "9BE09175BB6015DAA7DC00CAC845699CCF71701A96C7449B7492A2BFD24E3AB6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9BE09175BB6015DAA7DC00CAC845699CCF71701A96C7449B7492A2BFD24E3AB6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-00120212": {
+      "Kind": "Terrain",
+      "Label": "Overworld chamber masonry and fittings",
+      "VisualFingerprint": "5FB58AA6A903445F53DDED750E29E9BA69C2152AFFE78F98B1914E4E4484C9C2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5FB58AA6A903445F53DDED750E29E9BA69C2152AFFE78F98B1914E4E4484C9C2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-70D371D4": {
+      "Kind": "Terrain",
+      "Label": "Overworld field platforms and vines",
+      "VisualFingerprint": "7490BD358965067EBE78D138B4CF45C85661F8F47D40AB0C6A5C53BD537BCF21",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7490BD358965067EBE78D138B4CF45C85661F8F47D40AB0C6A5C53BD537BCF21",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D3D3D4D4": {
+      "Kind": "Terrain",
+      "Label": "Overworld field platforms and vines",
+      "VisualFingerprint": "D44C80EAF8F653F515A1DA02AF8586DF275300B0FC6BA34934A7506DBC6586D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D44C80EAF8F653F515A1DA02AF8586DF275300B0FC6BA34934A7506DBC6586D2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C9CBCACC": {
+      "Kind": "Terrain",
+      "Label": "Overworld field platforms and vines",
+      "VisualFingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD14FBFB2A28B54BB4DD51BC017251A0270BC0E0A2AD6484D1CAC40D131F3BDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-12D112D1": {
+      "Kind": "Terrain",
+      "Label": "Overworld waterway ledges",
+      "VisualFingerprint": "1E7693930503B3D9A7C3382FF2A071B4C05196E16965B763A782B48C060805AD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1E7693930503B3D9A7C3382FF2A071B4C05196E16965B763A782B48C060805AD",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-CDCFCED0": {
+      "Kind": "Terrain",
+      "Label": "Overworld waterway supports",
+      "VisualFingerprint": "6951D71126F1C22A6C4008EBE9B1C1B7E0F53D9A600E944D5859DC84C66420C6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6951D71126F1C22A6C4008EBE9B1C1B7E0F53D9A600E944D5859DC84C66420C6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    }
+  }
+}

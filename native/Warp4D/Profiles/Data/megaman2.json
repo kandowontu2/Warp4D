@@ -1,0 +1,2788 @@
+{
+  "FormatVersion": 5,
+  "Name": "Mega Man 2 \u00B7 built-in",
+  "RomName": "Mega Man 2.nes",
+  "RomSha256": "",
+  "GameplayStateAddress": -1,
+  "GameplayStateValue": 2,
+  "TransparentBackdrop": true,
+  "SeparateMetatiles": true,
+  "CellSize": 16,
+  "RequireRecognizedScene": true,
+  "MinimumScenePatterns": 2,
+  "SceneAnchors": [],
+  "FlatRegions": [
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 16,
+        "Y": 16
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 24,
+        "Height": 64
+      },
+      "X": 16,
+      "Y": 16,
+      "Width": 24,
+      "Height": 64,
+      "Left": 16,
+      "Top": 16,
+      "Right": 40,
+      "Bottom": 80,
+      "IsEmpty": false
+    }
+  ],
+  "ObjectRegions": [],
+  "PlayerOamIndices": [],
+  "PlayerLabel": "Player",
+  "BackgroundRules": {
+    "P0-B8B9BABB": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "7C0B4A2DB1E832FA8A671E0EC3A1F5684B02FCB36D9886743E0AA8BE59ACCCC2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7C0B4A2DB1E832FA8A671E0EC3A1F5684B02FCB36D9886743E0AA8BE59ACCCC2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "688794C723C46FF674ACE590F7543AABEE8A6D22CFF9C35DFE7353ADA5E69CCF",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A1AA79295923B41E981A1077C415AA4F3E55D0DE0297E83E913C646A1263E9C9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "525B3C540E9BC34274882AED2EA5B2E739249D4F68EC1AA3F8F7D6B12AFCC7E1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4B6DF2E4235E34B5B8128C80652A3746FACA6821EB09C1F49241F81D39B194E5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "964AC6783EEDD6F4770D8A7637E6EB5CE5C2511176DC3B22B9C0A371E501369D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-BCBDBEBF": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "1177B353A5C5E3FAA66347DAFE51A8F63573268E6445F471EB47C197A7BAF5D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1177B353A5C5E3FAA66347DAFE51A8F63573268E6445F471EB47C197A7BAF5D2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3F6D318C6210A63374567C456E54442E178D27C5D64E38AF2E5CE2FDD31DF529",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "05FCC0C9C0939E5FEA381F9A869C67A020B821572C81BF798E4DF99124E625C0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "60C34DB8D9BAFEC72F56952405483239DADE0B9773A4A8DD14A8DB9E873FD55E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "15285DD69DCBC572800892DCBC844962F4719F86E31F96293EE482E82A080748",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5FE6BECA50C60ABF2371F56652FBC5422C3BEE4602F271888069AED057C5FC0A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C8C9CACB": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "35CE1E13525C3F5878EDB0751FF6185831228D26928B3DC4F7F3E0C080D006AA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "35CE1E13525C3F5878EDB0751FF6185831228D26928B3DC4F7F3E0C080D006AA",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CDB3BBBDC5E34B27F0FC079AACE593CA3DDC9A34876C0B19BA8964ED215793E0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9A6CD6C2049D2E1560BF70459F761106BB3B4CA71E0C18F2625161C812C0BD01",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-CCCDCECF": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "96A28F265C0949D93E7FEED7B48A5A033D59FA2C5B936A76CC32C6E7B0E78EB3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "96A28F265C0949D93E7FEED7B48A5A033D59FA2C5B936A76CC32C6E7B0E78EB3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BA75897C44252B66FE197E91BAECA1B99568ED0CCF1BF744BDD1EBEE1EC93AE4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C4C5C6C7": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "B971765EAB141C290001ABA615ED25F145CEA6FDB73CE0414F79236B005C29A9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B971765EAB141C290001ABA615ED25F145CEA6FDB73CE0414F79236B005C29A9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C8A7789A13E24A32F386639BDA6321063A0B97783D78B915F28C5384C7249B05",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-F8F9FAFB": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "B829B48CE289A17DA1FCE1DD44BCE04BCFF1029970649ADDE83E1FDA188E6664",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B829B48CE289A17DA1FCE1DD44BCE04BCFF1029970649ADDE83E1FDA188E6664",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A0A1A2A3": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "8C70EE03A6E06346BB75561B41D053E8A4B0264DA5F9354C67BA05BF4346CEF4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8C70EE03A6E06346BB75561B41D053E8A4B0264DA5F9354C67BA05BF4346CEF4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F72EADA988CE0159F9252EF65D83D85766AFCBA2C4F4A3290E9DB4B862727624",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "866DBE89DCBF3F72D315750AE5BF04338FA2CC01D9A1C3939AECC8630C40D986",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-F4F5F6F7": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "F509A7BFE25A2A02F3FE01C8455BD81333443E11D2A7DBAA8739161DD1041337",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F509A7BFE25A2A02F3FE01C8455BD81333443E11D2A7DBAA8739161DD1041337",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-DCDDDEDF": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "ACA0345C102E7DF6D30577B7D96A3CA28B04B4AC3AB776DA4EFF3646DA04ED5F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "ACA0345C102E7DF6D30577B7D96A3CA28B04B4AC3AB776DA4EFF3646DA04ED5F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "922FEC3289194ACBD73D4811B30A7752A260220DEAA639A88294689C9E6E65BB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "048CAB77A71DD04D05D10527585623A719FA0D65E87A4F0C3AA06FE61F60FD54",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A8A9AAAB": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "D7E9A0E840B64B6534B0BDA79476D048943C3BB3A86BBFB0B9477A52E8CF8955",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D7E9A0E840B64B6534B0BDA79476D048943C3BB3A86BBFB0B9477A52E8CF8955",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BDB9957A2B197E16725B336BC85C5C53E17054A5BDC8787AB6D5EC392ECB356D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "29811E7C2931681DDAC53762634B6883C5F3217086673045CAAE7BF7B4B63D66",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CA01CDDB108B8920451F0089CBB402B605FB0751D0D4B891A11A9662D02D1F38",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-D8D9DADB": {
+      "Kind": "Tree",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "AC327075AA58027B41BAE72374F85544C92ACDBF5D6A2B7C7A94FE124A3471E5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AC327075AA58027B41BAE72374F85544C92ACDBF5D6A2B7C7A94FE124A3471E5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C384B6C5EFB1D5E2CF075914ED6CC0E2472F26B945ED50E28F94C7BE872D8AFD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D8BB432C2101266B961255058870B58287B758D3B39CC340E0B61C7DBA873C0A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "34CA43054D16BA6FF12164F17E67DF3E54E7F9BE2EC65A59FD131E61B80EF97F",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-B4B5B6B7": {
+      "Kind": "Terrain",
+      "Label": "Forest floor",
+      "VisualFingerprint": "C6ADB0456308EA9DD53684A4FC8B7619779F1611FEE51D4CE4404539E5152261",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C6ADB0456308EA9DD53684A4FC8B7619779F1611FEE51D4CE4404539E5152261",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "32F8ECF0406012C329A461CBE5FBE598A430F723E6034A932C7B06B95EEFE5C5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "114788978054E920BE91B14768551AA9666A0CE955FFA6A38382888FB0E8FFB6",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "AD584277544AB40D309E5F4DCADED441EA7840989BCC6C78D9F56976538B5DD1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "78712F5AE0AF446B4DD62E3B60127715F745254D01A4289C829E6263ADB2BDF3",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-ACADAEAF": {
+      "Kind": "Terrain",
+      "Label": "Forest floor",
+      "VisualFingerprint": "46B2CAF5E71B33F65B6A5594BC21DB606C6AAE92862E8AC436729DDE6316CB99",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "46B2CAF5E71B33F65B6A5594BC21DB606C6AAE92862E8AC436729DDE6316CB99",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5FB981A01E13ABA1A7F39427D2331419AB71741C6AFEDE8A56148EE6F48D6BB8",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "067615AC779BD1734DAB867C9F485F90448031F95B2B7444A0AF7650663DACA2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-80818283": {
+      "Kind": "Terrain",
+      "Label": "Forest floor",
+      "VisualFingerprint": "946CFA57733D5D445129851CDEE68E3AD197FF01656E736CEC10CEA7DF1108E2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "946CFA57733D5D445129851CDEE68E3AD197FF01656E736CEC10CEA7DF1108E2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D6063271804028A81A5F59BB93649BB9804810D5F4267566700F9D71646C8A63",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-60616263": {
+      "Kind": "Terrain",
+      "Label": "Forest floor",
+      "VisualFingerprint": "645F540321C0A3C4A8D488189B8172B8D14A636D454CFDE102547D73F7C7607F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "645F540321C0A3C4A8D488189B8172B8D14A636D454CFDE102547D73F7C7607F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1B05F02BB886288132E19B5B48760A78C0C3912EDAFAFF00BDCD03973085E7F0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-64656667": {
+      "Kind": "Terrain",
+      "Label": "Forest floor",
+      "VisualFingerprint": "74B4D8C9CF3CAE56D7DC2A7F5EED8AB646EC1236133AEF355832956B3C34206F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "74B4D8C9CF3CAE56D7DC2A7F5EED8AB646EC1236133AEF355832956B3C34206F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E694E31A3D240D783A624AC2702BD282E635B941179B1C2BF3671AE483631EB7",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-80818283": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "051C02802702BCE567426FFC478465179AE43F42C0902CCCBA88BE872F111086",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "051C02802702BCE567426FFC478465179AE43F42C0902CCCBA88BE872F111086",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C6DE010F146A03E1DBF9CB06FB9D88362066628EDE9CC0E43019286168A02732",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "52533B4928046570ED023836CFCE65AC0856D199403C8D9F3B0344F43643D16F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5EF3BC901E49C1E2628F03B54085A8AD4949174778BA7A9C918FDC26A91CB584",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-84858687": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "29F89AA2B134C424D21B9D7C2A89D2FF9226B8F226C9996082B19797A9813208",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "29F89AA2B134C424D21B9D7C2A89D2FF9226B8F226C9996082B19797A9813208",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "857835A8653F07D1456525F1615ACDA3AB23F59888139BCBDE855F163B8FAD00",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A0A1A2A3": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "00F1B1B82B4768CC3E62804F106DF12A29014B7E332D4795E148E2ADEA39E147",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "00F1B1B82B4768CC3E62804F106DF12A29014B7E332D4795E148E2ADEA39E147",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "886382E695BDB3BA8D556873A506DF74EF2CE755C8FEF2D0AE30CDB740FCD37B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9652DACCDB74588CD0F1D82413FB4F3726E361C3A35904CF0697EAF905F8201A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-88898A8B": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "66CB7AA23A241D430DD16E4581CEA405673E29DE1A1E6C3315D56FF9996E643E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "66CB7AA23A241D430DD16E4581CEA405673E29DE1A1E6C3315D56FF9996E643E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "94975196D0A802767E6A6158FE2CACDAE417AE286AC6EC2598912EB70CBA22E4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0C77BBF303F1016021DD5CAEF0DE403DEAC2CC4ADB7F04A37FC23E9CB3A77E17",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-8C8D8E8F": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "1D7CCFCF253FB67FAD4BCE7D028CB500D2B111B69B373CC4C6DBDE215810684F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1D7CCFCF253FB67FAD4BCE7D028CB500D2B111B69B373CC4C6DBDE215810684F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "70A1C3B3B7E7FAFE927EC070A32C7EAE1BB7137181E48BCF7BBD569F4D09B0C5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "178A25FFECE7EFC07F82B9EBA16EC955BE1A95E4FAC8120D51AC9DB66D0010C5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5E429FA28B959FFEFC082BF6010E350DBBB28902881DE9363DC670D8E1A9BF7D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "AC77EF7C25E808DB7B7783A7C70651A7D7A4E465CCDBD98303D3E298E72CD1BF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-90919293": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "C466DE741A0E6D096DDEBD6B2D57B213E7B4129BFA48369711717827740B3802",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C466DE741A0E6D096DDEBD6B2D57B213E7B4129BFA48369711717827740B3802",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7AEA1438BB0D463B54940AC1521A0F470FA3159EEBEC4D64EAAF3D948AAA52E2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "186A9DBA3FD0F6DD1ED7829F473F84A2C8398CEC55AA5A264E3FADAF70B3FCD1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F0452D7776CD0AFF34115444C65294DBE355FDE6BAC4D941ECBC5D1F6333C56B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "798D4D4208D7010660DADBEED389057892B294F15A172C64B64149D22DDEA1A8",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-94959697": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "CF316989ED4A0F89397E9EEB867ABB3F726C67E03ED530A24BC9391E06DB3E9C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CF316989ED4A0F89397E9EEB867ABB3F726C67E03ED530A24BC9391E06DB3E9C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "75938B402F93291DEDDB9A78E3E41277871E2F50D48F0F1F6A319AA93F03C6B1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2FE9C0728E14BA8F5BDFEECA547A42E66BAD78ACEE001E9997F456FCDB752776",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-98999A9B": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "C3083372CF06349ECE8F9296CC341C9BD5E9E02D4F7E86FD1BF0643D7623E6D0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C3083372CF06349ECE8F9296CC341C9BD5E9E02D4F7E86FD1BF0643D7623E6D0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8A4CE1CA860DE740D430682AB300A1A39FDB866825FC932B236ADFA03803F665",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BE4F0BE7185F8B30D3314DC119100E13F8A1580CA0854C3D2D20277DD96C462B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-9C9D9E9F": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "30810C00DAF757B41131DD8A946787AE66CE61AB590B0A7A073E843CD13CAA93",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "30810C00DAF757B41131DD8A946787AE66CE61AB590B0A7A073E843CD13CAA93",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6D0CEFD6B7562804A7571EA6F1FA72487FCD0283C6C29CA4CC77317FF42BF83B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C4C5C6C7": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "AAA15586D996B0371D4F1301793062522EE7D9815B3C1E768446793AF641E122",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AAA15586D996B0371D4F1301793062522EE7D9815B3C1E768446793AF641E122",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "272BA3868E969670396E58E25564F0FFED3E2DB8C5749ADDB6B2E28734C4F825",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-78797A7B": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "C673E4E048701A152C9AF9238E7F814B25468803E84031D025035E42EAB73D39",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C673E4E048701A152C9AF9238E7F814B25468803E84031D025035E42EAB73D39",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "58EFE5ECCBD307B73C3AF17E00FCCA079A0D5A8F1BC81173AE81C80FE9EC4319",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4DAA906B19B7B50A87CD57B88F3036654446B86AF3C82A528C67C7EDF7560AAC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-6C6D6E6F": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "D17E8D8504679D7B0F2AB4379C17A03C3392ABD6F4927DA8B5230B381AF37677",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D17E8D8504679D7B0F2AB4379C17A03C3392ABD6F4927DA8B5230B381AF37677",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "09EB1BD9EF47A3EBAE6961AD8A46A544B610E8CD4EF6D7C47CC1876208EB407F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A0EB29FFB40448BA1D6DED420836C3A58CC657B65D9B5943941A8B9705A3926B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4F95EE433B97097FA757440885FC968B006E9B264654878C7AE1C17FEBBFCD7B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-B0B1B2B3": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "7D17890FFABB09A9B180B1D2184164CFFA9C8D7C07C0D509FF831585905EB1A8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7D17890FFABB09A9B180B1D2184164CFFA9C8D7C07C0D509FF831585905EB1A8",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C42A75EA1B2000038A348DEA0360A1222099520E4825D0412196965BB3C25641",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E4E3F52F087C3FC0E5741FE355522558B1D080BB4E29B74AD5D866A9DECA9F4A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D03ADF51641AAA5A29B900AEF1BEB84C86064BE2694F8DE6ACB33CCE45EECA7D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C43D49B72E71E8FB9492AFC30525C2F71C2DEA3DA2BAEAB470F827EDEAAA8B0B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "82D2A7F68D2409F459942BFD9927514DFF2B8D3A08D7CAF7DE37B6172EF340E8",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D8F2535090884DEC97089B26071D2D359D1036D93F868B11AF221FC9A5DE34F2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-B4B5B6B7": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "5A86E32B4DE3C1AE1EDC7FBF0D3C8D352F5C1595515D5A374F60975C38005172",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5A86E32B4DE3C1AE1EDC7FBF0D3C8D352F5C1595515D5A374F60975C38005172",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3AE5F049FCE14D4FC6789C74A771212FE85B1CCAEF9C4DFC1C084A6A8034B96F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "AC09E3F9A910CB6A107BE9879D2E84B42485D5B5E8146DDFBBDE61C380EC9B57",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7A5915EC2F5CF03F18D9626FA7D276C28C729BF1389BE2384398EF92F581580D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "91C1EB5696140FE6C448DE85A95748C0B8635BE58B7C6356E0EFF21A575050B0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E2CB8F738DF07D0C40F6402B40AF0FD32683748DB9EDA233D92E1341F444D9C7",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "21B034661AF0106A3CE52D30EBF2899C71C0F73B569C70C87A2DC8E14DBD9993",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-70717273": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "098CC5F856D5AFEFEF24BF71D1D4477948865AE3CDEFE74DB70FD543EF0BA1ED",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "098CC5F856D5AFEFEF24BF71D1D4477948865AE3CDEFE74DB70FD543EF0BA1ED",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C9726D3BC6F32B7D390B239641B0E08C186E8C789C2AA9184A1FEE5763230BAD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A376113E33AF2214797CA190517618C845CDD59A02DB10B3BD6962C500A2827D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-7C7D7E7F": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "F9187FF0F0A1555201C4C5168858C7D0DF2B5CF411AB1C33995D59498E9663C3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F9187FF0F0A1555201C4C5168858C7D0DF2B5CF411AB1C33995D59498E9663C3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F2CEB17ACB076780FC88107FAF28339792768C92AFB3CEF0FE9988DB48665D75",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F196A591D90B7CF819E252C60B1656B549814AF94FC42D051F22524C70B136C9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1FC85F62F5D96B8243E9163CEDD86EAB19CE8A5B96FC210EF2761387BEB0F411",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "ABE936D436A160E72779B326AFF74D234D82AC60AF0236BA602FE00A8391F1C9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "418BEB3167E9632D6908D8F624EC24D673B7647224ACB3256A0E87BED7D0AF97",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "31A0B33AA4128A8A654DDC45885D893B0A80CEB57BB80B3B6D464D53D5776A69",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-74757677": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "9D58E39D332CC3E2E1D898C0732F65CFBF975AE30D4213EF39B33BF0E4BFDACD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9D58E39D332CC3E2E1D898C0732F65CFBF975AE30D4213EF39B33BF0E4BFDACD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3BE276577795200A04083B6995A2CB6AD774FAAECA3F412C4703E0CFA5D4D0BB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F196A591D90B7CF819E252C60B1656B549814AF94FC42D051F22524C70B136C9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "EE89390453189CF9F4380CD1E70CDD087145305CDE0D07D405451DEEC19C30CB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4C199978E323494841BAAFF01FF11EDCF2925712F67A0D0D8648C487987618F2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CBBE81A8AC89190E2E52AC1855181EE65CEF14C16F37C293E3DA1CB32984D72A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-60616263": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "4FA5BB28A0BAB298452B80C95CF6BBBDE296E900AAFE592DFA53E0F59DDF5976",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4FA5BB28A0BAB298452B80C95CF6BBBDE296E900AAFE592DFA53E0F59DDF5976",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5ABDC83CAEBBF86E4CD8C464A49A995A6A21F2F7B68F9B65ED8DE9D71FBC11EA",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "DCC4E629F8B5B1000740DFDB35692DF161E120B71197BB9F4D0631DE4B27BCFF",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A8B39BEA10B309990082C48A49AFB6C4C915A7F5E71D50AE3954705AFDC1A1AD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "92625809AA0BA6DE06FA7A017D142F0F39A119ADEDD7D05F37455CE6EDC6EDE0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5D04C44C099B1669829EB263C0ECCC65931EAFE3BC6EC6E82BA704ECA86179DD",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A4A5A6A7": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "7450140001E3D9FCE9F6C3AB1187BBFA71677A611A035BC98D050E398C5C8576",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7450140001E3D9FCE9F6C3AB1187BBFA71677A611A035BC98D050E398C5C8576",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6D674946C9A595FEEAC29A0D156F74E4C77DC4CD4894AEB6BB0759C8E8789468",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-E4E5E6E7": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "F83B3D6370225B5B9E6323EBA600C0B4FA8440B2D20D1E106A026C06A37C1E85",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F83B3D6370225B5B9E6323EBA600C0B4FA8440B2D20D1E106A026C06A37C1E85",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2D95FE4FB5218D9A744BB7A663E92BE59AED58A07F8284EC3C8D2D094D0AC3A4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-98999A9B": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "D56836045D304F5D9521C024C13A5C10434449EB61A31B4E82CC8EA85FC25A1E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D56836045D304F5D9521C024C13A5C10434449EB61A31B4E82CC8EA85FC25A1E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "454C2500749EA71F2B94A84F6D626260BF60F3427A903073770D3BFC824D46F3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "98BAF00E2E66D655E07CAE7DFA9A9EAFBB5154E0FDB86A12364F827B4357DCBC",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C6AFFECFF841D70923F9D302D37C2443CB105D886E9A70D365FFF1D78BFED879",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D64AE7C2BC6B1FD21A64CAA92F2131D5D7E157B4C3DB1D7E65835EE709101187",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4738BC73C6AF4A85CF19A1FB697FAA031FE2A684D060EF755D04B13073E4674E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B2716ADA6ABAB5CAE57C66E273EE63A60F9CC3727743CDF007F48FDCB75F2AFC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-94959697": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "7BEB9133D8541B1BF51E4F0F3E8EA8314599C3427E7B7DCADF9AAABEA963BE1D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7BEB9133D8541B1BF51E4F0F3E8EA8314599C3427E7B7DCADF9AAABEA963BE1D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "00993337A6F933B503036CCC03A7A99CB6E82B23C11540D370C17966D794EEF0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9234EE8302EE16B5E3440E1976B3314F01A767A73657865142140C5D33D19FA5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0CA1A0BB650D7F5FC23B5C6652F7C96BA860E8187BFB53AE706C88A412B5557B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D3AE71E7429F63EF9A46B7321338AD0DB849C8FC380EFFABDD3644B878C28E32",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-D4D5D6D7": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "F57AE9FAB7AD4EE64B7D96FEA74AC54357F96F43C008589C330B659E81999A45",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F57AE9FAB7AD4EE64B7D96FEA74AC54357F96F43C008589C330B659E81999A45",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D7F1FC6D42612C2D95DE73C3EF59805CDF80F6771482480973B86A94DC1D2E39",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7086F6F95C46DF1193D14217D76276BBA007460693BC8A74E0F153C51CF339AB",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-F4F5F6F7": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "1680844C76A0D6B518C9E6DDFAA10E4EE0425F13502DC18DFD66DA60F850B866",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1680844C76A0D6B518C9E6DDFAA10E4EE0425F13502DC18DFD66DA60F850B866",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-DCDDDEDF": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "3A9827769391BAB05F5751D034DD01EDE6E2CEC0C696D4795FD1225CA1FABFE4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3A9827769391BAB05F5751D034DD01EDE6E2CEC0C696D4795FD1225CA1FABFE4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-9C9D9E9F": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "78F7D8125F974DAF3B067D1B6398AA93AB25146A5BE2508E66257166DD37AB0B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "78F7D8125F974DAF3B067D1B6398AA93AB25146A5BE2508E66257166DD37AB0B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CD5C60552BBC90058A3CBE482C07EEEDD72E94209054887DE7B81741651C1357",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9DF7147BAD9F9360B580883784F2F4AE3E1E7CD9FDD14B582723561726D436AE",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BA0626BAC06BCB2D3FAB526F5ABD8DB23ACBA60126F5EB4C23B94F858238CF20",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E305222746D48870C9A96D788437F7D89434478A9A1A865FE15139036EA98B06",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A555C52DA7D3B6365C9E516A309437CFACBC5CDFC342FA2B28B65ADF07C8545B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1A02466A2CD8D268AA2A1C8CB685464A6DB56403C272C696518E8A1A16E94FC1",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-70717273": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "D1591A93203448E9E90E5F64FBE454CCE013E2A41B7E94F7D7C72AF258B0703C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D1591A93203448E9E90E5F64FBE454CCE013E2A41B7E94F7D7C72AF258B0703C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-74757677": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "2434485B10806DEAC23B09501FAF0A5F0943B378088508C491EAE83C9508E979",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2434485B10806DEAC23B09501FAF0A5F0943B378088508C491EAE83C9508E979",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4A2A50C2AD0D66EACDB62ED6D72D5C39A9691569803A0EE39721380E9C599C46",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-60616263": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "92625809AA0BA6DE06FA7A017D142F0F39A119ADEDD7D05F37455CE6EDC6EDE0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "92625809AA0BA6DE06FA7A017D142F0F39A119ADEDD7D05F37455CE6EDC6EDE0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-9C9D9E9F": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "32147D73CBF716C0FE99689D20BB39F3FB72B0E59183E0DD7DEECB44E2042C9F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "32147D73CBF716C0FE99689D20BB39F3FB72B0E59183E0DD7DEECB44E2042C9F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0DF02BB449D470214DB2475FFE6E0825CE7ED303A9051484E5E439DDE78E9102",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6A02201A4F7BE47ED6E8D7EF2927DDC2F31447C3E74FDE381AB3FB12D8F0B4A4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0B278255C5700553B42BD991392BD9EEC9FDB8EB11B31B0CD2BAC99EC6CD3765",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4FDD2D53927691B8FB2B40690AACEC4424944E6304F4B99BB3DCC990F2E723D3",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-CCCDCECF": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "0FC01226EB5DCB1762EA9932D3E236C921D9A1543C326AC3EA08CC2EA3007C20",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0FC01226EB5DCB1762EA9932D3E236C921D9A1543C326AC3EA08CC2EA3007C20",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D4D5D6D7": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "DA738EE0762C7EEAEB93692BB55BEB422C8A65C0FCD97C2AFBEC282143B02465",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DA738EE0762C7EEAEB93692BB55BEB422C8A65C0FCD97C2AFBEC282143B02465",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "57389AE3BED400A16DD7FA3D8218583A9A9301015364C84D7A9F2188E7EF447A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B8628381C9A68A1ABD944E46A7675EBA46B7E9DFF7A41C6EFEFFB5F90F9220B2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A8A9AAAB": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "22B3FCA1F2F8320A742DE55F085E9C629969A5F769F62DB264276C314C5C2027",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "22B3FCA1F2F8320A742DE55F085E9C629969A5F769F62DB264276C314C5C2027",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A52546156A77869656CBD98FA396BEC505514E1FF40175F512FA51A24A84282C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "450676E6572FD6D73E4E56B77695F60DD594289337CF864866735501F4003F2C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CA01CDDB108B8920451F0089CBB402B605FB0751D0D4B891A11A9662D02D1F38",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-ACADAEAF": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "B8C554268CB27B6A9BD0618F3C943B68A8660FF9554B5B7FF0BD37EA95171ADA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B8C554268CB27B6A9BD0618F3C943B68A8660FF9554B5B7FF0BD37EA95171ADA",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C1E6428E2B1AF22129DCC8AFEB61A0919F1AB5B4055508FB10E3600BF57DDF11",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2ED29168921598CDE66B287306D39AF774E80E384B30E7E5EAA85949A91350CE",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-B0B1B2B3": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "EB3260B640F3BCC5E1A0238902082793A27BEA0DAE1EB3AC2C8BFDAB8376853C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EB3260B640F3BCC5E1A0238902082793A27BEA0DAE1EB3AC2C8BFDAB8376853C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C42A75EA1B2000038A348DEA0360A1222099520E4825D0412196965BB3C25641",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8910AA1B12DCC605E06A14E6AFF41D0F260D09F785FB751F05979FE76ED6F563",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-CCCDCECF": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "0FC01226EB5DCB1762EA9932D3E236C921D9A1543C326AC3EA08CC2EA3007C20",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0FC01226EB5DCB1762EA9932D3E236C921D9A1543C326AC3EA08CC2EA3007C20",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D5E9A98B1C8025D623C2E100A08AA84AA8570BD8BC45FDAE876888520E7C63AE",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3F9354CB46622287E57E5091AA7C4FA0F351104FC3F050BD2C8E8E51DB7DB48D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A2F1558DEC9A8680114CB53F1FD49F08E7DCB4B7F73E9D5F9D28C27E4D700502",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-C0C1C2C3": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "4E7CB70E0E02A3EE84BD6678D825526BC6369BA8A7AC354FD32BD71E468CE919",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4E7CB70E0E02A3EE84BD6678D825526BC6369BA8A7AC354FD32BD71E468CE919",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "790CCE7B548EBAF3024BDBA94EB7C8E006E5B489CB98F9454E6EF7DB31C5F922",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A4A5A6A7": {
+      "Kind": "Terrain",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "74EAC839B2A0E99E38646E7241708141D0C6E5117DFA43CB5863FEDD2274A8F9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "74EAC839B2A0E99E38646E7241708141D0C6E5117DFA43CB5863FEDD2274A8F9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2B4A6E0D0B8C41CD18F36620EF67F1C25A4C294D5B35B92D88ED7DE08ED3CC92",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-64656667": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "D92E7203394DE7D66A6EAF6585EB83EE1C59775DD1ADD5F27C9298AD3D00EC51",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D92E7203394DE7D66A6EAF6585EB83EE1C59775DD1ADD5F27C9298AD3D00EC51",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "EC15381FAE3A4C3462F942B5AC307B04FB4C1119268715636643EACCD18B976E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6B75417D56C1D1E9D1900A1FC58DB38765FAB343BBAC677181CA302678D8BD7A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6CFF7B0A7BBEAB85627FB57D20F7A394E4D17F7F588BE82ECF2368BBE1F6B7D3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "ED47BA40894C1C32A294502A587084EA64D6DE4E345148C4112A2483A87C3F2B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "190BD750CF4C07AD5FEFC3A05E8495C7697566D31501B793C2A037C72C069091",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-70717273": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "C5D11473D1C7A322E58175F15678E58BBE508D0C45CCB42D05E59074B2448EC9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5D11473D1C7A322E58175F15678E58BBE508D0C45CCB42D05E59074B2448EC9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "75455055308B71511EE09CBB35FF3090469EC0EB5249A419F4C99E8D08F47289",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "06850D6DDC30D3218CD57CD5427AD8CCF8A9E1491FA5CA35A53E5C11AAD7E61D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A376113E33AF2214797CA190517618C845CDD59A02DB10B3BD6962C500A2827D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-88898A8B": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "94975196D0A802767E6A6158FE2CACDAE417AE286AC6EC2598912EB70CBA22E4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "94975196D0A802767E6A6158FE2CACDAE417AE286AC6EC2598912EB70CBA22E4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6DA7F6FCFCA1049F4004BBF1C9DF62E3255785D85AC6F62E71880A0608D0428E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-90919293": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "186A9DBA3FD0F6DD1ED7829F473F84A2C8398CEC55AA5A264E3FADAF70B3FCD1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "186A9DBA3FD0F6DD1ED7829F473F84A2C8398CEC55AA5A264E3FADAF70B3FCD1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7CBC1F1C0ACCF0087E6BF9E853F7E17374C5DCE1EDE818AF8BD6EA3BCB9DA40D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-88898A8B": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "94975196D0A802767E6A6158FE2CACDAE417AE286AC6EC2598912EB70CBA22E4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "94975196D0A802767E6A6158FE2CACDAE417AE286AC6EC2598912EB70CBA22E4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E468DBE29BF5F6E3E228906BB70612D9F84A26A2F825A130B1AAFE031126ACE6",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-90919293": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "186A9DBA3FD0F6DD1ED7829F473F84A2C8398CEC55AA5A264E3FADAF70B3FCD1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "186A9DBA3FD0F6DD1ED7829F473F84A2C8398CEC55AA5A264E3FADAF70B3FCD1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "70A27731A6E5D90D6E8890A763ABC384001B77DEFBAF1598B643E6E86A22F171",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2D29D7322DB8CEB540F107816FB69D43262D7A12EB2DBB4287BC0A9DF11ECBD4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6732851D0D47FF5AE7E5E04CF9A2B9EE1C798E5FBC699D177F4BD22265DAE065",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-7C7D7E7F": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "F2CEB17ACB076780FC88107FAF28339792768C92AFB3CEF0FE9988DB48665D75",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F2CEB17ACB076780FC88107FAF28339792768C92AFB3CEF0FE9988DB48665D75",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9861717A7A5AD0D72E82CF7042956D068396FB6245E57643A3A2B01D8F8D654B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-8C8D8E8F": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "178A25FFECE7EFC07F82B9EBA16EC955BE1A95E4FAC8120D51AC9DB66D0010C5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "178A25FFECE7EFC07F82B9EBA16EC955BE1A95E4FAC8120D51AC9DB66D0010C5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "623DB2DB08DCA49EC9E1C2D4951BBBE9DC28011F2DB5B5D545976DFED3E3441F",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-A8A9AAAB": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "BDB9957A2B197E16725B336BC85C5C53E17054A5BDC8787AB6D5EC392ECB356D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BDB9957A2B197E16725B336BC85C5C53E17054A5BDC8787AB6D5EC392ECB356D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CB0C459C78CA5B0B073B1F6DBDE0EAEE4A1F352B9408227C4502D179DC12C9FD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BEBF62F7E224C6895F041E45FE73F52190B06DE4241C8839C099071217D602DD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "803F321996D4FD5B9309AFFA9C8D5EF98670FF04A4E0189C62B84AC1BF737A3F",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-68696A6B": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "5D04B45B73C8E8C126BD612FA485B50AA2A2EE49D613743AFA3DCB1C27E266B7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5D04B45B73C8E8C126BD612FA485B50AA2A2EE49D613743AFA3DCB1C27E266B7",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CA4D80B5F5E90475BD56C817566C8ED00344ECAEF22BDFB4BF12B9F9AB79C50A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7FD0F6E30C9C4E317D3C21CE326C7590967AD0137578950C8E7B81C22D6EE60D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5E90874FAD3CD6A9655F65C87EB3007A9F1FB3D2A8DCF1AD1BC9E4039D0E643F",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-ACADAEAF": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "C1E6428E2B1AF22129DCC8AFEB61A0919F1AB5B4055508FB10E3600BF57DDF11",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C1E6428E2B1AF22129DCC8AFEB61A0919F1AB5B4055508FB10E3600BF57DDF11",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "076A18B8E15C93E03CEF6E90CED38A8C30F07AE0B8F8FED4ACC0A3C349733E11",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-B0B1B2B3": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "C42A75EA1B2000038A348DEA0360A1222099520E4825D0412196965BB3C25641",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C42A75EA1B2000038A348DEA0360A1222099520E4825D0412196965BB3C25641",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-8C8D8E8F": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "178A25FFECE7EFC07F82B9EBA16EC955BE1A95E4FAC8120D51AC9DB66D0010C5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "178A25FFECE7EFC07F82B9EBA16EC955BE1A95E4FAC8120D51AC9DB66D0010C5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CC84637EB0BEA8318645A7D358CDDDADF1A2A5C66F5CC92DE96B9988B9CB19EC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-7C7D7E7F": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "F2CEB17ACB076780FC88107FAF28339792768C92AFB3CEF0FE9988DB48665D75",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F2CEB17ACB076780FC88107FAF28339792768C92AFB3CEF0FE9988DB48665D75",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-6C6D6E6F": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "02412DE9F6400DAA241A4C3C52DCBA2341AEE39016A68776A77890BAAF106101",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "02412DE9F6400DAA241A4C3C52DCBA2341AEE39016A68776A77890BAAF106101",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8A7872D722D2A86C006973FD08271ACF5C5B044503F0AD4D0B2569B1B207093B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4F95EE433B97097FA757440885FC968B006E9B264654878C7AE1C17FEBBFCD7B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A8A9AAAB": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "BDB9957A2B197E16725B336BC85C5C53E17054A5BDC8787AB6D5EC392ECB356D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BDB9957A2B197E16725B336BC85C5C53E17054A5BDC8787AB6D5EC392ECB356D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1C4A7CA73C81B51447C44ECD53F8CA5756F2E063E4B10BBD0A2CE147FB779F82",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-84858687": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "84E40BF92CDBBB6A5C64578E93DF107FB1BB595AC42A1ADAC689712BC00903B0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "84E40BF92CDBBB6A5C64578E93DF107FB1BB595AC42A1ADAC689712BC00903B0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B9F971591AC06E243CD05411818D958A246D88FE8FFE29F94A819386CD1363C0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1D616604B847D0886CD061912790B09FBD0D5534224C7B5C9E56435EFC6AA550",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B25F5E5269B9435ED62588C06043AF7AD406E4EBD694E7FE81D7C8B437F7D5EF",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0FCD6EE38D8D8B343AE4E8D740E6A40DFD93FFB3C725DAD32668E46A2C02B7A9",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-88898A8B": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "D245E6EF8A6FADCB8BA4B7834FBF601754E0A725118A393633C760AD8265F099",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D245E6EF8A6FADCB8BA4B7834FBF601754E0A725118A393633C760AD8265F099",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9884138711E4930F04A3E4E1AAC0367ADBBC090FACBA2F2428256C184E9C870A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F41BE8CDD657F794C6498856378041D33F1587B963E94F63E697F09C0659B980",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8E8C5E717371655A17D40641944C08F029A770155F1F12FEBF21D1F63F3313FE",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-98999A9B": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "20509A1EF6E7CE5CF30A612B230BF929D17FC6ADE57AB1BDB308FDFCAE2AB061",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "20509A1EF6E7CE5CF30A612B230BF929D17FC6ADE57AB1BDB308FDFCAE2AB061",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FFA1AE4AE30888383E4E5DFD08F9F045E54FAB1160DC6E33030844F3ED0F92BF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-B8B9BABB": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "D519B3FB328749D73E7526122AB239D60F1F6BD3985889692752F9CD46770CBD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D519B3FB328749D73E7526122AB239D60F1F6BD3985889692752F9CD46770CBD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4093A88E44D364C55A8B9CBF43C0C1D172F9E17A4DD0DBF1982042F2E801332E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "76DFA3C59D1DF4142FC4E72BA41AE5283CE2C521995376328A8D9068C27C09C1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3D3217DCE23D84967B41BA4553F79A44D9A22D08A462536A7A306065E807E67B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4C38C2A01A5D7FBF5C3F2CCB56D2B97AD6880B17A21F4DE43BA09D2D262937DE",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3B8B93648DC29D992ACBAA468F5F10EFABF2FDF80B7884B420B8C54A04AAF43B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-94959697": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "9161C72A309B4B5D7BFC9476A99E975D2E44F69CA378D89F4EE2D5CC012D43F7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9161C72A309B4B5D7BFC9476A99E975D2E44F69CA378D89F4EE2D5CC012D43F7",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "649F065BA2DD616895133586EB3B650E754AC95B6252EB867FD043A72388333D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-BCBDBEBF": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "2235165C57BA03DDE143F74865F635751055843FF55DFE2F27945267323A273A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2235165C57BA03DDE143F74865F635751055843FF55DFE2F27945267323A273A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E70267CE43718BB0AF43BF7DFA8D4B1C664BB5C4F6799E01A4EE1C01127D3A78",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "AA6805CF5173EDD79B5A888393A2D960CA5FE0DE5B596DBBA09DF6559B1D2830",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B9DBFC80E69A08CF3FDF780533763A0AD982D4E6D0E862262728106F197CBF15",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A130353B48B232BD7C4F994D833F66D8E4508A4FF1BF5FA3CEE2EE8C5B33B0A4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-F8F9FAFB": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "710A3849608F2D0C8CC2A430BACCFA0BE3F529171228FCFD27D28B3E7A37257C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "710A3849608F2D0C8CC2A430BACCFA0BE3F529171228FCFD27D28B3E7A37257C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8D52619D536DBA538E40196B63F1A93C0C62709416DADA74D376451243AE2A33",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2059F23A2E4F03A474841588F20BED14978B650FBBEE3094BE444D7F13A9F105",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "206F96A076A2CCD1B26581A07172D3E67ACD8800FF1E10B054A02FF2A1D60273",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "DC5F1B1819A21183B8D3FBC12D72B48CA5E9E0A39C75C292BF4B2E3D2E2026C1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "408E386965FC9DF9622B34D142749BAC1664C21BF681224B08698438729B4E1E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-F4F5F6F7": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "E3974120A88C93D937DFE835D9E11BE77A58B1F06EC330C757A7B3563C91BE7A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E3974120A88C93D937DFE835D9E11BE77A58B1F06EC330C757A7B3563C91BE7A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0EA487A20BF9FEC4A90FEF6F92ED8C6EB6097E2182968D2C0BF1FF9E4BEE527E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9CB821A208DEF9FFA1519FC11CD0AEFB163615922B7435AA0491F41253AEBBE2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7E47B5636A3D44561F0ECF31E833EB5DDF2C84CCAF586DBE967844FB73321FE5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C9CD99173C85F479A5F97DFDF9CC3BD75F0B2D031C2EB3BF206A6777415F01B0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4B3C4BA6126DA5B5A95552B0D4FDEBBACFDB753219DCFA21AB2723709C0C49F8",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "72E9DFCD7BDFC45AD7C3C00CA0161412C6250DDA384D68775A05F87EB66D96D0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-78797A7B": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "8183CB52324B1A711E7346F034FC869D36218012B7B7800FE32B96249961E8FF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8183CB52324B1A711E7346F034FC869D36218012B7B7800FE32B96249961E8FF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E0E1E2E3": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "AC3C5A3C64C985FB8399EAA45FAF1CBE875FF18C872ADF3C516874E36820DE8C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AC3C5A3C64C985FB8399EAA45FAF1CBE875FF18C872ADF3C516874E36820DE8C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-0C0D0E0F": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "90121BD65DF604A407E19D0E6AF6F36519881E35E8F23C7C0EA85CD8EB117976",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "90121BD65DF604A407E19D0E6AF6F36519881E35E8F23C7C0EA85CD8EB117976",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-14151617": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "57F86A6D4CB7D6B41153435350F03ED29F7D729DB021C98C196AD4F2FBBD2568",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "57F86A6D4CB7D6B41153435350F03ED29F7D729DB021C98C196AD4F2FBBD2568",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E4E5E6E7": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "1F78343FE88FFAEE0AE46581E9FA58726A2AC364CFFBC3CEE3BD22B496D21EA4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1F78343FE88FFAEE0AE46581E9FA58726A2AC364CFFBC3CEE3BD22B496D21EA4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-68696A6B": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "36FE9048A3413FF9CDA946748E950CB7368F0BB4626360D318CE952725F54ED7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "36FE9048A3413FF9CDA946748E950CB7368F0BB4626360D318CE952725F54ED7",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7FD0F6E30C9C4E317D3C21CE326C7590967AD0137578950C8E7B81C22D6EE60D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-F0F1F2F3": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "26CDFA7C57B5F13CB91E3116A5F996B2C0C6B01E1AAFD85C3CD778AC6CE0B63C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "26CDFA7C57B5F13CB91E3116A5F996B2C0C6B01E1AAFD85C3CD778AC6CE0B63C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FCFDFEFF": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "7CA6D014A1B943B85BA3EBBEEAB639AB77091BC1AB037D06EF265155CCF0D5F7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7CA6D014A1B943B85BA3EBBEEAB639AB77091BC1AB037D06EF265155CCF0D5F7",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-94959697": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "C7784D30BC7E2F3E7456893DEB1938527A2C06AA69617778C5C92ED90D28F2F3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C7784D30BC7E2F3E7456893DEB1938527A2C06AA69617778C5C92ED90D28F2F3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0ECBDCAB5349F3B068FE73D21A60BF3379E6D6DB80EF098D523B1F5983FCE643",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D3AE71E7429F63EF9A46B7321338AD0DB849C8FC380EFFABDD3644B878C28E32",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E8E9EAEB": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "CD7F253B73E1AF45F52841AE31ED116129238906341EF80A9174FE639E2DF552",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CD7F253B73E1AF45F52841AE31ED116129238906341EF80A9174FE639E2DF552",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9C4CED295369A91DD966ED95CB2F480DD0ACB964A0296556A0BBDE6DA758435C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-8C8D8E8F": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "5FB69C4C9E6F0ACE7261DF47951C76E3C1AC36AEE7B7A2F88F6909B4C4875581",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5FB69C4C9E6F0ACE7261DF47951C76E3C1AC36AEE7B7A2F88F6909B4C4875581",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A0E7A928A69616C16A1F2EFB6875F0C18BB1FC21CC787687EDD0DA6735826D96",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-ECEDEEEF": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "30F59194BC0E6CDC1D08EFFA168BCC4839D8C38AB6C0F957DDB4819B3FC8EA1C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "30F59194BC0E6CDC1D08EFFA168BCC4839D8C38AB6C0F957DDB4819B3FC8EA1C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "97398FEFCF3DFD359E35F0C21A6F41506823C6CBDB61A8A86C37743B4B06BD30",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-08090A0B": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "A2BD62DC5D12B22A61E658E93A6CAE912FCCAFAD6B41393A73E753854425B670",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A2BD62DC5D12B22A61E658E93A6CAE912FCCAFAD6B41393A73E753854425B670",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C8C9CACB": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "0670102444859037F951D873651BADC995F521EBF3A32FCD1B54528EE43C51FB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0670102444859037F951D873651BADC995F521EBF3A32FCD1B54528EE43C51FB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "EBDA24970E98182CBCB7327F7B16C88918C8DFB0996FD80905EDF65EFA26485A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-20212223": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "C058E202EFD8810AE20A38731A23DA96A66D12716E79EB69F2BEB29929652CB0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C058E202EFD8810AE20A38731A23DA96A66D12716E79EB69F2BEB29929652CB0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-DCDDDEDF": {
+      "Kind": "Brick",
+      "Label": "Heat Man factory",
+      "VisualFingerprint": "952FE5658D0E79790ABFEE698DE39BE2781802D239EB75C197D1EBB0D25C9787",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "952FE5658D0E79790ABFEE698DE39BE2781802D239EB75C197D1EBB0D25C9787",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-20212223": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "C058E202EFD8810AE20A38731A23DA96A66D12716E79EB69F2BEB29929652CB0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C058E202EFD8810AE20A38731A23DA96A66D12716E79EB69F2BEB29929652CB0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-68696A6B": {
+      "Kind": "Terrain",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "23064560B7889DE2377A848FE8084000C7D9AC59CAE8BD5E3237C9244E5C2AA1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "23064560B7889DE2377A848FE8084000C7D9AC59CAE8BD5E3237C9244E5C2AA1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B267C0BF9E9AE02D406D494D82577411F7F0CDDF76A10D2AB16934C8CC972968",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7A23C3C7245B4D9BDD2FA5F82D118BBB133E8BFEEA9FA7B1BCF332251E0F111A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "22FAEBF87EB68E4E63CA88F7281D749D803D87EDDBDE519A8F1DE8D898422D95",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-08090A0B": {
+      "Kind": "Terrain",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "A2BD62DC5D12B22A61E658E93A6CAE912FCCAFAD6B41393A73E753854425B670",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A2BD62DC5D12B22A61E658E93A6CAE912FCCAFAD6B41393A73E753854425B670",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-84858687": {
+      "Kind": "Terrain",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "8EC0978E439BC50DD967306B34B021A73B95E5140F5DF9F71D079B92290F53C6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8EC0978E439BC50DD967306B34B021A73B95E5140F5DF9F71D079B92290F53C6",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-20212223": {
+      "Kind": "Terrain",
+      "Label": "Wood Man forest",
+      "VisualFingerprint": "C058E202EFD8810AE20A38731A23DA96A66D12716E79EB69F2BEB29929652CB0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C058E202EFD8810AE20A38731A23DA96A66D12716E79EB69F2BEB29929652CB0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-10111213": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "FC6227E7615F328DD22FD14FD170086F5A74D695CC21719796D9DFDC5DBA115F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FC6227E7615F328DD22FD14FD170086F5A74D695CC21719796D9DFDC5DBA115F",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-E0E1E2E3": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "428092E2E1CC71EFD31AB7658E190C491BE006D6394B67A282444824818EDBDD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "428092E2E1CC71EFD31AB7658E190C491BE006D6394B67A282444824818EDBDD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F91900D9D4F342E84F5B0471F32CD908855A90B61442214D819426CF6924EFBC",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0B4A4B48C90EEED82E0FCF53CF165870514EBDD1B9660836B1DFAC93F536FFA3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E3B54E479C0A37389E9ED817F22F6F4A72A79AD18A7A583279AB654E4BD1196B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "88F2571CE641A433BDFDC41820C34644D9CAD6EA535723637E2E09D94D7057DA",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C4C5C6C7": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "965ADED6BFCF8A7247709526F66BDD6D4ADBB5EF85986B87548B253359BF7B16",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "965ADED6BFCF8A7247709526F66BDD6D4ADBB5EF85986B87548B253359BF7B16",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F60C559B44E00C51D7C975F7FFB0DEB6AD51E252493A6E16FD0BA51D0359850C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D38B5FB39D309D66BC4020E65DE16F7A34AA76C9F5D483061BD422727A12F6A9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0BE06FF94522183F9BD4375A28E5482FAED805E5DD25FA749793FAFA1CE6F659",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "22A354443BC06EDC7C3507B7014E2AB687AE82A85FFD14006C2AB61F75C99E8D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F89C68A5FDA3A9ACA061EB37F16A033D6560F3F4F548E60F2984C75FD7312B1E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "44C4329E3F26F7DC43F53EBCDC7FB2BAEDCC8D44BF74E5BE2387DED45EC9FD0A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "CD0D6FF11487F72C36327514B1BBFB9A0E1CA4C3E3CE49FC5820DB2E8E2A6A9C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D2EFFEB56D4908A0CAE5C9B4DC0E629338C50B752D946B505FD0C3AD5C675BB9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6661D878836E0E5839B209C44DA7CF561552F0C465EF6E0BACB12B83A2918229",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-6C6D6E6F": {
+      "Kind": "Terrain",
+      "Label": "Bubble Man caverns",
+      "VisualFingerprint": "BC03934A18A2D7DAAEC92D3D0B9D808F6241F881D49B002AC7A10862F19998BA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BC03934A18A2D7DAAEC92D3D0B9D808F6241F881D49B002AC7A10862F19998BA",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2A30E9ED9F26720E33D299AFEE2A9D3CDC740ADC40C3636C104DEA48162CDB34",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5F61E12CBF0193AC3E68673FE6F9EA1A1C02A8CAF5FCE66C1803842FA5D7C4BF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D0D1D2D3": {
+      "Kind": "Brick",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "DFACF171E63F4E3BC87AA386FA835A08DD86CA16B3F050FED9CC2E74729FD370",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DFACF171E63F4E3BC87AA386FA835A08DD86CA16B3F050FED9CC2E74729FD370",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-B4B5B6B7": {
+      "Kind": "Brick",
+      "Label": "Wily refight architecture",
+      "VisualFingerprint": "9B39D8220F0CC1F56AA390F93081CCBE7A55719570389392A696F3008702D089",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9B39D8220F0CC1F56AA390F93081CCBE7A55719570389392A696F3008702D089",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-34353637": {
+      "Kind": "Brick",
+      "Label": "Wily refight architecture",
+      "VisualFingerprint": "B9F7822AE9E452E8BA44FE03B09A5C5D01BD8C867AAAAF5A04539A694C6194DF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B9F7822AE9E452E8BA44FE03B09A5C5D01BD8C867AAAAF5A04539A694C6194DF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-38393A3B": {
+      "Kind": "Brick",
+      "Label": "Wily refight architecture",
+      "VisualFingerprint": "226ADB14B6EED048E2BCE4B03C11F28D56548491A4B886D82A2337587C3FC793",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "226ADB14B6EED048E2BCE4B03C11F28D56548491A4B886D82A2337587C3FC793",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D8D9DADB": {
+      "Kind": "Brick",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "0FB2A43BC24CBD6E8230D8BC8363D8C638315EF05FC001E06F3B15E0870D4832",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0FB2A43BC24CBD6E8230D8BC8363D8C638315EF05FC001E06F3B15E0870D4832",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B00D922ADBBC63CB627D19A77874B6AD4E01EB729016B71BF6B3DC34D4524E9B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-ACADAEAF": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "C1E6428E2B1AF22129DCC8AFEB61A0919F1AB5B4055508FB10E3600BF57DDF11",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C1E6428E2B1AF22129DCC8AFEB61A0919F1AB5B4055508FB10E3600BF57DDF11",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "996D52EE5B63A39B86C8C029E35C0A0E9A63B027A182F2B30212E2063592C578",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6740BCFB234DEBB35EE30FD89F536F27B02F5862A4B8D85840F1E3FC54EFD254",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5129071E88D6F0F0EE073DC7A9D522B92EAD4D939281053A9E4054C022866BF5",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-78797A7B": {
+      "Kind": "Brick",
+      "Label": "Flash Man crystal blocks",
+      "VisualFingerprint": "2D44CCEF204B385B53C77B6643E4B58D580DAEF95FF7F751CBEBE64042CA4A26",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2D44CCEF204B385B53C77B6643E4B58D580DAEF95FF7F751CBEBE64042CA4A26",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "738674E867D31F5629C19BB282A087F7C6236217397ADF70DFFD77CB9E30CACE",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9DA4B429CC9CF97F332288BA9CAEE07EEB6EF95654433AF76BA587CFA5A42F7D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-D4D5D6D7": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "D8F2535090884DEC97089B26071D2D359D1036D93F868B11AF221FC9A5DE34F2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D8F2535090884DEC97089B26071D2D359D1036D93F868B11AF221FC9A5DE34F2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "743A0C28CCA7F1116896B039AE5F5B04D9934F6CDB4C88153A10CB005FD882EA",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "DA465663B9248383E697265D673CDACB5317D3510CCCC3536F32EF24BB925CB9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "61C7AAAEC01D4B68088C8EF6D3307BEFCFAC75829375622E7F1F7F36390F34A7",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A3D439E4EADB68250CFAAAB5ADFAD9429DACF3912D6026D41F2A3ABB33659D1C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7AF04BD4E359EACA545DD13D18FC25C22037CC091537C0917D9BE68C5B516E9C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5B5639AC0EC7E1E583513CFF6C0143FE58F4FA98B5CE4353B3CF15EFFADDA651",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C68CE12E405DA49A9876B5456475960C358E008D579F5E9340F052052F13111C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E4E3F52F087C3FC0E5741FE355522558B1D080BB4E29B74AD5D866A9DECA9F4A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-D0D1D2D3": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "8FEE30E646C5CCC6463A34A5A247516104625DAA9E364C70B862064ABCE770C9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8FEE30E646C5CCC6463A34A5A247516104625DAA9E364C70B862064ABCE770C9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5A207EE507EDCB77D9BC75D48298B64C0002CB5472042FD8E122BE590300D84C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4FDF588F70DAAE4A5313A20CFFCEA98888C8224922BCA0CA814237554AB34D33",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "17E3E2DF46DB5B5EA0DAE98AB842673E05DBC805473438252A4CD9A5408CE0ED",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "43543234180C3E6B29B8322C2F0A5133B5242585A5125013058807D93DF0E090",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "DCEE0AEC65765DD5246AA8029A55AFF3CBA939B993B0CBDFCFEC5007530111D0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "95D8A79131A21DB619A12EF73A363F9A2B2C6A58DAB5EE8714375F234C0AEE6B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-D8D9DADB": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "95D8A79131A21DB619A12EF73A363F9A2B2C6A58DAB5EE8714375F234C0AEE6B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "95D8A79131A21DB619A12EF73A363F9A2B2C6A58DAB5EE8714375F234C0AEE6B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "44C57A4E96DE096ED91735AE7A838F4F6C74F4908F498A35346F67FF8BD57860",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "839EB1AB30908B8C6DF25AF92AEE790E22244FC9AC817DB424F02A0A69C7E381",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "ED47E48D926CB2D23D71ABAF89D290FCDFDFBD6B789C7B5D16F73B2D0459E3E8",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "94E64EA13D8CB5390F00AF7C9339203273B0D416F8190093C6521FF18E06411C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "FCE4552F12A0B96B003079B0F2386DC1A4102C8D368F20A6B4EE3704C75A5663",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "475BE433F63E42CB93645F3977BC90FB4906D86A331F36CB4F36C33966070B11",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0E8681B17FC72B90E7EB1BDA422EC729FEC127EED88D94025C00A827404B7F0B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8FEE30E646C5CCC6463A34A5A247516104625DAA9E364C70B862064ABCE770C9",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-F0F1F2F3": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "549FB30A9C762CBE7CE6F423D6C64994EE5A4973F9937236C20CA1C38A1747CB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "549FB30A9C762CBE7CE6F423D6C64994EE5A4973F9937236C20CA1C38A1747CB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D236474DBFE69DED6BEE596C4182D3B00F3F64158D6C79B56E0637DA8A053DDB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D33579C078A8FB89E9DD2B9DFDB2317A84F383405311EF4F0E3F9610BC714840",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5FF236EC35BC92E3CBD9C67EEA0C006275475607F95CBA4B92EF0B5BAB3E85AA",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "AF199E850488AA8E9EE0DB82E6E2C998DA32098082D47E07B0D9D714BB23B384",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-DCDDDEDF": {
+      "Kind": "Brick",
+      "Label": "Metal Man machinery",
+      "VisualFingerprint": "AF199E850488AA8E9EE0DB82E6E2C998DA32098082D47E07B0D9D714BB23B384",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AF199E850488AA8E9EE0DB82E6E2C998DA32098082D47E07B0D9D714BB23B384",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A774DF2CF8206CE72C7F3C7D599CC0D3D1D28B46C25DCD5DE612A0849E84860A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "ED995A3D9BC5E027C467DC7F9E65DEC4033B1C2904FCA9959AC4E787E1B5E65D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "68BD1AC1970B4642EF3C4AFAB948B8FD0BDF3D12901EF93C465C3BD01DA49D02",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "549FB30A9C762CBE7CE6F423D6C64994EE5A4973F9937236C20CA1C38A1747CB",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-F8F9FAFB": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "B63068A11E870CFF2271B90421CBE206E526C4B7B75BC035EADB3A6FDD79B6A0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B63068A11E870CFF2271B90421CBE206E526C4B7B75BC035EADB3A6FDD79B6A0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-80818283": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "93F954BEE66C447BC078EC53AB7A3CECEBC87C593E7F27103956979844CEA7F0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "93F954BEE66C447BC078EC53AB7A3CECEBC87C593E7F27103956979844CEA7F0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "469AED5DE25EBCA1C2C78C23BBE14E393FD54DA5A40868B703B4C0D05A00D7F5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F0822BAE3C3844F2EF7F96E8171FECA8B3CD0CBFCADF8FE4A2B9DF5C9832F228",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-70717273": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "06850D6DDC30D3218CD57CD5427AD8CCF8A9E1491FA5CA35A53E5C11AAD7E61D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "06850D6DDC30D3218CD57CD5427AD8CCF8A9E1491FA5CA35A53E5C11AAD7E61D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E648BFD2C8A5A165F053F84B4C92A95263CC42B48C71417872C211C782BE70B8",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "18A0679D6816DC9F4B8D7B430677168CD40F208A5DCB6740BBAC94988A2C753E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-74757677": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "EE89390453189CF9F4380CD1E70CDD087145305CDE0D07D405451DEEC19C30CB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EE89390453189CF9F4380CD1E70CDD087145305CDE0D07D405451DEEC19C30CB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4C199978E323494841BAAFF01FF11EDCF2925712F67A0D0D8648C487987618F2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-74757677": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "EE89390453189CF9F4380CD1E70CDD087145305CDE0D07D405451DEEC19C30CB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EE89390453189CF9F4380CD1E70CDD087145305CDE0D07D405451DEEC19C30CB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C0FBB23C819C5FEA2B460AD42380DF7C03005BE3E183CF2592012F65C6985513",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-E8E9EAEB": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "C8B17FE0332BED8B7C36919228F8CCFECE1481FFE94B71A3DAB429060C46B4FD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C8B17FE0332BED8B7C36919228F8CCFECE1481FFE94B71A3DAB429060C46B4FD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9F41AC4FFE4C1F4A767C58F626EE08F444DCE88B4120BA80EC56B68B64E6CD74",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A1F1B25886FD12D456819430D53D2A844BAA28DD0B69305C6F8106F5F4BB5C0B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "94679E6AB56DEEFB3681B22DE1663130B77C2BF77B11D304B711533AA9A617DB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "EC489DEE834370ADC6DED5CAEF8482CCDB500FA4AA700056EAD9235E72A20281",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-ECEDEEEF": {
+      "Kind": "Brick",
+      "Label": "Crash Man towers",
+      "VisualFingerprint": "B5F3C3F9F416F55EBE7E87F110731EBC8F8304B52CA38F4FD3948E705DD5D1A9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B5F3C3F9F416F55EBE7E87F110731EBC8F8304B52CA38F4FD3948E705DD5D1A9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "216919803E722FBA72E357B40D1940BED8C314812239F782FA789BD04CA59EDD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "361329312A714A4F5DE737554A67CD91C82A2FA85133248C34E69A324A94129C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-9C9D9E9F": {
+      "Kind": "Brick",
+      "Label": "Wily 1 castle",
+      "VisualFingerprint": "FD83364713D988D6686584055A5BF6174EC8DBEE3CB9F6E9A74C7E6E5D41F81C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FD83364713D988D6686584055A5BF6174EC8DBEE3CB9F6E9A74C7E6E5D41F81C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D0D1D2D3": {
+      "Kind": "Brick",
+      "Label": "Wily 1 castle",
+      "VisualFingerprint": "C39932DD4A367AF4F30D1392769C9B2E74E6AB6434FE50DCC7101A191AF858C9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C39932DD4A367AF4F30D1392769C9B2E74E6AB6434FE50DCC7101A191AF858C9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "98BBD49FC8505FDB4C3121B8D35C95EA94C1322DA44FB323AC4D000ED2865149",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FCFDFEFF": {
+      "Kind": "Brick",
+      "Label": "Wily 1 castle",
+      "VisualFingerprint": "004BB03348A6EE118757CF7D7F0168DEEDEA01554A4E1502E635ED6288BBE7E0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "004BB03348A6EE118757CF7D7F0168DEEDEA01554A4E1502E635ED6288BBE7E0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A969783EB1323C948DAD0968A84D9F8E055A02362FE653A7F74FA9732B599861",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6A2EFA76BB5C252F978B16A13008C1E16C79B052F63186A5207BFD2EC07C6636",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-A0A1A2A3": {
+      "Kind": "Brick",
+      "Label": "Wily 2 castle",
+      "VisualFingerprint": "646DB402B0E3A3284A2A3CEC35239502969895CD17D2B6EA36AC02180E5B86C5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "646DB402B0E3A3284A2A3CEC35239502969895CD17D2B6EA36AC02180E5B86C5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D8ADD0AABB23C7C2E29F02B848A82DB083B3392E021EAF9216156707E43765FB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E61176D12D0118C9D88986C94A4FC6D3FE64A0A3B8D9911ACBFCDD99C9BF6060",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-A4A5A6A7": {
+      "Kind": "Brick",
+      "Label": "Wily 2 castle",
+      "VisualFingerprint": "BF462D59DF12B37E1D281204C9FF393003E1E81D4945F28FF66228DCA4590E85",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BF462D59DF12B37E1D281204C9FF393003E1E81D4945F28FF66228DCA4590E85",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "00EDF8DC605756C0E133448ACBEE0B2C5FC9FD16B0356575A94CE6B0E09355C5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "68F66ABE993210DA4F6084B56F86085E4AF65D57578673279E9FC3B2E16C759C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C0C1C2C3": {
+      "Kind": "Brick",
+      "Label": "Wily 2 castle",
+      "VisualFingerprint": "5B23A136A632867D46DF547323A479241490F38AE87EB74A1574E463C1370FAC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5B23A136A632867D46DF547323A479241490F38AE87EB74A1574E463C1370FAC",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "61FCF2E255E4E4A7BA9A58FB2DDE367138A39D9F076A643C4383519F86EBE2E1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D5D1C832C4837C250CB324FEF42B11E453419C897347DCA8FF19365E3F3F1102",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3D68C91B819B7A10803AC11B0DC7100B68D1623BE98D277126E9F0DF5BC9DC13",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C8C9CACB": {
+      "Kind": "Brick",
+      "Label": "Wily 2 castle",
+      "VisualFingerprint": "59181B6BD58DBC749E79D17E711D7878EBF29EA1BA66BFEDD1299177B595F7A0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "59181B6BD58DBC749E79D17E711D7878EBF29EA1BA66BFEDD1299177B595F7A0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "08040CF30D06683093AA23D33A63ED2CEDA6EDFFCC7AB1104912F24A0ACF64CD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8E57977B0F511CF543F98B869F7566A840EE7DC80684E3A986702574B9DBDA4A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3E609170DC52FD42486A19CAD43068E77DBCEC019972671BC704313DD23283A3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B4EC20C3CE10A6EDF290FF49E2F6FC66F5F3D045677EE0DF204F6DD89A405E7F",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-CCCDCECF": {
+      "Kind": "Brick",
+      "Label": "Wily 2 castle",
+      "VisualFingerprint": "3D63D48946F97F478D52875E3FFB4E4DDED96F7BA9563C5C15CCFC8F67771B68",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3D63D48946F97F478D52875E3FFB4E4DDED96F7BA9563C5C15CCFC8F67771B68",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "95CE4613A35C18E623F90905098E4D92286266E930C2E7BA3A878E03932B3298",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6A4EB1E242CD50E35311482D7C1259EFC9A9D93A0A97DDEA05A1A4238CC82DBD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B543744BE79572DF3C4F962D78BFB5E4DEE7E0BE10ADDBC9D5DCF93D80EA65F3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "338A1F05053C2259449CD77F9A1D2A6415FA6C4451EDCFD108AEAEFF2BAC027E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9E2FDB936FFBF779D7E26B4A1DA6B1D339E625395553704BF803D67743C8C328",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C601E88DD9F04D59D99D7D35A042817969FFC8894DAB771FE15F35EF2B8A8D21",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-7C7D7E7F": {
+      "Kind": "Brick",
+      "Label": "Wily 2 castle",
+      "VisualFingerprint": "FEDB0830EA6D97FA9393A6BE30A43F2A962420503D61FED75D9409A5B91202B7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FEDB0830EA6D97FA9393A6BE30A43F2A962420503D61FED75D9409A5B91202B7",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-BCBDBEBF": {
+      "Kind": "Brick",
+      "Label": "Wily 3 castle",
+      "VisualFingerprint": "D0C7B168BB706E255B990A147CD39587B02060617D8605D86571CE072A31A019",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0C7B168BB706E255B990A147CD39587B02060617D8605D86571CE072A31A019",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "936D5F1B7857011A5B9AF07CE4B5D09354AFD49D250541D4F685CAE079C66C1C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-B0B1B2B3": {
+      "Kind": "Brick",
+      "Label": "Wily 5 castle machinery",
+      "VisualFingerprint": "BFFE09779D9C1A10DB74239EF1F60563D43036ABE80F64454F62999552F568E1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BFFE09779D9C1A10DB74239EF1F60563D43036ABE80F64454F62999552F568E1",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-90919293": {
+      "Kind": "Brick",
+      "Label": "Wily 5 castle machinery",
+      "VisualFingerprint": "647C44B58BD93ED774326D3EDFC3FF8BA21E9AFEC2FF96DF3ACA99FA3B30F3CD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "647C44B58BD93ED774326D3EDFC3FF8BA21E9AFEC2FF96DF3ACA99FA3B30F3CD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6732851D0D47FF5AE7E5E04CF9A2B9EE1C798E5FBC699D177F4BD22265DAE065",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-84858687": {
+      "Kind": "Brick",
+      "Label": "Wily 5 castle machinery",
+      "VisualFingerprint": "877FD13328BB7F25CA18D0C795A8E997865DBE34B9A3BB780BC61CAD50D7D008",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "877FD13328BB7F25CA18D0C795A8E997865DBE34B9A3BB780BC61CAD50D7D008",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B25F5E5269B9435ED62588C06043AF7AD406E4EBD694E7FE81D7C8B437F7D5EF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-E4E5E6E7": {
+      "Kind": "Brick",
+      "Label": "Wily 5 castle machinery",
+      "VisualFingerprint": "59D94D061B3B350F8A2F26DAF8FF4F9A19800D02E60977041BCF18C07D5EE640",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "59D94D061B3B350F8A2F26DAF8FF4F9A19800D02E60977041BCF18C07D5EE640",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B3A68108B6EBE6744C488C9D321C4A2B9697272E1FD441636C9BBF90B03507C8",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6DDE25AE041C194ACF0963CD86D47C866A8C79F117E333077618D932E45C7EFE",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "812DE26EC3D8E46CCA0F90DCEAD082AA884FCCAECB60037DF7C74E4D5BC99A4E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A4A5A6A7": {
+      "Kind": "Brick",
+      "Label": "Wily 5 castle machinery",
+      "VisualFingerprint": "2A285B043C39F28F24F5EAD202B90E50C82049CA521B573C3A31077D04E6CF2E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2A285B043C39F28F24F5EAD202B90E50C82049CA521B573C3A31077D04E6CF2E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1FF65465097FFAA6AE6FA6B72109ED24F3C302B1C18ED640CD456B257208C28E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-B8B9BABB": {
+      "Kind": "Brick",
+      "Label": "Wily 5 castle machinery",
+      "VisualFingerprint": "E37E3185C29312FA16776D8482823FEC8D968947C49B76FA0DCA6EDAD91A1AD3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E37E3185C29312FA16776D8482823FEC8D968947C49B76FA0DCA6EDAD91A1AD3",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A0A1A2A3": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "AC11BB58CB7F1E274561B62E9BFF292C880FE8947D0D10D58C7B2F9DA19BD706",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AC11BB58CB7F1E274561B62E9BFF292C880FE8947D0D10D58C7B2F9DA19BD706",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C0C1C2C3": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "560B90EA038C0B8CEE817E89A4847D33043F165C287773078CAA9DB310CCDEBC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "560B90EA038C0B8CEE817E89A4847D33043F165C287773078CAA9DB310CCDEBC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-E0E1E2E3": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "058227361CE803F76953CA272F4758AEA880E7C3B92E96B7ACC000DA29670A15",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "058227361CE803F76953CA272F4758AEA880E7C3B92E96B7ACC000DA29670A15",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-E8E9EAEB": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "66D2EAF1479F855CC2FC3EFDA134DFCDA7413F26EA29BAE1E3B9F93916F374B9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "66D2EAF1479F855CC2FC3EFDA134DFCDA7413F26EA29BAE1E3B9F93916F374B9",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-ECEDEEEF": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "F1B9D022FCF28FBF0934D79F813BD552DCE4FF1BFFA15E8201EE32372C19FE6D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F1B9D022FCF28FBF0934D79F813BD552DCE4FF1BFFA15E8201EE32372C19FE6D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-F0F1F2F3": {
+      "Kind": "Terrain",
+      "Label": "Air Man platforms",
+      "VisualFingerprint": "40F2D5756B76B5F07BBDE24C7605A2CD93C1BB8F7DC945D182830859696B2FE6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "40F2D5756B76B5F07BBDE24C7605A2CD93C1BB8F7DC945D182830859696B2FE6",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-B8B9BABB": {
+      "Kind": "Brick",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "964AC6783EEDD6F4770D8A7637E6EB5CE5C2511176DC3B22B9C0A371E501369D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "964AC6783EEDD6F4770D8A7637E6EB5CE5C2511176DC3B22B9C0A371E501369D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-D0D1D2D3": {
+      "Kind": "Brick",
+      "Label": "Quick Man machinery",
+      "VisualFingerprint": "DFACF171E63F4E3BC87AA386FA835A08DD86CA16B3F050FED9CC2E74729FD370",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DFACF171E63F4E3BC87AA386FA835A08DD86CA16B3F050FED9CC2E74729FD370",
+          "ThumbnailPng": ""
+        }
+      ]
+    }
+  }
+}

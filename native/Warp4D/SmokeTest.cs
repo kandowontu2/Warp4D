@@ -370,6 +370,8 @@ internal static class SmokeTest
             int visualTable = (visualWorldX >= 256 ? 1 : 0) + (visualWorldY >= 240 ? 2 : 0);
             int visualPixelIndex = (visualWorldY % 240) * 256 + (visualWorldX & 0xFF);
             int originalVisualPixel = frame.NametablePixels[visualTable][visualPixelIndex];
+            int secondVisualPixelIndex = visualPixelIndex + 1;
+            int originalSecondVisualPixel = frame.NametablePixels[visualTable][secondVisualPixelIndex];
             try
             {
                 frame.NametablePixels[visualTable][visualPixelIndex] ^= 0x00010101;
@@ -381,11 +383,26 @@ internal static class SmokeTest
                 {
                     throw new InvalidOperationException("A game-profile rule matched different tile artwork from another graphics bank.");
                 }
+                BackgroundObjectRule variantRule = importedGameProfile.BackgroundRules[capturedSignature.Key];
+                variantRule.CaptureArtwork(MetatileVisualFingerprint.Read(frame, capturedWorldTileX, capturedWorldTileY));
+                if (importedGameProfile.Match(capturedSignature, frame, capturedWorldTileX, capturedWorldTileY) is null)
+                    throw new InvalidOperationException("Captured alternate artwork did not match its rule.");
+                frame.NametablePixels[visualTable][secondVisualPixelIndex] ^= 0x00020202;
+                if (importedGameProfile.Match(capturedSignature, frame, capturedWorldTileX, capturedWorldTileY) is not null)
+                    throw new InvalidOperationException("Uncaptured artwork matched an animation-variant rule.");
             }
             finally
             {
                 frame.NametablePixels[visualTable][visualPixelIndex] = originalVisualPixel;
+                frame.NametablePixels[visualTable][secondVisualPixelIndex] = originalSecondVisualPixel;
             }
+            if (importedGameProfile.Match(capturedSignature, frame, capturedWorldTileX, capturedWorldTileY) is null ||
+                importedGameProfile.BackgroundRules[capturedSignature.Key].ArtworkVariants.Count != 2)
+                throw new InvalidOperationException("Adding an artwork variant replaced the original frame.");
+            GameRecognitionProfileStore.WriteToFile(exportedGameProfilePath, importedGameProfile);
+            importedGameProfile = GameRecognitionProfileStore.ReadFromFile(exportedGameProfilePath);
+            if (importedGameProfile.BackgroundRules[capturedSignature.Key].ArtworkVariants.Count != 2)
+                throw new InvalidOperationException("Artwork variants did not survive a JSON round trip.");
 
             string gameEditorPreviewPath = Path.Combine(
                 Path.GetDirectoryName(absoluteOutput)!,
@@ -401,11 +418,24 @@ internal static class SmokeTest
                 gameEditor.Show();
                 Application.DoEvents();
                 gameEditor.SelectGamePixelForTest(capturedGameX, capturedGameY);
+                gameEditor.ApplySelectedForTest();
+                bool capturedThumbnail = gameEditor.WorkingProfileForTest.BackgroundRules[capturedSignature.Key]
+                    .ArtworkVariants.Any(variant => variant.ThumbnailPng.Length > 0);
+                if (!capturedThumbnail) throw new InvalidOperationException("Profile capture did not save its thumbnail.");
+                gameEditor.UndoEdit();
+                if (gameEditor.WorkingProfileForTest.BackgroundRules[capturedSignature.Key].ArtworkVariants
+                    .Any(variant => variant.ThumbnailPng.Length > 0))
+                    throw new InvalidOperationException("Undo did not restore the pre-capture rule.");
+                gameEditor.RedoEdit();
+                if (!gameEditor.WorkingProfileForTest.BackgroundRules[capturedSignature.Key].ArtworkVariants
+                    .Any(variant => variant.ThumbnailPng.Length > 0))
+                    throw new InvalidOperationException("Redo did not restore the captured thumbnail.");
                 (int additionalGameX, int additionalGameY) = FindDifferentVisiblePattern(
                     frame,
                     emulator.IsSmbWorld,
                     capturedSignature);
                 gameEditor.SelectGamePixelForTest(additionalGameX, additionalGameY, additive: true);
+                gameEditor.UpdatePreview();
                 if (gameEditor.SelectedCellCountForTest != 2 ||
                     gameEditor.SelectedPatternCountForTest != 2)
                 {
@@ -564,6 +594,8 @@ internal static class SmokeTest
                 UserProfileEditorValidated = true,
                 GameProfileCreatorValidated = true,
                 GameProfileMultiSelectionValidated = true,
+                GameProfileHistoryValidated = true,
+                AnimatedArtworkVariantsValidated = true,
                 AttractDemoSceneryValidated = true,
                 ProfileObjectClasses = Enum.GetValues<SceneObjectKind>().Length,
                 ExportedProfile = exportedProfilePath,
@@ -654,6 +686,7 @@ internal static class SmokeTest
         {
             Kind = item.Kind,
             Label = item.Label,
+            IdentityKey = item.IdentityKey,
             Bounds = item.Bounds,
                 Image = new Bitmap(item.Image),
                 Accent = item.Accent,

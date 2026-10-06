@@ -1,0 +1,2336 @@
+{
+  "FormatVersion": 5,
+  "Name": "Super Mario Bros. 2 USA · built-in",
+  "RomName": "Super Mario Bros. 2 USA.nes",
+  "RomSha256": "",
+  "GameplayStateAddress": 1198,
+  "GameplayStateValue": 1,
+  "TransparentBackdrop": true,
+  "SeparateMetatiles": true,
+  "CellSize": 16,
+  "RequireRecognizedScene": true,
+  "MinimumScenePatterns": 1,
+  "SceneAnchors": [],
+  "FlatRegions": [
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 8,
+        "Y": 32
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 24,
+        "Height": 64
+      },
+      "X": 8,
+      "Y": 32,
+      "Width": 24,
+      "Height": 64,
+      "Left": 8,
+      "Top": 32,
+      "Right": 32,
+      "Bottom": 96,
+      "IsEmpty": false
+    }
+  ],
+  "ObjectRegions": [],
+  "PlayerOamIndices": [],
+  "PlayerLabel": "Player",
+  "BackgroundRules": {
+    "P3-60616263": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "48DA173258C56E1BD28BDA1FC78E553635CFB3C9EB5886C6D44EF77A523B55B1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "48DA173258C56E1BD28BDA1FC78E553635CFB3C9EB5886C6D44EF77A523B55B1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4A970C1359D41AA9CEB4D908443657C9B1321FE63E98579FED3DEB7A2E384C21",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "00D83BC7009DC97062296C46FB7141A19AAD0F4603F977D7853DB45B7958AE6E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-64656263": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "A93F39C0642C6D9000BBD8CEFF6A364180F92CB2C1EB9EB46B8D735A06D028CB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A93F39C0642C6D9000BBD8CEFF6A364180F92CB2C1EB9EB46B8D735A06D028CB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "61796FFF42EE60E7B213FFB1D2C77DAC966EBBD861155024F1EAB6FC45A802F5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D658D083F847D9AEED08E9FD1F1CB92701153C304E6C110487CF0A9154ED6D8F",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-64656667": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "523198AEABD48BF66763751D1F1122E90E88F17F58F684A3757CEB8169CCB937",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "523198AEABD48BF66763751D1F1122E90E88F17F58F684A3757CEB8169CCB937",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A464172702C102A82D1334F0FD50FE4FBF206119F4BD4D9C442FB9877C9E154A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BB63C025E60836D2BE66BB501475E78EC665500C728999BD9D325E4B29D583E4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-61616363": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "C5510C39D23EF66033B9C2057257BCCB891BB061D586CC351E54A2CFBC464096",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5510C39D23EF66033B9C2057257BCCB891BB061D586CC351E54A2CFBC464096",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E99D37797A725499AAB19EF6E542F926D8D63A5FEF4FFA8A62A1F8FE6DB1D167",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "04FEA7825E64DE9D0C4B3F4759F2F42D98296D71A94FD07FAD70EE5C62488641",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-65656363": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "2B5738A6DC1EBB3334300298FE0F55FB763D5ED39EC53AD042B2F38ECEC9DE73",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2B5738A6DC1EBB3334300298FE0F55FB763D5ED39EC53AD042B2F38ECEC9DE73",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2C2787C24D3AE84990D6CF25F9685FA8EB7A1487C9212106E2BAC6631EEAF42C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "183971A75FE8BFEDA516C1429B9093F96D1EE9DAC09370BB2A744DA1EAA2E516",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-65656767": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "739F2462543B2B3BB7317FB30A47916E0F3C9662803ECD98567DCBED6E1B380D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "739F2462543B2B3BB7317FB30A47916E0F3C9662803ECD98567DCBED6E1B380D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D3E49D8735E416DB5C40FEA29EFC73A5A61F641CA0DC5A5E4CD907CD47FC350C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BC2DA61148F88CAD423099407D4AE5A30DEDC6E4C57889D3F24107BDF72CABD6",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-B4B5B6B7": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "974A5C34A6B0DF26801ACC8C720002B309046A2E47B46293D0B989DC7D8C27FC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "974A5C34A6B0DF26801ACC8C720002B309046A2E47B46293D0B989DC7D8C27FC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-B8B9FAFA": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "56C6A3CE0AE5ECCDBFDFB0FC3AB20FED006A6947A6B5FC53A0D1C623B9D97472",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "56C6A3CE0AE5ECCDBFDFB0FC3AB20FED006A6947A6B5FC53A0D1C623B9D97472",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-60616263": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "48DA173258C56E1BD28BDA1FC78E553635CFB3C9EB5886C6D44EF77A523B55B1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "48DA173258C56E1BD28BDA1FC78E553635CFB3C9EB5886C6D44EF77A523B55B1",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-64656667": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "523198AEABD48BF66763751D1F1122E90E88F17F58F684A3757CEB8169CCB937",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "523198AEABD48BF66763751D1F1122E90E88F17F58F684A3757CEB8169CCB937",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-61616363": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "C5510C39D23EF66033B9C2057257BCCB891BB061D586CC351E54A2CFBC464096",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5510C39D23EF66033B9C2057257BCCB891BB061D586CC351E54A2CFBC464096",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-65656363": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "2B5738A6DC1EBB3334300298FE0F55FB763D5ED39EC53AD042B2F38ECEC9DE73",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2B5738A6DC1EBB3334300298FE0F55FB763D5ED39EC53AD042B2F38ECEC9DE73",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-65656767": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "739F2462543B2B3BB7317FB30A47916E0F3C9662803ECD98567DCBED6E1B380D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "739F2462543B2B3BB7317FB30A47916E0F3C9662803ECD98567DCBED6E1B380D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FAB0FAB1": {
+      "Kind": "Terrain",
+      "Label": "Subcon grassy platform",
+      "VisualFingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2850AC29A8650B96D14F44F76CAE5AF11AED76FB9AF3D4438A35ECA1A2C87296",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4F4E4E4F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F7BC6B228776376414DA1EA9A8B76F2721D1ED5799FC0EC47BB6FB3E78A7CF91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F7BC6B228776376414DA1EA9A8B76F2721D1ED5799FC0EC47BB6FB3E78A7CF91",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A0A1A2A3": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "A98D6DE330F90B305D284B41CA1448A788949D2597892DB0160422B6AED64FDD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A98D6DE330F90B305D284B41CA1448A788949D2597892DB0160422B6AED64FDD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B7CD15329FB1AF60B8EC037626AD93CCF460C13E049108B85257E113917BBD95",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "98F90BC1E7628406A7BCFEF78E282935FA28AC40B6AC50F6BB6546BD04D94608",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-BEBFBEBF": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "5C550BDA7CCCE7EF9E9842714AD8F1D1AA6C066F762FD0995CA824D73DA5CB57",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5C550BDA7CCCE7EF9E9842714AD8F1D1AA6C066F762FD0995CA824D73DA5CB57",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F4FD76E492D766D14CAD23B6DD0BA65523A54E5D04B66885368357E5F86CF4E6",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B171DC026A1385A053F54024749A0386C94ADEA55FDA0E7FB42419BB79F4296E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B605300E4C7104471DADB195ECD37166E52D97974BB003A9DA87DD96DE601C55",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D636A84FC93F6913992CCA3F9D2E7655FF10B481DC5AEAEC84636B98FE93F305",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "09E503DEE4E7F340E46CBFC7BF8F6AF7C638F8DD6D83B1B6E9C22BB5DC114E23",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9EC17465C4EDDC7EC296E549EAE28FA212DC2C75C244ABFEEEA85CD76B47A615",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-BFBFBFBF": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "C578E78344323B84EA20235CEB58B9CF73BB2F81F657D1D1AB1D533604253EF4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C578E78344323B84EA20235CEB58B9CF73BB2F81F657D1D1AB1D533604253EF4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0B6BCCAA39DC94DCDCB4B5448E356413A8CD1FB6F684A8214ACBD2433B2B610F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "3D317FC75A4934A2E518CD3A5D9D381642F255F354B7EAC1D9EBBDDCEC2CE263",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "08BDC8A73A239E6BCED659F97D7E901E912DE5F87F0FE09DD5868637155F340B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-70717273": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "6A9AD2A77DFE1325C1A1EE77BD72AA12BBA04241198B9E9B30B022CD630EA815",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6A9AD2A77DFE1325C1A1EE77BD72AA12BBA04241198B9E9B30B022CD630EA815",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "5D788A6F96B5C89A7F24EE4977FF64C657832BBADBCF2D08384821849DBC99DA",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-AEAEAFAF": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F350BD268E530900BBC0A8F48AE5369E117959FC7D4BFDC2796FA9C7B7803391",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F350BD268E530900BBC0A8F48AE5369E117959FC7D4BFDC2796FA9C7B7803391",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FAB2FAB3": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "AD92272DD21E66DC7C3BED2A2DA9FC4F60042492438CA0CBBB27040DB6E1D6BC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD92272DD21E66DC7C3BED2A2DA9FC4F60042492438CA0CBBB27040DB6E1D6BC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-B4B5B6B7": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "974A5C34A6B0DF26801ACC8C720002B309046A2E47B46293D0B989DC7D8C27FC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "974A5C34A6B0DF26801ACC8C720002B309046A2E47B46293D0B989DC7D8C27FC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-B8B9FAFA": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "56C6A3CE0AE5ECCDBFDFB0FC3AB20FED006A6947A6B5FC53A0D1C623B9D97472",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "56C6A3CE0AE5ECCDBFDFB0FC3AB20FED006A6947A6B5FC53A0D1C623B9D97472",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FB323233": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "8FF33868512008FE4DBC76DE2F8E220E4D4336831DBED93657E6646FF0156435",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8FF33868512008FE4DBC76DE2F8E220E4D4336831DBED93657E6646FF0156435",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-34FDFB34": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F542640C73EA30CC4399A4662B75250783ECFF09ED8E1B9E59E2DB477BD27810",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F542640C73EA30CC4399A4662B75250783ECFF09ED8E1B9E59E2DB477BD27810",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-33333333": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "080CF56058983C56E50A61987425A669CF6FBA7C6CDECBEBC9F3B971E0434C03",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "080CF56058983C56E50A61987425A669CF6FBA7C6CDECBEBC9F3B971E0434C03",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-94949595": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D23EF2A7080050591D87B8A2B74626B6AEA4396B5E399BDB360CA8DA1FCE3081",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D23EF2A7080050591D87B8A2B74626B6AEA4396B5E399BDB360CA8DA1FCE3081",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-40414243": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "528F32A307F79054EFB45EBA0E52BA8455BAD7CBE54A5D353C708C6053D0998D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "528F32A307F79054EFB45EBA0E52BA8455BAD7CBE54A5D353C708C6053D0998D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-48484949": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D96A366AA236A0BA693CEA99BF6DBEBE93DCEAFB631A4578F7D56D125BD9E9DC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D96A366AA236A0BA693CEA99BF6DBEBE93DCEAFB631A4578F7D56D125BD9E9DC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-80818283": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F13A98DAAD4256AE3E0D7B58EDE04DA04EB3EB5E18B28FBFDD441940E3D1F662",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F13A98DAAD4256AE3E0D7B58EDE04DA04EB3EB5E18B28FBFDD441940E3D1F662",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-84858687": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "EB504CFF3ECBA0C64867A17ED2221D687401E7A6174B1E47D0401A6C32F1481A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EB504CFF3ECBA0C64867A17ED2221D687401E7A6174B1E47D0401A6C32F1481A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-58595A5B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "785F9CEEFB83F76BB5AFFC2404932621DB6BE6AB81BDBCD31BEF9BDEB5B229EC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "785F9CEEFB83F76BB5AFFC2404932621DB6BE6AB81BDBCD31BEF9BDEB5B229EC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E8A9E8A9": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "9585B42706727627E47495D4FBCF5963AA41D77BF7EABF614D0128C78E739A5E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9585B42706727627E47495D4FBCF5963AA41D77BF7EABF614D0128C78E739A5E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9D49A3772B70557EC08D34CA2BCA2962407DA92BE2D15588E3879D95EC5D2359",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9CF8C95DD1E33B97959B3B5D4EBA8FE6C78ABA547CD01230519973DEB51DC2FD",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A9A9A9A9": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "637407D89A260A8331AF515AE71EA64C4E7F9C1FCE043ADFF5D540AEC259CE20",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "637407D89A260A8331AF515AE71EA64C4E7F9C1FCE043ADFF5D540AEC259CE20",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "861C021956F7B79494FCBF6D3DDD3CCD1D37781C452FD5DC194D4D37D177F412",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E7A3C65C7929C73AE913785674E69FBD3D2B4D62AB99D746450DE9077A548FFC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FB3B3BAC": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D3CE0AF0A2D71B450B34D5175B4A9A6661291DF18E36D983EA4F90638EF64067",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D3CE0AF0A2D71B450B34D5175B4A9A6661291DF18E36D983EA4F90638EF64067",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-ACACACAC": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "080CF56058983C56E50A61987425A669CF6FBA7C6CDECBEBC9F3B971E0434C03",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "080CF56058983C56E50A61987425A669CF6FBA7C6CDECBEBC9F3B971E0434C03",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D0D0D0D0": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "B7F6371F98CB372C268FE21F2ED11405658869F94EF18060E2D910FE3590EE0C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B7F6371F98CB372C268FE21F2ED11405658869F94EF18060E2D910FE3590EE0C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C157EB6C023D03C75D3F08F0403E7C0ECEB769EF3BE8922BD66016D422519F45",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4F02D47880B40D0B6F82FEA5E1F2BBE59636A6E556D471CC252B00A199A5DCEA",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9911627F257CEEB2EF8F00DE53186C209A926AA99BE4CCBBA73457B71E5A5240",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D63564966205F8B95B51406DCD965DC1F19601B605565370CBCAD6D34AB1166A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BC2131C0CA1CDC73DBE6CDD3AA6225D65D64DD9393D8BE721A62F00C3E0A6801",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E79ADFBA0599263794DB39F21C35ABC9AFF1B75DB0FC7138353160C4FF0B94CE",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-98999A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4B3AB873B74B24665E94CF7B0212EFC166BFFE1CE9C6EC5718C76222BDEF2064",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4B3AB873B74B24665E94CF7B0212EFC166BFFE1CE9C6EC5718C76222BDEF2064",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F9C1718F20D31FCFD78D1162ACA67B5238AEBD5F67942427E2C42A17996B85C6",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-9C9D9A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4DADE51A1ACC8B5AE8A422E9856C67907E456C564F415C6294615095239BEFE5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4DADE51A1ACC8B5AE8A422E9856C67907E456C564F415C6294615095239BEFE5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E2D8C5F1EA6F56E99520B4DF2F23C6AAA48B5AFB199D92B617705701B99EAA74",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "590A9D2070994230E062395AA8F1622E9BD5B4F4D4AC43BD746BE98DA1EE588D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7038CD0C1926BC17DC40BD327D27497170D76E31ABA5567DF82AB6A48FAE793A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-9C9B9E9F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "682600AF9C01A5FD52C35A1EED1A00A96F618CEB79A8A857E9ED856E8A3FF2EE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "682600AF9C01A5FD52C35A1EED1A00A96F618CEB79A8A857E9ED856E8A3FF2EE",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "267A203E7FC0B26FF3D597D1B4E2B0C0F4EAC21A0AF2DCD05A507B5CEA06C55F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "04F15B25F283F04406D4B59D13188DE4CB5C83C3C4E35A827EE3E47538667C9F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "75BFB5FAC58FE80963FF508EE1F9D2E9E64F10BA1118369E877304947EFDD9A4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-72737372": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-72737372": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-98999A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4B3AB873B74B24665E94CF7B0212EFC166BFFE1CE9C6EC5718C76222BDEF2064",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4B3AB873B74B24665E94CF7B0212EFC166BFFE1CE9C6EC5718C76222BDEF2064",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F9C1718F20D31FCFD78D1162ACA67B5238AEBD5F67942427E2C42A17996B85C6",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-9C9D9A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4DADE51A1ACC8B5AE8A422E9856C67907E456C564F415C6294615095239BEFE5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4DADE51A1ACC8B5AE8A422E9856C67907E456C564F415C6294615095239BEFE5",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E2D8C5F1EA6F56E99520B4DF2F23C6AAA48B5AFB199D92B617705701B99EAA74",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "590A9D2070994230E062395AA8F1622E9BD5B4F4D4AC43BD746BE98DA1EE588D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7038CD0C1926BC17DC40BD327D27497170D76E31ABA5567DF82AB6A48FAE793A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-36373435": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D4C9718DC07448FC660E2FAF8B8D7F4E8A2ED6D48784835944E5C685B40B02D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D4C9718DC07448FC660E2FAF8B8D7F4E8A2ED6D48784835944E5C685B40B02D2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-36373839": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "2D1F8D91E370689DD39098A2CEAFC9218C7CC977ACFC7542886D16DB1D2DBC69",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2D1F8D91E370689DD39098A2CEAFC9218C7CC977ACFC7542886D16DB1D2DBC69",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FCFC4848": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "3793826CBA3FC7E9150F909EC7BBDE86B8AC760333E1DFF025CCFFAA7B5529B3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3793826CBA3FC7E9150F909EC7BBDE86B8AC760333E1DFF025CCFFAA7B5529B3",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-4646FCFC": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "CA8573E547785423E0E473F61551D1AE1A6A43793911067CE1382A92973E23C8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CA8573E547785423E0E473F61551D1AE1A6A43793911067CE1382A92973E23C8",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-40414243": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "B11223847C693A695025AD55083C06A95ACBF60B3F78C894D37D68E23697BA91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B11223847C693A695025AD55083C06A95ACBF60B3F78C894D37D68E23697BA91",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-41414343": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "AEC6F4FB38BA9D293F756D0EC525461D1FFBC1EF73B0BA7E23BD4910BD3E5135",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AEC6F4FB38BA9D293F756D0EC525461D1FFBC1EF73B0BA7E23BD4910BD3E5135",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-98999A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F9C1718F20D31FCFD78D1162ACA67B5238AEBD5F67942427E2C42A17996B85C6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F9C1718F20D31FCFD78D1162ACA67B5238AEBD5F67942427E2C42A17996B85C6",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4B3AB873B74B24665E94CF7B0212EFC166BFFE1CE9C6EC5718C76222BDEF2064",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-9C9D9A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "E2D8C5F1EA6F56E99520B4DF2F23C6AAA48B5AFB199D92B617705701B99EAA74",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E2D8C5F1EA6F56E99520B4DF2F23C6AAA48B5AFB199D92B617705701B99EAA74",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "590A9D2070994230E062395AA8F1622E9BD5B4F4D4AC43BD746BE98DA1EE588D",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7038CD0C1926BC17DC40BD327D27497170D76E31ABA5567DF82AB6A48FAE793A",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4DADE51A1ACC8B5AE8A422E9856C67907E456C564F415C6294615095239BEFE5",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-9C9B9E9F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "267A203E7FC0B26FF3D597D1B4E2B0C0F4EAC21A0AF2DCD05A507B5CEA06C55F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "267A203E7FC0B26FF3D597D1B4E2B0C0F4EAC21A0AF2DCD05A507B5CEA06C55F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "04F15B25F283F04406D4B59D13188DE4CB5C83C3C4E35A827EE3E47538667C9F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "75BFB5FAC58FE80963FF508EE1F9D2E9E64F10BA1118369E877304947EFDD9A4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "682600AF9C01A5FD52C35A1EED1A00A96F618CEB79A8A857E9ED856E8A3FF2EE",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-68616263": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F244A3FEB3F1611AA0650EB2AAB1AD3DDDA4C338104A2E72A85993D1D3F1AABD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F244A3FEB3F1611AA0650EB2AAB1AD3DDDA4C338104A2E72A85993D1D3F1AABD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C6D8004F026BECAEF802284388AEBC5AF41206A58C50110BCCF65EB5C52BC1D4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-64654767": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "CA2281E664E34B15920C5CB63E02A17F72CEEB9FD6F2EE69C773FC2B0F09CD4E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CA2281E664E34B15920C5CB63E02A17F72CEEB9FD6F2EE69C773FC2B0F09CD4E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2B7D4E8C570ED3C2BB0DB2F44B2F708CED0F27BDF0A8B5ED3916C6FD0BB17646",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FAB0FAB1": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2ACEDC39A4F599B2CAA1359AECFFD6F01EEA6C28772FEA36AE41EC398FD7B2D3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2850AC29A8650B96D14F44F76CAE5AF11AED76FB9AF3D4438A35ECA1A2C87296",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9C13C0BA55589E4E88B30C790DE5BDFBDD15BC06CFD553AE09EB859B04BB61C8",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-6A6B6C6D": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "A32D7302303FEF22A40732592AD6D1E8648D4C15782264231F37EF7E9562F6DD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A32D7302303FEF22A40732592AD6D1E8648D4C15782264231F37EF7E9562F6DD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "BF7A6BC63633CDD46F7754B6B402407EB00BA5E9C601BB16D50273BA152190C7",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-6C6D6C6D": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "94D81166BEA32F53303536ECE8F36FF7879E27200C9CD2702F2081CEAB06BA50",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "94D81166BEA32F53303536ECE8F36FF7879E27200C9CD2702F2081CEAB06BA50",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8B3AA8D4B4A9774BD99431FF09EC0FBA720788AD59AE344A2192D62425934E93",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-6C6D6E6F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "74A643E03C49C2EC6DC4FA3744E0D97095A799823F535BB3D2A72F12C532E5BC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "74A643E03C49C2EC6DC4FA3744E0D97095A799823F535BB3D2A72F12C532E5BC",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6A8B65CAFAFE8D3540D8E3D73329A84282751B4938A096491508169AD4D37A2B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-46616263": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F633E187F64C574AFB67D117D19FDD15140AF407A6972CB70FB4702AF48334FB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F633E187F64C574AFB67D117D19FDD15140AF407A6972CB70FB4702AF48334FB",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-5E5E5F5F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "BC80806D3068AFF4D8DA3A7ED7D3D8BEFACEBB9AC13E7F01737FEBD3FF4E0FA0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BC80806D3068AFF4D8DA3A7ED7D3D8BEFACEBB9AC13E7F01737FEBD3FF4E0FA0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D3FBD3FB": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "6E5CB0D30BA8EC83337A1C8B2FAD44E5FE5BC2DABBEB2C51190ECD4B4E62CDD4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6E5CB0D30BA8EC83337A1C8B2FAD44E5FE5BC2DABBEB2C51190ECD4B4E62CDD4",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7D61B86CD2A44FA5C20BC72CB36C94C241C4F60CF2F38A0C6B05A42E0683331B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "85AB1F35ABEBD3D78C42840A73615030D00D9BDD94D7828E5B31CBBAD5E5EC43",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "20337A12F6C842DBDB95AC3DC1971C53E7F812EAA39A219AF3D91B1A2B674142",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-D2FBD2FB": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "026C8BC8D65BCD9F7155F2E4F0A2CA698C2E2809C5CAA22D5D1A64C4D3535A12",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "026C8BC8D65BCD9F7155F2E4F0A2CA698C2E2809C5CAA22D5D1A64C4D3535A12",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "4EA0B14C5451D2BAD1486C77DB8C5D84A667CA13A597AE7E7334129E6822BE2C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "1468F527796945DF5FD7BF4C3F2B54C86547AF31FDBF54252A305A2420E8362F",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B52F156E5A3497049A080AC7E39227FD8B943E950AC024F5D81BB7F436ACB305",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-74757677": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4B7F281BE2993A15CAF2C49B6486A1EA04436D4E00047869E69EA5E0DA430193",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4B7F281BE2993A15CAF2C49B6486A1EA04436D4E00047869E69EA5E0DA430193",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7D8A007A9F3B5924C7B7502E44820BA8C868191007BC746ECDAAD0818B93F4DB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6AE2D8D523E15064261877B2EDC03C5B4E5C0F87FB55F242AEA9F2C4C4446029",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9DF15A2A80C96F82917B39CE2641BB49441484EB0757439872C76A98D7E6DBB4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-C0C1C2C3": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "FF8938D5F39F72C07E23A753A45DD444B3CC29172BC091CB1815EB6F0EDF5AE1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FF8938D5F39F72C07E23A753A45DD444B3CC29172BC091CB1815EB6F0EDF5AE1",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7C16D9F41FD3381A3F7F5C9FCBD8D779BD739FD732A3948EDE17AF0A52D29614",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "72FF08FD6D2D1B114F5E0C1EC847267553C38C367DFC75C8DA4066D8EE54AC2C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "D26A43502CD20DC26B484B47A681F9919F79F25C48581A1DE4C1560542BCE853",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F3E078AEF8E4F71C38B66F2B9183D325A238930F9E66048224E7665783192005",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-F4F58687": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "27D17587603B40B23E6458C0B4D419DA401E29E18794B460E9FCF0324F864879",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "27D17587603B40B23E6458C0B4D419DA401E29E18794B460E9FCF0324F864879",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-7C7D7E7F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "205714FB1D33D1362C5C7EB7401879F3B7CF1F0AA03ACA28C238D90135BCF8FD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "205714FB1D33D1362C5C7EB7401879F3B7CF1F0AA03ACA28C238D90135BCF8FD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8FDC63C058B9990549CD40CA5E0AB3A080B63C2F48B06AFA90F18CC92E185866",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F1538E302E4777E1D10FE362204D13BBEA64B180ABA66E14F109289E217259F3",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F84182B77DB4D227EFD3CB4FA664A2A8D4A5E691DDE161D7C68C3EC58C6B8BD6",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "939D16EDA0F725A49AAC00FA80177B77CF36BC5F6DE4B4EC6FF387B092ADBE91",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-72737372": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-3C3D3E3F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4AE33D59E85AF6811D7B4FF6B362CEEEED6D4B5462FB9A39F64D32F86954BD8D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4AE33D59E85AF6811D7B4FF6B362CEEEED6D4B5462FB9A39F64D32F86954BD8D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-6E706F71": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D4DB4E2DD0E4B7BE2E747CBEE9B038B623C3C43A02CF6A55D8F700F560EBD829",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D4DB4E2DD0E4B7BE2E747CBEE9B038B623C3C43A02CF6A55D8F700F560EBD829",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-64656667": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "A6D0E74F93669F7367E928BC93A8D94491B2A5EEE7BBB35E80108C3FBAFAC045",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A6D0E74F93669F7367E928BC93A8D94491B2A5EEE7BBB35E80108C3FBAFAC045",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-68696A6B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "DEDB74A1F3BD9A14EBDB3BB11AA4C4B753DD170E438A2B9A275D9C3C6A93A19E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DEDB74A1F3BD9A14EBDB3BB11AA4C4B753DD170E438A2B9A275D9C3C6A93A19E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FAFA6C6C": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "0A495AB1DDFDD248A08B38CEAF57E21C24F868F5FEC0341FAFF15FE3E0BED668",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0A495AB1DDFDD248A08B38CEAF57E21C24F868F5FEC0341FAFF15FE3E0BED668",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-6D6DFAFA": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "C4FB93BD470504F5FBD0E622708D6CFE8F938A984375FA983B82A5F5729C398A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C4FB93BD470504F5FBD0E622708D6CFE8F938A984375FA983B82A5F5729C398A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-7C7D7E7F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "205714FB1D33D1362C5C7EB7401879F3B7CF1F0AA03ACA28C238D90135BCF8FD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "205714FB1D33D1362C5C7EB7401879F3B7CF1F0AA03ACA28C238D90135BCF8FD",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "F84182B77DB4D227EFD3CB4FA664A2A8D4A5E691DDE161D7C68C3EC58C6B8BD6",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "939D16EDA0F725A49AAC00FA80177B77CF36BC5F6DE4B4EC6FF387B092ADBE91",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-72737372": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F858BD113ACFF0B41DCACA873C1BEF745C4439B6A7A9B235C56EFA37BA1E9A99",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-5E5E5F5F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "BC80806D3068AFF4D8DA3A7ED7D3D8BEFACEBB9AC13E7F01737FEBD3FF4E0FA0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BC80806D3068AFF4D8DA3A7ED7D3D8BEFACEBB9AC13E7F01737FEBD3FF4E0FA0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A6A7A6A7": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "40D0E0B0604218F561349377FB3F06C3B7A061CBF69A8B85DADB98761647FE89",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "40D0E0B0604218F561349377FB3F06C3B7A061CBF69A8B85DADB98761647FE89",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "EEA4CE92CFF42E4A3100F2672B3F89C978668BF3E139A04D9CB72B5179237AA0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A0E254C39F3937B0298455DF5411095EFA37FA6C4821088D6DAA682AAB4A4D7E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8EE97E30C22549C89B2FDC3BF87697910289A94726F4B068A9DF75CE1CFCAB9B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-40414243": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "B11223847C693A695025AD55083C06A95ACBF60B3F78C894D37D68E23697BA91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B11223847C693A695025AD55083C06A95ACBF60B3F78C894D37D68E23697BA91",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-41414343": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "AEC6F4FB38BA9D293F756D0EC525461D1FFBC1EF73B0BA7E23BD4910BD3E5135",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AEC6F4FB38BA9D293F756D0EC525461D1FFBC1EF73B0BA7E23BD4910BD3E5135",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-74757677": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4B7F281BE2993A15CAF2C49B6486A1EA04436D4E00047869E69EA5E0DA430193",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4B7F281BE2993A15CAF2C49B6486A1EA04436D4E00047869E69EA5E0DA430193",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7D8A007A9F3B5924C7B7502E44820BA8C868191007BC746ECDAAD0818B93F4DB",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "6AE2D8D523E15064261877B2EDC03C5B4E5C0F87FB55F242AEA9F2C4C4446029",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9DF15A2A80C96F82917B39CE2641BB49441484EB0757439872C76A98D7E6DBB4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-74757677": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4B7F281BE2993A15CAF2C49B6486A1EA04436D4E00047869E69EA5E0DA430193",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4B7F281BE2993A15CAF2C49B6486A1EA04436D4E00047869E69EA5E0DA430193",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "7D8A007A9F3B5924C7B7502E44820BA8C868191007BC746ECDAAD0818B93F4DB",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-5E5E5F5F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "BC80806D3068AFF4D8DA3A7ED7D3D8BEFACEBB9AC13E7F01737FEBD3FF4E0FA0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BC80806D3068AFF4D8DA3A7ED7D3D8BEFACEBB9AC13E7F01737FEBD3FF4E0FA0",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-94949595": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D23EF2A7080050591D87B8A2B74626B6AEA4396B5E399BDB360CA8DA1FCE3081",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D23EF2A7080050591D87B8A2B74626B6AEA4396B5E399BDB360CA8DA1FCE3081",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-92939392": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "47973E72F84540B858BF999DE8EA067C05E75881349BEE078B53904E3A40602D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "47973E72F84540B858BF999DE8EA067C05E75881349BEE078B53904E3A40602D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-88898A8B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "658A8CB527790468C5089B123B4735CD786E410394A500B6D21501C3E2759125",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "658A8CB527790468C5089B123B4735CD786E410394A500B6D21501C3E2759125",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-898C8B8D": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "AD6FA93789ACCD74F9EB1447129EDD690D9C1E971147F7176ECBEE04CFE3EBCC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD6FA93789ACCD74F9EB1447129EDD690D9C1E971147F7176ECBEE04CFE3EBCC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-84858687": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "EB504CFF3ECBA0C64867A17ED2221D687401E7A6174B1E47D0401A6C32F1481A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EB504CFF3ECBA0C64867A17ED2221D687401E7A6174B1E47D0401A6C32F1481A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-92939392": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "47973E72F84540B858BF999DE8EA067C05E75881349BEE078B53904E3A40602D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "47973E72F84540B858BF999DE8EA067C05E75881349BEE078B53904E3A40602D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-92939392": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "47973E72F84540B858BF999DE8EA067C05E75881349BEE078B53904E3A40602D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "47973E72F84540B858BF999DE8EA067C05E75881349BEE078B53904E3A40602D",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-84858687": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "EB504CFF3ECBA0C64867A17ED2221D687401E7A6174B1E47D0401A6C32F1481A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EB504CFF3ECBA0C64867A17ED2221D687401E7A6174B1E47D0401A6C32F1481A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-BABBBCBD": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "48EABB4B8459A2FAF81816B6277655D6E630FFF8C1FB754112E87DBE579A4F5C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "48EABB4B8459A2FAF81816B6277655D6E630FFF8C1FB754112E87DBE579A4F5C",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "36EAEB75C765FA9459F4444851F91A0FE852DCACAA46C4AC9E6A845E40816E44",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-9C9D9A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4DADE51A1ACC8B5AE8A422E9856C67907E456C564F415C6294615095239BEFE5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4DADE51A1ACC8B5AE8A422E9856C67907E456C564F415C6294615095239BEFE5",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-BABBBCBD": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "48EABB4B8459A2FAF81816B6277655D6E630FFF8C1FB754112E87DBE579A4F5C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "48EABB4B8459A2FAF81816B6277655D6E630FFF8C1FB754112E87DBE579A4F5C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-7C7D7E7F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "8FDC63C058B9990549CD40CA5E0AB3A080B63C2F48B06AFA90F18CC92E185866",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8FDC63C058B9990549CD40CA5E0AB3A080B63C2F48B06AFA90F18CC92E185866",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-ADACFBAD": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "A04D445CB75AA49822F748207EC5DD74971B35DCA0F7FB68363DB625FC9BBE4C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A04D445CB75AA49822F748207EC5DD74971B35DCA0F7FB68363DB625FC9BBE4C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A6A7A6A7": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "A0E254C39F3937B0298455DF5411095EFA37FA6C4821088D6DAA682AAB4A4D7E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A0E254C39F3937B0298455DF5411095EFA37FA6C4821088D6DAA682AAB4A4D7E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "40D0E0B0604218F561349377FB3F06C3B7A061CBF69A8B85DADB98761647FE89",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "EEA4CE92CFF42E4A3100F2672B3F89C978668BF3E139A04D9CB72B5179237AA0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8EE97E30C22549C89B2FDC3BF87697910289A94726F4B068A9DF75CE1CFCAB9B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-57FB57FB": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "2963E118462CB352E9F624DB34B5F08E0FE576E5D8DF84CC7508627FFD5099D3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2963E118462CB352E9F624DB34B5F08E0FE576E5D8DF84CC7508627FFD5099D3",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FAB0FAB1": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-64656967": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "3447334EFA38C15F53B2F009ADB5922D40D1897E132BD7FFA5C6717BBC2C83C9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3447334EFA38C15F53B2F009ADB5922D40D1897E132BD7FFA5C6717BBC2C83C9",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B2E4E4B9A10853C0E2F4DE5D43120274FC9FAA0BEE6910E0D8491D88D89CB3A7",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-8E8F8F8E": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "024D81135401608F13C8024BE7033800118FBB9BE945FD6BA63C99230530B413",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-8E8F8F8E": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "024D81135401608F13C8024BE7033800118FBB9BE945FD6BA63C99230530B413",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-8E8F8F8E": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-50515253": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "E544A2B04E5AFF17CD0F9C55FEC67F9C78304762BC7D5ECB6E34577E8BF23EA2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E544A2B04E5AFF17CD0F9C55FEC67F9C78304762BC7D5ECB6E34577E8BF23EA2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FBFB30FB": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "7F3CA55096C3CFB895FAD83824661CBB75F84ABD6A4DEA667CF52D520C25766A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7F3CA55096C3CFB895FAD83824661CBB75F84ABD6A4DEA667CF52D520C25766A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FB31FBFB": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "FBC766737EC0A23BCF7C5ADC3845A88542A2DAD139D25E46913B26ABF31876A9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FBC766737EC0A23BCF7C5ADC3845A88542A2DAD139D25E46913B26ABF31876A9",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-89898B8B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "10EB05741384613A94A9945E52C9FED2B062D35DCC3FB5B10011B3B8F306C17A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "10EB05741384613A94A9945E52C9FED2B062D35DCC3FB5B10011B3B8F306C17A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-22232425": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "6536159195226A339F4C08750BD4E4805247B128A917B9752CB83E5900286B55",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6536159195226A339F4C08750BD4E4805247B128A917B9752CB83E5900286B55",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-70717273": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4B4D551EC7582E6671F34024D75A0D8B1361EDC1EFBE49C74E541F23728E926A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4B4D551EC7582E6671F34024D75A0D8B1361EDC1EFBE49C74E541F23728E926A",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-71717373": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "B6192B27954F565AC0A0AEAF4B6A47532ED8F312721954CBFB88A00E3F41C304",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B6192B27954F565AC0A0AEAF4B6A47532ED8F312721954CBFB88A00E3F41C304",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-64656263": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "A93F39C0642C6D9000BBD8CEFF6A364180F92CB2C1EB9EB46B8D735A06D028CB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A93F39C0642C6D9000BBD8CEFF6A364180F92CB2C1EB9EB46B8D735A06D028CB",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A8AFA8AE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "7270EF3D272CB591F1BF3BEDB7CBA3535C41F3A714F0E69A95ED65054627FC3B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7270EF3D272CB591F1BF3BEDB7CBA3535C41F3A714F0E69A95ED65054627FC3B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A8AFA8AE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "7270EF3D272CB591F1BF3BEDB7CBA3535C41F3A714F0E69A95ED65054627FC3B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7270EF3D272CB591F1BF3BEDB7CBA3535C41F3A714F0E69A95ED65054627FC3B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A0A1A2A3": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "98F90BC1E7628406A7BCFEF78E282935FA28AC40B6AC50F6BB6546BD04D94608",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "98F90BC1E7628406A7BCFEF78E282935FA28AC40B6AC50F6BB6546BD04D94608",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-4F4E4E4F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F7BC6B228776376414DA1EA9A8B76F2721D1ED5799FC0EC47BB6FB3E78A7CF91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F7BC6B228776376414DA1EA9A8B76F2721D1ED5799FC0EC47BB6FB3E78A7CF91",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A8AFA8AE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "7270EF3D272CB591F1BF3BEDB7CBA3535C41F3A714F0E69A95ED65054627FC3B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7270EF3D272CB591F1BF3BEDB7CBA3535C41F3A714F0E69A95ED65054627FC3B",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-78797A7B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "C7B1DCACEF6188EC7B9E11A562B5E342D7EAF488A248D627929C8ADF81271039",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C7B1DCACEF6188EC7B9E11A562B5E342D7EAF488A248D627929C8ADF81271039",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-78797A7B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "C7B1DCACEF6188EC7B9E11A562B5E342D7EAF488A248D627929C8ADF81271039",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C7B1DCACEF6188EC7B9E11A562B5E342D7EAF488A248D627929C8ADF81271039",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-50515253": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "E544A2B04E5AFF17CD0F9C55FEC67F9C78304762BC7D5ECB6E34577E8BF23EA2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E544A2B04E5AFF17CD0F9C55FEC67F9C78304762BC7D5ECB6E34577E8BF23EA2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FB36364F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D9AB97FA90436D1E2D82DCBF4D8EC4E22018D83B66A2159CB4A162F16E4F65AF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D9AB97FA90436D1E2D82DCBF4D8EC4E22018D83B66A2159CB4A162F16E4F65AF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-D1D1D1D1": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "9911627F257CEEB2EF8F00DE53186C209A926AA99BE4CCBBA73457B71E5A5240",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9911627F257CEEB2EF8F00DE53186C209A926AA99BE4CCBBA73457B71E5A5240",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "E79ADFBA0599263794DB39F21C35ABC9AFF1B75DB0FC7138353160C4FF0B94CE",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "C157EB6C023D03C75D3F08F0403E7C0ECEB769EF3BE8922BD66016D422519F45",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "B7F6371F98CB372C268FE21F2ED11405658869F94EF18060E2D910FE3590EE0C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-BA90BC91": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "01F458732D9B73A6E3F6228C30DAAA74EF05D0EB3A54F9585084B1149A93055E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "01F458732D9B73A6E3F6228C30DAAA74EF05D0EB3A54F9585084B1149A93055E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-32333435": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "E6987963E83274CC870BA21E63DDA47D9115D417788FFCB0F0F6C14B2579EA34",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E6987963E83274CC870BA21E63DDA47D9115D417788FFCB0F0F6C14B2579EA34",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "0ABC299EEA30E67D3423B11DF7BE9ED3BE89A11DF77D82BBEB903EFF5C007FEB",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-33333535": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "72D5E7ECB0527B075A4DD6FA62F251C9D27B6B4049F755EBBD57F7012C539B82",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "72D5E7ECB0527B075A4DD6FA62F251C9D27B6B4049F755EBBD57F7012C539B82",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-4F4E4E4F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "F7BC6B228776376414DA1EA9A8B76F2721D1ED5799FC0EC47BB6FB3E78A7CF91",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F7BC6B228776376414DA1EA9A8B76F2721D1ED5799FC0EC47BB6FB3E78A7CF91",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FAB0FAB1": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DAC420B568E9DE2A0EC58EED462BC228BD6FA8B68F95BD855A9023202EBDB1D2",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2850AC29A8650B96D14F44F76CAE5AF11AED76FB9AF3D4438A35ECA1A2C87296",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-BFBFBFBF": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "C578E78344323B84EA20235CEB58B9CF73BB2F81F657D1D1AB1D533604253EF4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C578E78344323B84EA20235CEB58B9CF73BB2F81F657D1D1AB1D533604253EF4",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-64656667": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "523198AEABD48BF66763751D1F1122E90E88F17F58F684A3757CEB8169CCB937",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "523198AEABD48BF66763751D1F1122E90E88F17F58F684A3757CEB8169CCB937",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-4A4B4A4B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "FF283616110F6ED2C6E44B6719A4693C7F7012DDBD679CD54AF2245B6D981595",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FF283616110F6ED2C6E44B6719A4693C7F7012DDBD679CD54AF2245B6D981595",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-96969797": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "654934B7ACEE2256A4C501C672036B913BC23CBDDDA4FC9F02BC70D79DAEABB9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "654934B7ACEE2256A4C501C672036B913BC23CBDDDA4FC9F02BC70D79DAEABB9",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-BA90BC91": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "570EA1BC3C40E565A8B806BEF8A6B961BE7E85F43D3E4F97A0B6EAF24566EF72",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "570EA1BC3C40E565A8B806BEF8A6B961BE7E85F43D3E4F97A0B6EAF24566EF72",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "01F458732D9B73A6E3F6228C30DAAA74EF05D0EB3A54F9585084B1149A93055E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-94949595": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D23EF2A7080050591D87B8A2B74626B6AEA4396B5E399BDB360CA8DA1FCE3081",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D23EF2A7080050591D87B8A2B74626B6AEA4396B5E399BDB360CA8DA1FCE3081",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A0A1A2A3": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "98F90BC1E7628406A7BCFEF78E282935FA28AC40B6AC50F6BB6546BD04D94608",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "98F90BC1E7628406A7BCFEF78E282935FA28AC40B6AC50F6BB6546BD04D94608",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-888C8A8D": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "0B29741E86B944B93B2CDF281C964EC969EAC6F91EEA77D2CE178107163870BE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0B29741E86B944B93B2CDF281C964EC969EAC6F91EEA77D2CE178107163870BE",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-24252627": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "0998BCB4A56ACD51399DA4191E28608B706C1613D91B3A7B19A229CB8A7B2234",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0998BCB4A56ACD51399DA4191E28608B706C1613D91B3A7B19A229CB8A7B2234",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "45E150257C99C8DB6957291871EAFE80F4C86679318D679DBE83278306DA22C7",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E9A9E9A9": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "9D49A3772B70557EC08D34CA2BCA2962407DA92BE2D15588E3879D95EC5D2359",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9D49A3772B70557EC08D34CA2BCA2962407DA92BE2D15588E3879D95EC5D2359",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9585B42706727627E47495D4FBCF5963AA41D77BF7EABF614D0128C78E739A5E",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "9CF8C95DD1E33B97959B3B5D4EBA8FE6C78ABA547CD01230519973DEB51DC2FD",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-32333435": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "9E1D625E1133798414684A8D0A85DA4ED91EECCC462385A6D0F9421032D31905",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9E1D625E1133798414684A8D0A85DA4ED91EECCC462385A6D0F9421032D31905",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-33333535": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "406262180DCB0C2414547CAAA62920B045A5AA85342FFA3B7B525B4AD2C99903",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "406262180DCB0C2414547CAAA62920B045A5AA85342FFA3B7B525B4AD2C99903",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-6CFEFEFE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "FC0DF12D5742D90E790B1C81D35B0F4B0EDB8338A427FF273680ECC9729A6B69",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FC0DF12D5742D90E790B1C81D35B0F4B0EDB8338A427FF273680ECC9729A6B69",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FEFE6E6F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "3650F630ECB80E0D3667C184229C9AFC0BBAA097060AED49A1A5471DF9270FDA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3650F630ECB80E0D3667C184229C9AFC0BBAA097060AED49A1A5471DF9270FDA",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FE6DFEFE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "967E94753E381539F551267F2E2F0E245F3E5F7D033E10499339E3AF7FE15701",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "967E94753E381539F551267F2E2F0E245F3E5F7D033E10499339E3AF7FE15701",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-20212223": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "E735B2E6DFC219AE269C41ED9DB84FC4E4AE9B631AFE4F178AD5AA329F16A3BF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E735B2E6DFC219AE269C41ED9DB84FC4E4AE9B631AFE4F178AD5AA329F16A3BF",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E8A9EBA9": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "575E0E1BEA7B4B9AA4107F56C3B812660647A6B53EC3A6DC59C3CD93F0229466",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "575E0E1BEA7B4B9AA4107F56C3B812660647A6B53EC3A6DC59C3CD93F0229466",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-57FE57FE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "BBDB2BD771E9CFD2F5D5B59C74ECC8006C98B2D2021409469F8B1FD2EB32AD42",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BBDB2BD771E9CFD2F5D5B59C74ECC8006C98B2D2021409469F8B1FD2EB32AD42",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-58595A5B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "785F9CEEFB83F76BB5AFFC2404932621DB6BE6AB81BDBCD31BEF9BDEB5B229EC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "785F9CEEFB83F76BB5AFFC2404932621DB6BE6AB81BDBCD31BEF9BDEB5B229EC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A6A7A6A7": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "40D0E0B0604218F561349377FB3F06C3B7A061CBF69A8B85DADB98761647FE89",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "40D0E0B0604218F561349377FB3F06C3B7A061CBF69A8B85DADB98761647FE89",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "EEA4CE92CFF42E4A3100F2672B3F89C978668BF3E139A04D9CB72B5179237AA0",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "8EE97E30C22549C89B2FDC3BF87697910289A94726F4B068A9DF75CE1CFCAB9B",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "A0E254C39F3937B0298455DF5411095EFA37FA6C4821088D6DAA682AAB4A4D7E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-58595A5B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "785F9CEEFB83F76BB5AFFC2404932621DB6BE6AB81BDBCD31BEF9BDEB5B229EC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "785F9CEEFB83F76BB5AFFC2404932621DB6BE6AB81BDBCD31BEF9BDEB5B229EC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-8E8F8F8E": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "053999AB4039498EDF1055CBBD9AEE92D1040E90FF5A880AB44E308760212653",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FAB2FAB3": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "AD92272DD21E66DC7C3BED2A2DA9FC4F60042492438CA0CBBB27040DB6E1D6BC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "AD92272DD21E66DC7C3BED2A2DA9FC4F60042492438CA0CBBB27040DB6E1D6BC",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-50515253": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "E544A2B04E5AFF17CD0F9C55FEC67F9C78304762BC7D5ECB6E34577E8BF23EA2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E544A2B04E5AFF17CD0F9C55FEC67F9C78304762BC7D5ECB6E34577E8BF23EA2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-5859FD5A": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "BEFC2A4A0B50E06BCC149C904507E96350E4EAE38F277E9854A02C7B99074AB9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BEFC2A4A0B50E06BCC149C904507E96350E4EAE38F277E9854A02C7B99074AB9",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-5BFD5AFD": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "FFDFC769BCA1B42418A89ACEDF617B821AC6A6338C20963524E4E2608F2F3451",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FFDFC769BCA1B42418A89ACEDF617B821AC6A6338C20963524E4E2608F2F3451",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FD5BFD5A": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "E01839F03448249AA4D7A2C2608049E50390CE0338E0BAE36EC2687907EF41D9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E01839F03448249AA4D7A2C2608049E50390CE0338E0BAE36EC2687907EF41D9",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-5BFD5C5D": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "3C5CE111A4D4FC6985D8F48C1454C4A5AAC9F5F624738A8CADA41CF5F976529E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3C5CE111A4D4FC6985D8F48C1454C4A5AAC9F5F624738A8CADA41CF5F976529E",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-6C6D5455": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "2CB040D8D03AFE11CC07D649150068991C16276A69BB4B38870387997D445AA2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2CB040D8D03AFE11CC07D649150068991C16276A69BB4B38870387997D445AA2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-44454544": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "2A0CD9DF50B6525D18A462F8E91D19ED78FC69C991B368C624595F1C854BBDE5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2A0CD9DF50B6525D18A462F8E91D19ED78FC69C991B368C624595F1C854BBDE5",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-44454544": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "2A0CD9DF50B6525D18A462F8E91D19ED78FC69C991B368C624595F1C854BBDE5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2A0CD9DF50B6525D18A462F8E91D19ED78FC69C991B368C624595F1C854BBDE5",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-44454544": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "2A0CD9DF50B6525D18A462F8E91D19ED78FC69C991B368C624595F1C854BBDE5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2A0CD9DF50B6525D18A462F8E91D19ED78FC69C991B368C624595F1C854BBDE5",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-888C8A8D": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "0B29741E86B944B93B2CDF281C964EC969EAC6F91EEA77D2CE178107163870BE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0B29741E86B944B93B2CDF281C964EC969EAC6F91EEA77D2CE178107163870BE",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4F4E37FE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D3C2C043547E246146911247DC74EBF5C790DA55AA8EEC3CC8AE23950A202909",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D3C2C043547E246146911247DC74EBF5C790DA55AA8EEC3CC8AE23950A202909",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4F4E3AFE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D7A9DE561B80AD5DBAEACB58AF33109DBC312E9FB92F0E115DFD5AFF74C84921",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D7A9DE561B80AD5DBAEACB58AF33109DBC312E9FB92F0E115DFD5AFF74C84921",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4F374E38": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "54E0FD62E6CA65B852FF99E7DEC611FAF175EFB6AF451E8CC1D80FAF100CA1F2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "54E0FD62E6CA65B852FF99E7DEC611FAF175EFB6AF451E8CC1D80FAF100CA1F2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-98999A9B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "4B3AB873B74B24665E94CF7B0212EFC166BFFE1CE9C6EC5718C76222BDEF2064",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4B3AB873B74B24665E94CF7B0212EFC166BFFE1CE9C6EC5718C76222BDEF2064",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-9C9B9E9F": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "682600AF9C01A5FD52C35A1EED1A00A96F618CEB79A8A857E9ED856E8A3FF2EE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "682600AF9C01A5FD52C35A1EED1A00A96F618CEB79A8A857E9ED856E8A3FF2EE",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-32333435": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "0ABC299EEA30E67D3423B11DF7BE9ED3BE89A11DF77D82BBEB903EFF5C007FEB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0ABC299EEA30E67D3423B11DF7BE9ED3BE89A11DF77D82BBEB903EFF5C007FEB",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-36373435": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "D4C9718DC07448FC660E2FAF8B8D7F4E8A2ED6D48784835944E5C685B40B02D2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D4C9718DC07448FC660E2FAF8B8D7F4E8A2ED6D48784835944E5C685B40B02D2",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-36373839": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "2D1F8D91E370689DD39098A2CEAFC9218C7CC977ACFC7542886D16DB1D2DBC69",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2D1F8D91E370689DD39098A2CEAFC9218C7CC977ACFC7542886D16DB1D2DBC69",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4AFE4BFE": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "DBA8E1B15F50EBD468207431C45E3483B0A02FEC3CFD61C280B3EE36AF62B26C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DBA8E1B15F50EBD468207431C45E3483B0A02FEC3CFD61C280B3EE36AF62B26C",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FB4949FB": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "6EC972F5868B983D1337167B10238B12754C04D0F4855705091684E15E1754F8",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "6EC972F5868B983D1337167B10238B12754C04D0F4855705091684E15E1754F8",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-724A734B": {
+      "Kind": "Terrain",
+      "Label": "Subcon scenery",
+      "VisualFingerprint": "16C662F2A34F02A4E5B1571D86E262FA14A8AA3DEF25310A78DE9622550FBB8F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "16C662F2A34F02A4E5B1571D86E262FA14A8AA3DEF25310A78DE9622550FBB8F",
+          "ThumbnailPng": ""
+        }
+      ]
+    }
+  }
+}

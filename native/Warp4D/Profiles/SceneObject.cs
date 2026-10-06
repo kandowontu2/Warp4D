@@ -1,5 +1,6 @@
 using System.Drawing;
 using System.Drawing.Imaging;
+using Warp4D.Rendering;
 
 namespace Warp4D.Profiles;
 
@@ -24,16 +25,20 @@ internal enum SceneObjectKind
 internal sealed class SceneObject : IDisposable
 {
     private PixelGeometry? _pixelGeometry;
+    private ImagePixels? _pixels;
 
     public required SceneObjectKind Kind { get; init; }
     public required string Label { get; init; }
+    public string IdentityKey { get; init; } = string.Empty;
+    public string PresentationKey => string.IsNullOrEmpty(IdentityKey) ? $"{Kind}:{Label}" : IdentityKey;
     public required Rectangle Bounds { get; init; }
     public required Bitmap Image { get; init; }
     public required Color Accent { get; init; }
     public required float Depth { get; init; }
     public required bool ProjectionEnabled { get; init; }
     public int SortOrder { get; init; }
-    public PixelGeometry PixelGeometry => _pixelGeometry ??= PixelGeometry.FromBitmap(Image);
+    public ImagePixels Pixels => _pixels ??= ImagePixels.Read(Image);
+    public PixelGeometry PixelGeometry => _pixelGeometry ??= GeometryCache.Get(Pixels, Image);
 
     public void Dispose() => Image.Dispose();
 }
@@ -44,6 +49,31 @@ internal readonly record struct PixelBoundary(PointF Start, PointF End, Color Co
 
 internal sealed class PixelGeometry
 {
+    private sealed record BoundaryTopology(PointF[] Points,(int Start,int End)[] Edges,Color[] Colors);
+    private sealed record LocalTopology(int ImageWidth,int ImageHeight,float HalfX,float HalfY,PointF[] Points);
+    private volatile LocalTopology? _localTopology;
+    private volatile BoundaryTopology? _topology;
+    internal (PointF[] Points,(int Start,int End)[] Edges,Color[] Colors) Topology
+    {
+        get
+        {
+            if(_topology is {} cached)return (cached.Points,cached.Edges,cached.Colors);
+            Dictionary<PointF,int> indices=[];List<PointF> points=[];
+            int Index(PointF point){if(indices.TryGetValue(point,out int i))return i;indices[point]=points.Count;points.Add(point);return points.Count-1;}
+            (int Start,int End)[] edges=new (int,int)[Boundary.Count];
+            for(int i=0;i<edges.Length;i++)edges[i]=(Index(Boundary[i].Start),Index(Boundary[i].End));
+            var built=new BoundaryTopology(points.ToArray(),edges,Boundary.Select(edge=>edge.Color).ToArray());_topology=built;return (built.Points,built.Edges,built.Colors);
+        }
+    }
+    internal PointF[] LocalPoints(int imageWidth,int imageHeight,float halfX,float halfY)
+    {
+        if(_localTopology is {} cached && cached.ImageWidth==imageWidth && cached.ImageHeight==imageHeight && cached.HalfX==halfX && cached.HalfY==halfY)return cached.Points;
+        var points=Topology.Points;
+        PointF[] local=new PointF[points.Length];
+        for(int i=0;i<local.Length;i++)local[i]=new(-halfX+(points[i].X/imageWidth)*halfX*2f,-halfY+(points[i].Y/imageHeight)*halfY*2f);
+        _localTopology=new(imageWidth,imageHeight,halfX,halfY,local);
+        return local;
+    }
     public required IReadOnlyList<PixelRun> Runs { get; init; }
     public required IReadOnlyList<PixelBoundary> Boundary { get; init; }
 
@@ -179,9 +209,24 @@ internal sealed class SmbScene : IDisposable
     public required IReadOnlyList<SceneObject> Objects { get; init; }
     public required string Location { get; init; }
     public required bool ExactProfile { get; init; }
+    public IReadOnlyList<Rectangle> FlatRegions { get; init; } = [];
     public required string RecognitionProfileName { get; init; }
     public required string ProjectionProfileName { get; init; }
     public long Sequence { get; init; }
+    public bool PlayerOverlaysFlatHud { get; init; }
+
+    public SmbScene Clone() => new()
+    {
+        Background = new Bitmap(Background),
+        Objects = Objects.Select(item => new SceneObject
+        {
+            Kind = item.Kind, Label = item.Label, IdentityKey = item.IdentityKey,
+            Bounds = item.Bounds, Image = new Bitmap(item.Image), Accent = item.Accent,
+            Depth = item.Depth, ProjectionEnabled = item.ProjectionEnabled, SortOrder = item.SortOrder
+        }).ToArray(),
+        Location = Location, ExactProfile = ExactProfile, FlatRegions = FlatRegions.ToArray(), RecognitionProfileName = RecognitionProfileName,
+        ProjectionProfileName = ProjectionProfileName, Sequence = Sequence, PlayerOverlaysFlatHud = PlayerOverlaysFlatHud
+    };
 
     public void Dispose()
     {

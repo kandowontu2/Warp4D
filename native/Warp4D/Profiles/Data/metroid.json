@@ -1,0 +1,2429 @@
+{
+  "FormatVersion": 17,
+  "Name": "Metroid \u00B7 built-in",
+  "RomName": "Metroid.nes",
+  "RomSha256": "",
+  "GameplayStateAddress": 29,
+  "GameplayStateValue": 0,
+  "TransparentBackdrop": true,
+  "SeparateMetatiles": true,
+  "AllowMaskedLeftEdgeArtwork": false,
+  "CellSize": 16,
+  "RequireRecognizedScene": true,
+  "MinimumScenePatterns": 2,
+  "SceneAnchors": [],
+  "FlatRegions": [
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 16,
+        "Y": 24
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 56,
+        "Height": 24
+      },
+      "X": 16,
+      "Y": 24,
+      "Width": 56,
+      "Height": 24,
+      "Left": 16,
+      "Top": 24,
+      "Right": 72,
+      "Bottom": 48,
+      "IsEmpty": false
+    }
+  ],
+  "ObjectRegions": [],
+  "PlayerOamIndices": [],
+  "PlayerLabel": "Samus",
+  "PlayerTracking": {
+    "XAddress": 782,
+    "YAddress": 781,
+    "SpritePalette": 0,
+    "BodyTilesByAnimation": {
+      "0": [0,1,65,64,32,33,49],
+      "1": [0,1,65,64,32,33,49],
+      "2": [0,1,65,64,32,33,49],
+      "3": [0,1,65,64,32,33,49],
+      "4": [2,3,67,66,34,35,50,51,52],
+      "5": [5,6,69,68,37,38,39,53,54],
+      "6": [9,9,25,26,41,42,57,57],
+      "7": [9,9,25,26,41,42,57,57],
+      "8": [14,13,30,29,46,45,59,60,23],
+      "9": [0,1,75,74,73,32,33,49],
+      "10": [0,1,75,74,73,32,33,49],
+      "11": [0,1,75,74,73,32,33,49],
+      "12": [0,1,75,74,73,32,33,49],
+      "13": [0,1,75,74,73,34,35,50,51,52],
+      "14": [0,1,75,74,73,37,38,39,53,54],
+      "15": [0,1,65,64,34,7,8,50],
+      "16": [0,1,65,64,34,7,8,50],
+      "17": [0,1,75,74,73,34,7,8,50],
+      "18": [0,1,75,74,73,34,7,8,50],
+      "19": [82,83,98,99,114,115],
+      "20": [82,83,98,99,114,115],
+      "21": [82,83,98,99,114,115],
+      "22": [82,83,98,99,114,115],
+      "23": [82,83,98,99,114,115],
+      "24": [84,85,86,100,101,102],
+      "25": [82,83,98,99,114,115],
+      "26": [84,85,86,100,101,102],
+      "27": [80,81,96,97],
+      "28": [80,81,96,97],
+      "29": [80,81,96,97],
+      "30": [80,81,96,97],
+      "31": [14,13,30,29,46,45,59,60,23],
+      "32": [14,13,30,29,46,45,59,60,23],
+      "33": [14,13,30,29,46,45,59,60,23],
+      "34": [14,13,30,29,46,45,59,60,23],
+      "43": [105,122,121,120,119,46,45,59,60],
+      "44": [105,122,121,120,119,46,45,59,60],
+      "45": [105,122,121,120,119,46,45,59,60],
+      "46": [105,122,121,120,119,46,45,59,60],
+      "47": [105,122,121,120,119,46,45,59,60],
+      "48": [105,122,121,120,119,46,45,59,60],
+      "54": [105,122,121,120,119,34,7,8,50],
+      "55": [105,122,121,120,119,34,7,8,50],
+      "56": [105,122,121,120,119,34,7,8,50],
+      "57": [105,122,121,120,119,34,7,8,50],
+      "61": [105,122,121,120,119,32,33,49],
+      "62": [105,122,121,120,119,32,33,49],
+      "63": [105,122,121,120,119,32,33,49],
+      "64": [105,122,121,120,119,32,33,49],
+      "65": [105,122,121,120,119,34,35,50,51,52],
+      "66": [105,122,121,120,119,37,38,39,53,54],
+      "67": [105,122,121,120,119,32,33,49],
+      "68": [105,122,121,120,119,32,33,49],
+      "69": [105,122,121,120,119,32,33,49],
+      "70": [105,122,121,120,119,32,33,49],
+      "71": [105,122,121,120,119,34,35,50,51,52],
+      "72": [105,122,121,120,119,37,38,39,53,54]
+    },
+    "MaximumWidth": 64,
+    "MaximumHeight": 64,
+    "XScrollAddress": 253,
+    "YScrollAddress": 252,
+    "VerticalWrap": {
+      "ScrollDirectionAddress": 73,
+      "HorizontalDirectionMask": 2,
+      "ObjectNametableAddress": 780,
+      "PpuNametableAddress": 255,
+      "NametableMask": 1
+    }
+  },
+  "PlayerOverlaysFlatHud": true,
+  "BackgroundRules": {
+    "P3-0E100F11": {
+      "Kind": "Pipe",
+      "Label": "Brinstar pillar",
+      "VisualFingerprint": "2CCE26AF002CC94057B837F860A917892A24180B5A1CB789C61A680174907D67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2CCE26AF002CC94057B837F860A917892A24180B5A1CB789C61A680174907D67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-59595B5B": {
+      "Kind": "Pipe",
+      "Label": "Brinstar pillar",
+      "VisualFingerprint": "5E25551F47DC983E31ADE270EB67C4C90DB8B36C19E7A012EF43495E07D689A2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5E25551F47DC983E31ADE270EB67C4C90DB8B36C19E7A012EF43495E07D689A2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-60626163": {
+      "Kind": "Pipe",
+      "Label": "Brinstar pillar",
+      "VisualFingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-4B4D4C50": {
+      "Kind": "Pipe",
+      "Label": "Brinstar pillar",
+      "VisualFingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-00020103": {
+      "Kind": "Terrain",
+      "Label": "Brinstar rock",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2C3F460955ED8CB66D5A1AF43D6E8D90C1F2EA0CD556FB2A0C85BDA3BE05965C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-04040505": {
+      "Kind": "Terrain",
+      "Label": "Brinstar rock",
+      "VisualFingerprint": "19950655F6A4011C26F568FE1BF14A689F3BCE6FD68435ABA96FE0FB5E4627CB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "19950655F6A4011C26F568FE1BF14A689F3BCE6FD68435ABA96FE0FB5E4627CB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-5C5E5D5F": {
+      "Kind": "Terrain",
+      "Label": "Brinstar rock",
+      "VisualFingerprint": "0651D9697811C2A69C02101987FED4B26F6BB3719DBCFCDAEDD4633782583D1F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0651D9697811C2A69C02101987FED4B26F6BB3719DBCFCDAEDD4633782583D1F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-08020903": {
+      "Kind": "Terrain",
+      "Label": "Brinstar rock",
+      "VisualFingerprint": "2C565DF021F380179525F00218B3CC55ED5FF2066072155C360315169601028A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2C565DF021F380179525F00218B3CC55ED5FF2066072155C360315169601028A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-00020103": {
+      "Kind": "Terrain",
+      "Label": "Brinstar rock",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-08020903": {
+      "Kind": "Terrain",
+      "Label": "Brinstar rock",
+      "VisualFingerprint": "2C565DF021F380179525F00218B3CC55ED5FF2066072155C360315169601028A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2C565DF021F380179525F00218B3CC55ED5FF2066072155C360315169601028A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-4B4D4C50": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-00020103": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2C3F460955ED8CB66D5A1AF43D6E8D90C1F2EA0CD556FB2A0C85BDA3BE05965C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-030A0AFF": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "3DE081E34FE6B3F6242F0EAEB686639FA1D6D73442D08911E1B839E3F74280E2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3DE081E34FE6B3F6242F0EAEB686639FA1D6D73442D08911E1B839E3F74280E2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-0BFF000B": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "522CEACFBFD8BB4E35BC654BBF991A7F5632BDE5F7C1BE610029E3ABC7B67C0B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "522CEACFBFD8BB4E35BC654BBF991A7F5632BDE5F7C1BE610029E3ABC7B67C0B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-1F212022": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-2325240B": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-10101010": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-1B1D1C1E": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "1031A2B409DA7CD52ADC44683DB6B26AC6C2D25B75DC0230018BD7FCB6A90CA0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1031A2B409DA7CD52ADC44683DB6B26AC6C2D25B75DC0230018BD7FCB6A90CA0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-1719181A": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "D94B4E79FE2B9F2E62E9BA82F12D9100A11952B082E7C94332B342A59E161073",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D94B4E79FE2B9F2E62E9BA82F12D9100A11952B082E7C94332B342A59E161073",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-60626163": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0C0D0D0D": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "1A9F9C165B1F326B25C885EE614850DCC6966BCDC9EE5C0C58B9B9B58FA3F9AF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1A9F9C165B1F326B25C885EE614850DCC6966BCDC9EE5C0C58B9B9B58FA3F9AF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-10FF0D10": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "FC2C09B979638DE90DA3B85D04301A818892CD8112207986F1E165EF91F08ED1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FC2C09B979638DE90DA3B85D04301A818892CD8112207986F1E165EF91F08ED1",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0EFF0FFF": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "09613CEDAFFF8F106B33529515B6D24C7FAC1723B349A48B8B5A745C0A56ECFF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "09613CEDAFFF8F106B33529515B6D24C7FAC1723B349A48B8B5A745C0A56ECFF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-55575658": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-4B4D4C50": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-ECEDFFFF": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "79B8D44D2EAEDDC7E93089337F779D15E539AAE2857CAE3522C0A44C394AD166",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "79B8D44D2EAEDDC7E93089337F779D15E539AAE2857CAE3522C0A44C394AD166",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FFFFEEEF": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "7DB3B0E0834C132D56131EC09EB5310DC8E92E675AC5B9A2247C283E355D5590",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7DB3B0E0834C132D56131EC09EB5310DC8E92E675AC5B9A2247C283E355D5590",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-08080808": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "87CB7ACA83AAABF0E711CD3C3EA35A09FB4F0E422CC83B0E5728AF54CD5287F7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "87CB7ACA83AAABF0E711CD3C3EA35A09FB4F0E422CC83B0E5728AF54CD5287F7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-45454646": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-04060507": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "476FC36405197DA3BBC3234F4F6BE1DE4B1BB47E8029D7C79126E5E81BD68CC4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-28292829": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "ACAB5F2B469EF7927508628AEA945305207BAAF5183BC1C5E4AEC5C229FDCA71",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "ACAB5F2B469EF7927508628AEA945305207BAAF5183BC1C5E4AEC5C229FDCA71",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-08080808": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "87CB7ACA83AAABF0E711CD3C3EA35A09FB4F0E422CC83B0E5728AF54CD5287F7",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "87CB7ACA83AAABF0E711CD3C3EA35A09FB4F0E422CC83B0E5728AF54CD5287F7",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-0C0E0D0F": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-26262727": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "68AD7279A06015589811B1684D27D74CD674EFA3E2E1FF30BE1EB3E55D359165",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "68AD7279A06015589811B1684D27D74CD674EFA3E2E1FF30BE1EB3E55D359165",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-14161517": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "0D1DBCE7CF8334F531B49DACFD674142E24FA29322471E9DF90ABAD27624FE00",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0D1DBCE7CF8334F531B49DACFD674142E24FA29322471E9DF90ABAD27624FE00",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-2AFF2BFF": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "BC561902A8C577B626FEF8071C790F43B771AABCFAC88105C94619ED0841477D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BC561902A8C577B626FEF8071C790F43B771AABCFAC88105C94619ED0841477D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-2BFF2CFF": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "2A798F722879A439324632B6EDCD77A8BB69A99615EA4B79D72AD7826BCFBEDF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2A798F722879A439324632B6EDCD77A8BB69A99615EA4B79D72AD7826BCFBEDF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-45454646": {
+      "Kind": "Terrain",
+      "Label": "Ridley architecture",
+      "VisualFingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-10121113": {
+      "Kind": "Terrain",
+      "Label": "Ridley architecture",
+      "VisualFingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-08020903": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "2C565DF021F380179525F00218B3CC55ED5FF2066072155C360315169601028A",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2C565DF021F380179525F00218B3CC55ED5FF2066072155C360315169601028A",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A0A0A0A0": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-06070607": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "05664039C5F2800B5BBB143ABBEB2A2A737843299F573685B5423D3A3DE78F9C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "05664039C5F2800B5BBB143ABBEB2A2A737843299F573685B5423D3A3DE78F9C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-00020103": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "2C3F460955ED8CB66D5A1AF43D6E8D90C1F2EA0CD556FB2A0C85BDA3BE05965C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-A0A0A0A0": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-80828183": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-51535254": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "E1D359223F16601E5438181289CE1C7C221C7F1E1CB7427DE14CE666F5BE2059",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E1D359223F16601E5438181289CE1C7C221C7F1E1CB7427DE14CE666F5BE2059",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-51535254": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "E1D359223F16601E5438181289CE1C7C221C7F1E1CB7427DE14CE666F5BE2059",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E1D359223F16601E5438181289CE1C7C221C7F1E1CB7427DE14CE666F5BE2059",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-60626163": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-04040505": {
+      "Kind": "Terrain",
+      "Label": "Brinstar architecture",
+      "VisualFingerprint": "19950655F6A4011C26F568FE1BF14A689F3BCE6FD68435ABA96FE0FB5E4627CB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "19950655F6A4011C26F568FE1BF14A689F3BCE6FD68435ABA96FE0FB5E4627CB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-2325240B": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-1F212022": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-76767676": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-C3C5C4C6": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-D7D7D7D7": {
+      "Kind": "Terrain",
+      "Label": "Norfair architecture",
+      "VisualFingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-55575658": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A0A0A0A0": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-55575658": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FFFFEEEF": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "7DB3B0E0834C132D56131EC09EB5310DC8E92E675AC5B9A2247C283E355D5590",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7DB3B0E0834C132D56131EC09EB5310DC8E92E675AC5B9A2247C283E355D5590",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-47474848": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "8D368D9CB79016904BCABDF62EBF617FA1B3094A692AF291D460666EC23FC209",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8D368D9CB79016904BCABDF62EBF617FA1B3094A692AF291D460666EC23FC209",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-ECEDFFFF": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "79B8D44D2EAEDDC7E93089337F779D15E539AAE2857CAE3522C0A44C394AD166",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "79B8D44D2EAEDDC7E93089337F779D15E539AAE2857CAE3522C0A44C394AD166",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-10121113": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-1C1E1D1F": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "E4086C82590DF880F7CE8539EEA82952D5ADB3CD02622EF409A20920FF91787F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E4086C82590DF880F7CE8539EEA82952D5ADB3CD02622EF409A20920FF91787F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FF59FF5A": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "58EA6A94A2B9352D171FB7DE4AAE073E843B1020CFE783D20DB22845A9D43214",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "58EA6A94A2B9352D171FB7DE4AAE073E843B1020CFE783D20DB22845A9D43214",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FF5AFF5B": {
+      "Kind": "Brick",
+      "Label": "Kraid architecture",
+      "VisualFingerprint": "EE3E93728ECF6F12F9D61D2E97A0BAAD024555AA456D0FD1F8D46B4A7F33F0B3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EE3E93728ECF6F12F9D61D2E97A0BAAD024555AA456D0FD1F8D46B4A7F33F0B3",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-2AFF2BFF": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "BC561902A8C577B626FEF8071C790F43B771AABCFAC88105C94619ED0841477D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BC561902A8C577B626FEF8071C790F43B771AABCFAC88105C94619ED0841477D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-2BFF2BFF": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "73505854CCED094CAAFC4429ADDF9E063AFB0CE54B8155019E56CAA01A07525C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "73505854CCED094CAAFC4429ADDF9E063AFB0CE54B8155019E56CAA01A07525C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-2BFF2CFF": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "2A798F722879A439324632B6EDCD77A8BB69A99615EA4B79D72AD7826BCFBEDF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2A798F722879A439324632B6EDCD77A8BB69A99615EA4B79D72AD7826BCFBEDF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-2BFF2BFF": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "73505854CCED094CAAFC4429ADDF9E063AFB0CE54B8155019E56CAA01A07525C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "73505854CCED094CAAFC4429ADDF9E063AFB0CE54B8155019E56CAA01A07525C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-04060507": {
+      "Kind": "Brick",
+      "Label": "Tourian architecture",
+      "VisualFingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "476FC36405197DA3BBC3234F4F6BE1DE4B1BB47E8029D7C79126E5E81BD68CC4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-26282729": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "764C82FA7690F86FF3A2F7891B914163282F000A4D4992EDE6053B21BF23AA74",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "764C82FA7690F86FF3A2F7891B914163282F000A4D4992EDE6053B21BF23AA74",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-2A2C2B2D": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "4CE38DDF66289940F802DA72300F18B4BE0C12FA19EF4AF1BFBBE9A3CD3A444D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4CE38DDF66289940F802DA72300F18B4BE0C12FA19EF4AF1BFBBE9A3CD3A444D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-45454646": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-04060507": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FFF0FFF0": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-F1F1F1F1": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-70727173": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-60626163": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A79D109C9CFC1B92AF7CC0B20982BDFAB701E287670AED3849F19DAADF697886",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-0C0E0D0F": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FFF0FFF0": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-F1F1F1F1": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-20222123": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-25242524": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "084119FD1D378CE8F26DF0E94A15CD02A994F5996A2BB7271024DCF610BF77FD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "084119FD1D378CE8F26DF0E94A15CD02A994F5996A2BB7271024DCF610BF77FD",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FF59FF5A": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "58EA6A94A2B9352D171FB7DE4AAE073E843B1020CFE783D20DB22845A9D43214",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "58EA6A94A2B9352D171FB7DE4AAE073E843B1020CFE783D20DB22845A9D43214",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FF5AFF5B": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "EE3E93728ECF6F12F9D61D2E97A0BAAD024555AA456D0FD1F8D46B4A7F33F0B3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EE3E93728ECF6F12F9D61D2E97A0BAAD024555AA456D0FD1F8D46B4A7F33F0B3",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-20222123": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-FFF0FFF0": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-F1F1F1F1": {
+      "Kind": "Terrain",
+      "Label": "Ridley hideout architecture",
+      "VisualFingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FFFFEEEF": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "7DB3B0E0834C132D56131EC09EB5310DC8E92E675AC5B9A2247C283E355D5590",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7DB3B0E0834C132D56131EC09EB5310DC8E92E675AC5B9A2247C283E355D5590",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-181A191B": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "16805C006876C01617C185354D5712B0866C74041647E72516FF05D052B6D5DC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "16805C006876C01617C185354D5712B0866C74041647E72516FF05D052B6D5DC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-E0E2E1E3": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-E0E2E1E3": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-25242524": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "084119FD1D378CE8F26DF0E94A15CD02A994F5996A2BB7271024DCF610BF77FD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "084119FD1D378CE8F26DF0E94A15CD02A994F5996A2BB7271024DCF610BF77FD",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-20222123": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A0A0A0A0": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-0C0E0D0F": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-10121113": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-90929193": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C7C9C8CA": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-55575658": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FFF0FFF0": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-F1F1F1F1": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-26282729": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "764C82FA7690F86FF3A2F7891B914163282F000A4D4992EDE6053B21BF23AA74",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "764C82FA7690F86FF3A2F7891B914163282F000A4D4992EDE6053B21BF23AA74",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-2A2C2B2D": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "4CE38DDF66289940F802DA72300F18B4BE0C12FA19EF4AF1BFBBE9A3CD3A444D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4CE38DDF66289940F802DA72300F18B4BE0C12FA19EF4AF1BFBBE9A3CD3A444D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-04060507": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "324710D5F8E81E78DB1C45CC7916E4514FA83A1CB7B71C96F3CF5330E122BC67",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        },
+        {
+          "Fingerprint": "476FC36405197DA3BBC3234F4F6BE1DE4B1BB47E8029D7C79126E5E81BD68CC4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-14161517": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "0D1DBCE7CF8334F531B49DACFD674142E24FA29322471E9DF90ABAD27624FE00",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0D1DBCE7CF8334F531B49DACFD674142E24FA29322471E9DF90ABAD27624FE00",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-10121113": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "622A0F71E181ED9A51FCD5EE2464264F5B18A122A365F0BB9C7FF5F5D87E365D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-0C0E0D0F": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "148D69DFF81BC2470A3DAF9C24889917BD0258465C1B592B159CA125E2961DB6",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-ECEDFFFF": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "79B8D44D2EAEDDC7E93089337F779D15E539AAE2857CAE3522C0A44C394AD166",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "79B8D44D2EAEDDC7E93089337F779D15E539AAE2857CAE3522C0A44C394AD166",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-20222123": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "CBC513B2D0CEC7C62C115A8A7B7D894D55F5455A5AE46A8A893573AC264B4FDC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-45454646": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A67B9ABDF015089FF7C8E881C83F43ED7831955CC71657FDD23D98355FF4248C",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FF43FF43": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-44444444": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A1A1A1A1": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A1A1A1A1": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FF43FF43": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-44444444": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-26282729": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "764C82FA7690F86FF3A2F7891B914163282F000A4D4992EDE6053B21BF23AA74",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "764C82FA7690F86FF3A2F7891B914163282F000A4D4992EDE6053B21BF23AA74",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-2A2C2B2D": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "4CE38DDF66289940F802DA72300F18B4BE0C12FA19EF4AF1BFBBE9A3CD3A444D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4CE38DDF66289940F802DA72300F18B4BE0C12FA19EF4AF1BFBBE9A3CD3A444D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-888A898B": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "301F179D0516505525B05574CB5D413B0226DE5982502166691F1FD5D359D843",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "301F179D0516505525B05574CB5D413B0226DE5982502166691F1FD5D359D843",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-A1A1A1A1": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FF59FF5A": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "58EA6A94A2B9352D171FB7DE4AAE073E843B1020CFE783D20DB22845A9D43214",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "58EA6A94A2B9352D171FB7DE4AAE073E843B1020CFE783D20DB22845A9D43214",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FF5AFF5B": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "EE3E93728ECF6F12F9D61D2E97A0BAAD024555AA456D0FD1F8D46B4A7F33F0B3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "EE3E93728ECF6F12F9D61D2E97A0BAAD024555AA456D0FD1F8D46B4A7F33F0B3",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-25242524": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "084119FD1D378CE8F26DF0E94A15CD02A994F5996A2BB7271024DCF610BF77FD",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "084119FD1D378CE8F26DF0E94A15CD02A994F5996A2BB7271024DCF610BF77FD",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-787A797B": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "E8DFBC68F5D3F04AF766B35CB657BB1B6C9AE9EE69238E76365803923C1786BE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E8DFBC68F5D3F04AF766B35CB657BB1B6C9AE9EE69238E76365803923C1786BE",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-E8EAE9EB": {
+      "Kind": "Terrain",
+      "Label": "Metroid scenery",
+      "VisualFingerprint": "E8DFBC68F5D3F04AF766B35CB657BB1B6C9AE9EE69238E76365803923C1786BE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E8DFBC68F5D3F04AF766B35CB657BB1B6C9AE9EE69238E76365803923C1786BE",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-80828183": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-51535254": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "E1D359223F16601E5438181289CE1C7C221C7F1E1CB7427DE14CE666F5BE2059",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "E1D359223F16601E5438181289CE1C7C221C7F1E1CB7427DE14CE666F5BE2059",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-4B4D4C50": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B56ECB611C2BB7A656AD38FF13D702D8AD7081BC620D8A2E87AA099A411D6894",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FF08FF09": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "60156DFF0921A35AFA76A6009BF8A042E44688B7AFE1224E42DEBD590625E581",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "60156DFF0921A35AFA76A6009BF8A042E44688B7AFE1224E42DEBD590625E581",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FF09FF0A": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "7DEF2546B8988B0480EC9033BF498725090381729EEA52C01F48724E5B1C5B7D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7DEF2546B8988B0480EC9033BF498725090381729EEA52C01F48724E5B1C5B7D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-47484847": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-74757574": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-5C5E5D5F": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "0651D9697811C2A69C02101987FED4B26F6BB3719DBCFCDAEDD4633782583D1F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0651D9697811C2A69C02101987FED4B26F6BB3719DBCFCDAEDD4633782583D1F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-1F212022": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-11FF1211": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "9EC1EE27A381DC70781A87FFCF8DDDD11D565E6616E2DBD4A1F3119A64B8E19D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9EC1EE27A381DC70781A87FFCF8DDDD11D565E6616E2DBD4A1F3119A64B8E19D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-11121211": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "4621EA05C666627FB16A7A26490E0EAA10424A79587E176266CC168DA3C72272",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4621EA05C666627FB16A7A26490E0EAA10424A79587E176266CC168DA3C72272",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-111212FF": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "FAA10FC3B8E4029D08156337B4D8612F29C8D6307380FFADED1484001A1E0B5B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FAA10FC3B8E4029D08156337B4D8612F29C8D6307380FFADED1484001A1E0B5B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-11FF1211": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "9EC1EE27A381DC70781A87FFCF8DDDD11D565E6616E2DBD4A1F3119A64B8E19D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "9EC1EE27A381DC70781A87FFCF8DDDD11D565E6616E2DBD4A1F3119A64B8E19D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-11121211": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "4621EA05C666627FB16A7A26490E0EAA10424A79587E176266CC168DA3C72272",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "4621EA05C666627FB16A7A26490E0EAA10424A79587E176266CC168DA3C72272",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-111212FF": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "FAA10FC3B8E4029D08156337B4D8612F29C8D6307380FFADED1484001A1E0B5B",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FAA10FC3B8E4029D08156337B4D8612F29C8D6307380FFADED1484001A1E0B5B",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-80828183": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-80828183": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "127A9A44B02F322E46928CA276C569D5F84B21C84ECDA40F083766FDEF444B9E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-47484847": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-10101010": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-2325240B": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-76767676": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FFFFFF30": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "066E242E16AEAE9A2C61DE98132B1038755EBF21F0E932B19A909FD1CC8FA010",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "066E242E16AEAE9A2C61DE98132B1038755EBF21F0E932B19A909FD1CC8FA010",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FF31FF32": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "3EC9C2728434C2DD2D84F29E0C7E7B7DE6C827166AE4A54F23C1FB7F032DED5F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3EC9C2728434C2DD2D84F29E0C7E7B7DE6C827166AE4A54F23C1FB7F032DED5F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FFFF3336": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "FB87FCEFD8A42682DBDF492101DDE0704EB6CE211D30519DC619DF0C9BCF83E2",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FB87FCEFD8A42682DBDF492101DDE0704EB6CE211D30519DC619DF0C9BCF83E2",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-34373538": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D5D6A7AE33230F0311589B0838C8783267E3EA3F0B78BC2764BFC9E010383A4D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D5D6A7AE33230F0311589B0838C8783267E3EA3F0B78BC2764BFC9E010383A4D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-888A898B": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "301F179D0516505525B05574CB5D413B0226DE5982502166691F1FD5D359D843",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "301F179D0516505525B05574CB5D413B0226DE5982502166691F1FD5D359D843",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FFFF393D": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "10F30A7A728BF8057B3D6A23B91C775D717CD513B42E818F82237D396ED0F220",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "10F30A7A728BF8057B3D6A23B91C775D717CD513B42E818F82237D396ED0F220",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-3A3E3B3F": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "C942BAC6DB7725E72C8A8B047080914A62AB83C717C746CAB387CA57ED91D9D0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C942BAC6DB7725E72C8A8B047080914A62AB83C717C746CAB387CA57ED91D9D0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-3C404142": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "B55B4D601E9E060C974DCB888229A393BBA6DEE395BBE8A8F5681129D0534F78",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B55B4D601E9E060C974DCB888229A393BBA6DEE395BBE8A8F5681129D0534F78",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-47484847": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-B8B9B8B9": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "DE8225E5C8270C00C3DBA72E4599DADE671FFFAB2038EFDB665681C58AF5E8F4",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "DE8225E5C8270C00C3DBA72E4599DADE671FFFAB2038EFDB665681C58AF5E8F4",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-47484847": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "35AF1CD56443606A5F798732923F819A8EBB2FC0EBD7D41F6085EFC85097412E",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-5C5E5D5F": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "0651D9697811C2A69C02101987FED4B26F6BB3719DBCFCDAEDD4633782583D1F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "0651D9697811C2A69C02101987FED4B26F6BB3719DBCFCDAEDD4633782583D1F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-13151416": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-13151416": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-13151416": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-10101010": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FF08FF09": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "60156DFF0921A35AFA76A6009BF8A042E44688B7AFE1224E42DEBD590625E581",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "60156DFF0921A35AFA76A6009BF8A042E44688B7AFE1224E42DEBD590625E581",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FF09FF0A": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "7DEF2546B8988B0480EC9033BF498725090381729EEA52C01F48724E5B1C5B7D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "7DEF2546B8988B0480EC9033BF498725090381729EEA52C01F48724E5B1C5B7D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-64646464": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "47EA817698234C5CACE9F0545FAE4F62E9F306AB59FF64FF0D55C4C750B2CACC",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "47EA817698234C5CACE9F0545FAE4F62E9F306AB59FF64FF0D55C4C750B2CACC",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-A1A1A1A1": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C5C1CDB72C757A62EC9304C06FEAE8A5A759D4ECC85FA16473FAAA4F4FD602BB",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-10FFFFFF": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "B0B83F02BEA6712B2DB6D7A8C941D7AE7DD977BEA7044BDAB0BC160CC70B0389",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B0B83F02BEA6712B2DB6D7A8C941D7AE7DD977BEA7044BDAB0BC160CC70B0389",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-10101010": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D062E4E2406BBE5E6FC9B77A4C357CAC5AAB11C62BD7B2654F3571530234D0E9",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C3C5C4C6": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2E80FD52F0B1B5C9830FD32BADA207AF07AC69E4303A2E1D1BE3C47A0D627FCA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-8C8E8D8F": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "726978F6545B8074B76DE539AEF99E65CC7426137C135DE7B3D9ADEA52E0D297",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-70727173": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "2D1B31BBA9BC9416F5F092271D2D0BF3D0A1CD730FF6F3FAB3C272450C06DE04",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2D1B31BBA9BC9416F5F092271D2D0BF3D0A1CD730FF6F3FAB3C272450C06DE04",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-70727173": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "2D1B31BBA9BC9416F5F092271D2D0BF3D0A1CD730FF6F3FAB3C272450C06DE04",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2D1B31BBA9BC9416F5F092271D2D0BF3D0A1CD730FF6F3FAB3C272450C06DE04",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-FFBAFFBA": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "5044C6BB1C10298D6A236F7172B4BEFC2BBF7188A324BFCDC2EAAC6051607FBF",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-BBBBBBBB": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D0E737E0354D2BA74DB68D96CBA24D4A9B51BC06C56AA4F423DE88EDBDDC1BC5",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-10FF0D10": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "FC2C09B979638DE90DA3B85D04301A818892CD8112207986F1E165EF91F08ED1",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "FC2C09B979638DE90DA3B85D04301A818892CD8112207986F1E165EF91F08ED1",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C1131313": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "1BEBF6DA28A61165D4E75DD7A700BBC83E9A8E2BA4A8E0F01DB888AA945ED4BE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1BEBF6DA28A61165D4E75DD7A700BBC83E9A8E2BA4A8E0F01DB888AA945ED4BE",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-BF151414": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "92AD3445C0C19658270B375FD2D6D0FB42B44EE248BA5C84B5614843FB854F42",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "92AD3445C0C19658270B375FD2D6D0FB42B44EE248BA5C84B5614843FB854F42",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-36BCBEBD": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "F0E56662111F4761A4487B9FE76A0D188C16D2C6A11BA6BE07A0A82D48DD6EF0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "F0E56662111F4761A4487B9FE76A0D188C16D2C6A11BA6BE07A0A82D48DD6EF0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C0C01416": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D4C78FD5F22964E26137813526FDC0334E84A75CD76334AF1F351C4439E7AD56",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D4C78FD5F22964E26137813526FDC0334E84A75CD76334AF1F351C4439E7AD56",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FFFFC1FF": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "2D3221DAFDBEF43E9B2EF1ABE867EB5DF8CEE313A127C62B0604E95D6E9905C3",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "2D3221DAFDBEF43E9B2EF1ABE867EB5DF8CEE313A127C62B0604E95D6E9905C3",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-C2FF14FF": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "28EE389C32DE45D6417CFD9E6A1B50071714F9DA75ACD29F7F8442ECD0E8B147",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "28EE389C32DE45D6417CFD9E6A1B50071714F9DA75ACD29F7F8442ECD0E8B147",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-30BC13BD": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "B0DE662EE691AA6671672BD613F5BF63D6236C0112818F8C7E1F7EA6D4314BEE",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "B0DE662EE691AA6671672BD613F5BF63D6236C0112818F8C7E1F7EA6D4314BEE",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-1F212022": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "8E0F1B8A95DAA4508A7316694E274F80A388B7BBF71202AD7EE3685516CD90CA",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-A4A4FFFF": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "BAA89435951EE33F89D0172EF4D7CA57B2628FB8649D9106416EDE86D3E88A46",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BAA89435951EE33F89D0172EF4D7CA57B2628FB8649D9106416EDE86D3E88A46",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-FFFFA5A5": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "3704F317F4107233E597CB334FFCC0FFE0EFE9DD382BB4F99973379DCCDC3204",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3704F317F4107233E597CB334FFCC0FFE0EFE9DD382BB4F99973379DCCDC3204",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-A4A4FFFF": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "BAA89435951EE33F89D0172EF4D7CA57B2628FB8649D9106416EDE86D3E88A46",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BAA89435951EE33F89D0172EF4D7CA57B2628FB8649D9106416EDE86D3E88A46",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-FFFFA5A5": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "3704F317F4107233E597CB334FFCC0FFE0EFE9DD382BB4F99973379DCCDC3204",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "3704F317F4107233E597CB334FFCC0FFE0EFE9DD382BB4F99973379DCCDC3204",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-1B1D1C1E": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "1031A2B409DA7CD52ADC44683DB6B26AC6C2D25B75DC0230018BD7FCB6A90CA0",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "1031A2B409DA7CD52ADC44683DB6B26AC6C2D25B75DC0230018BD7FCB6A90CA0",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P0-1719181A": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "D94B4E79FE2B9F2E62E9BA82F12D9100A11952B082E7C94332B342A59E161073",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "D94B4E79FE2B9F2E62E9BA82F12D9100A11952B082E7C94332B342A59E161073",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P1-90929193": {
+      "Kind": "Terrain",
+      "Label": "Norfair cavern architecture",
+      "VisualFingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "BB2B63AA7B8A3AE1C63C6A06146D5352C785D2F6333122EE6F21F0603A2BB32D",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    }
+  }
+}

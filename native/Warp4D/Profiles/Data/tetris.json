@@ -1,0 +1,274 @@
+{
+  "FormatVersion": 7,
+  "Name": "Tetris (Nintendo USA) · built-in",
+  "RomName": "Tetris (Nintendo USA).nes",
+  "RomSha256": "",
+  "GameplayStateAddress": 189,
+  "GameplayStateValue": 3,
+  "TransparentBackdrop": true,
+  "SeparateMetatiles": true,
+  "AllowMaskedLeftEdgeArtwork": false,
+  "CellSize": 8,
+  "RequireRecognizedScene": true,
+  "MinimumScenePatterns": 1,
+  "SceneAnchors": [
+    {
+      "X": 80,
+      "Y": 40,
+      "Key": "P3-87878787",
+      "Fingerprint": "12E8B2B8EAFF5D4A6AC9FAD3BC8804A911DF1931938F9B0B0FE9569B2AE8DE01"
+    },
+    {
+      "X": 176,
+      "Y": 208,
+      "Key": "P3-37373737",
+      "Fingerprint": "ADBF5E1275AC6BE75CFE8A08791B3C9AFCE3A5E3DD5EFA2AE8BF998DD8A87D7F"
+    }
+  ],
+  "FlatRegions": [
+    {
+      "Location": {
+        "IsEmpty": true,
+        "X": 0,
+        "Y": 0
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 256,
+        "Height": 48
+      },
+      "X": 0,
+      "Y": 0,
+      "Width": 256,
+      "Height": 48,
+      "Left": 0,
+      "Top": 0,
+      "Right": 256,
+      "Bottom": 48,
+      "IsEmpty": false
+    },
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 0,
+        "Y": 48
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 96,
+        "Height": 160
+      },
+      "X": 0,
+      "Y": 48,
+      "Width": 96,
+      "Height": 160,
+      "Left": 0,
+      "Top": 48,
+      "Right": 96,
+      "Bottom": 208,
+      "IsEmpty": false
+    },
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 176,
+        "Y": 48
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 80,
+        "Height": 160
+      },
+      "X": 176,
+      "Y": 48,
+      "Width": 80,
+      "Height": 160,
+      "Left": 176,
+      "Top": 48,
+      "Right": 256,
+      "Bottom": 208,
+      "IsEmpty": false
+    },
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 0,
+        "Y": 208
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 256,
+        "Height": 32
+      },
+      "X": 0,
+      "Y": 208,
+      "Width": 256,
+      "Height": 32,
+      "Left": 0,
+      "Top": 208,
+      "Right": 256,
+      "Bottom": 240,
+      "IsEmpty": false
+    }
+  ],
+  "ConditionalFlatRegions": [
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": true,
+          "X": 0,
+          "Y": 0
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 256,
+          "Height": 240
+        },
+        "X": 0,
+        "Y": 0,
+        "Width": 256,
+        "Height": 240,
+        "Left": 0,
+        "Top": 0,
+        "Right": 256,
+        "Bottom": 240,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "104": 10
+      }
+    },
+    {
+      "Bounds": {
+        "Location": {
+          "IsEmpty": true,
+          "X": 0,
+          "Y": 0
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 256,
+          "Height": 240
+        },
+        "X": 0,
+        "Y": 0,
+        "Width": 256,
+        "Height": 240,
+        "Left": 0,
+        "Top": 0,
+        "Right": 256,
+        "Bottom": 240,
+        "IsEmpty": false
+      },
+      "ExpectedRam": {
+        "104": 6,
+        "112": 0,
+        "193": 1
+      }
+    }
+  ],
+  "ObjectRegions": [
+    {
+      "Location": {
+        "IsEmpty": false,
+        "X": 96,
+        "Y": 48
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 80,
+        "Height": 160
+      },
+      "X": 96,
+      "Y": 48,
+      "Width": 80,
+      "Height": 160,
+      "Left": 96,
+      "Top": 48,
+      "Right": 176,
+      "Bottom": 208,
+      "IsEmpty": false
+    }
+  ],
+  "PlayerOamIndices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "PlayerLabel": "Falling tetromino",
+  "BackgroundRules": {
+    "P3-7D7D7D7D": {
+      "Kind": "Brick",
+      "Label": "Tetromino block",
+      "VisualFingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-7B7B7B7B": {
+      "Kind": "Brick",
+      "Label": "Tetromino block",
+      "VisualFingerprint": "C426EB9BC86B86663B49BFC586A65E694465269C25E78E4F3C4C0548072B6E28",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C426EB9BC86B86663B49BFC586A65E694465269C25E78E4F3C4C0548072B6E28",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-7C7C7C7C": {
+      "Kind": "Brick",
+      "Label": "Tetromino block",
+      "VisualFingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-7C7C7C7C": {
+      "Kind": "Brick",
+      "Label": "Tetromino block",
+      "VisualFingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P2-7D7D7D7D": {
+      "Kind": "Brick",
+      "Label": "Tetromino block",
+      "VisualFingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "A6435017700B583CE907C5A789FAA01E81C0FB2F50BDDCCB90F083D11A51A86F",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    },
+    "P3-7B7B7B7B": {
+      "Kind": "Brick",
+      "Label": "Tetromino block",
+      "VisualFingerprint": "C426EB9BC86B86663B49BFC586A65E694465269C25E78E4F3C4C0548072B6E28",
+      "ArtworkVariants": [
+        {
+          "Fingerprint": "C426EB9BC86B86663B49BFC586A65E694465269C25E78E4F3C4C0548072B6E28",
+          "RightHalfFingerprint": "",
+          "ThumbnailPng": ""
+        }
+      ]
+    }
+  }
+}

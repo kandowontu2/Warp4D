@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Warp4D.Emulation;
 
 namespace Warp4D.Profiles;
 
@@ -116,10 +117,7 @@ internal static class ProjectionProfileStore
         PropertyNameCaseInsensitive = true
     };
 
-    public static string FilePath => Path.Combine(
-        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-        "Warp4D",
-        "projection-profile.json");
+    public static string FilePath => Path.Combine(AppPaths.DataDirectory, "projection-profile.json");
 
     public static ProjectionProfile Load()
     {

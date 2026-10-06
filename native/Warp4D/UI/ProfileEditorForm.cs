@@ -22,7 +22,7 @@ internal sealed class ProfileEditorForm : Form
         _workingProfile = activeProfile.Clone();
         EditedProfile = activeProfile.Clone();
 
-        Text = "Warp4D Projection Profile Editor";
+        Text = "Warp4D · Which objects become 4D?";
         StartPosition = FormStartPosition.CenterParent;
         ClientSize = new Size(780, 760);
         MinimumSize = new Size(700, 620);
@@ -52,10 +52,10 @@ internal sealed class ProfileEditorForm : Form
         root.RowStyles.Add(new RowStyle(SizeType.Absolute, 62));
 
         Panel heading = new() { Dock = DockStyle.Fill };
-        Label title = MakeLabel("PROJECTION PROFILE EDITOR", 16, TextColor, FontStyle.Bold);
+        Label title = MakeLabel("Which objects become 4D?", 16, TextColor, FontStyle.Bold);
         title.Location = new Point(0, 0);
         Label explanation = MakeLabel(
-            "Choose which recognized game objects become 4D and set their relative extrusion depth.\nDisabled objects remain visible as their original 2D NES artwork.",
+            "Turn object types on or off, then adjust how much depth they have.\nObjects you turn off keep their original 2D artwork.",
             9,
             MutedColor);
         explanation.Location = new Point(1, 32);
